@@ -34,8 +34,8 @@ export function About() {
             style={{ willChange: "transform", transition: "transform 0.1s linear" }}
           >
             <Image
-              src="/jra-about.png"
-              alt="Builder marking timber onsite"
+              src="/Phil-scaled.webp"
+              alt="Phil Ashton - Bear Construction"
               fill
               className="object-cover"
               sizes="(min-width: 1024px) 50vw, 100vw"
@@ -61,35 +61,31 @@ export function About() {
           </AnimateOnScroll>
 
           <AnimateOnScroll variant="fade-up" delay={100}>
-            <h2 className="mt-5 font-[ui-sans-serif,system-ui,sans-serif] text-[44px] font-extrabold leading-[1.02] tracking-tight text-[#0f2744] sm:text-[56px]">
-              Built on clarity, craft, and accountability
+            <h2 className="mt-5 font-[ui-sans-serif,system-ui,sans-serif] text-[44px] font-extrabold leading-[1.02] tracking-tight sm:text-[56px]">
+              Built on clarity. Backed by a 10-Year Guarantee.
             </h2>
           </AnimateOnScroll>
 
           <AnimateOnScroll variant="fade-up" delay={200}>
-            <div className="mt-7 space-y-5 text-[22px] leading-[1.52] text-[#3f5162]">
+            <div className="mt-7 space-y-5 text-[18px] leading-[1.62] text-[#3f5162]">
               <p>
-                JRA Construction is a full-service construction and management company specialising
-                in residential renovations, extensions, and alterations across New Zealand. We focus
-                on clear planning from the start and disciplined execution through every stage so your
-                project runs smoothly and stays aligned.
+                Bear Construction is an independent building company led by Phil Ashton. We work with homeowners who want local renovation specialists to guide them through the building and renovation process with clear communication, respect for their home, and a flawless finish.
               </p>
               <p>
-                We work closely with you to make practical decisions early, maintain clear
-                communication throughout the build, and ensure every detail meets a high standard.
+                With over 20 years of local experience, Phil is a Certified Building Surveyor (CBS) and a Registered Master Builder. Because we are independent, you are not dealing with a large franchise or getting passed around between different supervisors. You get direct, honest communication and tight project management from the owner from day one.
               </p>
             </div>
           </AnimateOnScroll>
 
           <ul className="mt-8 space-y-4 text-[18px] text-[#22384f]">
             {[
-              "Clear planning and defined scope before construction begins",
-              "Direct communication with consistent updates throughout the project",
-              "Quality workmanship that meets current standards and expectations",
+              "Clear communication from the first site visit to the final handover",
+              "Transparent, practical guidance on your budget and scope",
+              "Quality workmanship backed by a 10-Year Building Guarantee",
             ].map((text, i) => (
               <AnimateOnScroll key={text} variant="fade-up" delay={300 + i * 80}>
                 <li className="flex items-start gap-3">
-                  <svg viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 shrink-0 text-[#1d314a]" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 shrink-0 text-[#1278ce]" aria-hidden="true">
                     <circle cx="12" cy="12" r="9.2" fill="none" stroke="currentColor" strokeWidth="1.8" />
                     <path d="M8.3 12.2l2.2 2.2 5.1-5.1" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
@@ -100,16 +96,15 @@ export function About() {
           </ul>
 
           <AnimateOnScroll variant="fade-up" delay={560}>
-            <p className="mt-8 text-[30px] font-extrabold leading-[1.2] text-[#0f2744]">
-              If you want a builder who takes ownership from plans through to completion, book a free
-              consultation and we&apos;ll walk through your project with you.
+            <p className="mt-8 text-[20px] leading-[1.5] text-[#3f5162]">
+              If you want renovation builders Wellington locals trust with their biggest asset, let&apos;s talk through your project.
             </p>
           </AnimateOnScroll>
 
           <AnimateOnScroll variant="fade-up" delay={660}>
             <Link
-              href="#"
-              className="mt-8 inline-flex items-center justify-center rounded-full bg-[#0f2744] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#16385f]"
+              href="/about"
+              className="mt-8 inline-flex items-center justify-center rounded-full bg-[#1278ce] px-7 py-3 text-sm font-semibold text-white transition hover:opacity-90"
             >
               Read More About Us
             </Link>

@@ -6,9 +6,9 @@ import type { Metadata } from "next";
 import { ImageGallery } from "@/components/ui/ImageGallery";
 
 export const metadata: Metadata = {
-  title: "Westminster Road, Balmoral | JRA Construction",
+  title: "Westminster Road, Balmoral | Bear Construction",
   description:
-    "Explore the Westminster Road, Balmoral renovation and extension project by JRA Construction and Spooner Architectural.",
+    "Explore the Westminster Road, Balmoral renovation and extension project by Bear Construction and Spooner Architectural.",
 };
 
 const projectDetails = [
@@ -88,8 +88,8 @@ export default function WestminsterRoadBalmoralPage() {
         <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <AnimateOnScroll variant="fade-right">
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Project Details</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Project Details</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 Project Overview
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
@@ -100,11 +100,11 @@ export default function WestminsterRoadBalmoralPage() {
 
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="space-y-4 rounded-2xl border border-[#eef2f6] bg-[#f9fafb] p-6 shadow-sm">
-              <h3 className="text-[18px] font-bold text-[#0f2744]">Key Information</h3>
+              <h3 className="text-[18px] font-bold text-[#1278ce]">Key Information</h3>
               <ul className="space-y-3">
                 {projectDetails.map((item) => (
                   <li key={item.label} className="flex justify-between gap-4 text-[15px] leading-relaxed text-[#5f7286]">
-                    <span className="font-medium text-[#0f2744]">{item.label}:</span>
+                    <span className="font-medium text-[#1278ce]">{item.label}:</span>
                     <span>{item.value || "N/A"}</span>
                   </li>
                 ))}
@@ -119,8 +119,8 @@ export default function WestminsterRoadBalmoralPage() {
         <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
           <AnimateOnScroll variant="fade-right">
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Our Work</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Our Work</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 What We Did
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
@@ -161,12 +161,12 @@ export default function WestminsterRoadBalmoralPage() {
           </AnimateOnScroll>
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Achieved Outcomes</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Achieved Outcomes</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 Final Result
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                The Westminster Road, Balmoral project represents JRA Construction’s unwavering commitment to delivering exceptional results that exceed client expectations. The final outcome is a home that harmoniously combines contemporary aesthetics with thoughtful functionality.
+                The Westminster Road, Balmoral project represents Bear Construction’s unwavering commitment to delivering exceptional results that exceed client expectations. The final outcome is a home that harmoniously combines contemporary aesthetics with thoughtful functionality.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
                 The modern living, kitchen, and dining room extension provide a spacious and welcoming area where Brent & Kim’s family can create lasting memories. The refreshed master bedroom and ensuite offer a serene retreat that reflects their personal style and enhances their daily lives. With the addition of the new main bathroom, the home has been transformed into a haven of convenience and luxury. Every aspect of this project showcases our dedication to craftsmanship, attention to detail, and client satisfaction.
@@ -181,7 +181,7 @@ export default function WestminsterRoadBalmoralPage() {
         <Container>
           <AnimateOnScroll variant="fade-up" className="mb-12 text-center space-y-4">
             <p className="section-tab mx-auto w-fit">Gallery</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#0f2744] sm:text-[48px]">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[48px]">
               Project Showcase
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-[17px] text-[#5f7286]">
@@ -202,7 +202,7 @@ export default function WestminsterRoadBalmoralPage() {
         <Container className="text-center">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#0f2744] transition hover:gap-4"
+            className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#1278ce] transition hover:gap-4"
           >
             <span aria-hidden="true">←</span> Back to All Projects
           </Link>

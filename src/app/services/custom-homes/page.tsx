@@ -6,9 +6,9 @@ import { ContactForm } from "@/components/sections/ContactForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Custom Homes Auckland | JRA Construction",
+  title: "Custom Homes Auckland | Bear Construction",
   description:
-    "Build your dream custom home in Auckland with JRA Construction. Fixed-price contracts, licensed builders, Master Builders certified. Get a free consultation today.",
+    "Build your dream custom home in Auckland with Bear Construction. Fixed-price contracts, licensed builders, Master Builders certified. Get a free consultation today.",
 };
 
 const advantages = [
@@ -75,12 +75,12 @@ function CheckIcon() {
 
 function FaqItem({ q, a }: { q: string; a: string }) {
   return (
-    <details className="group rounded-2xl border border-[#eef2f6] bg-[#f9fafb] transition-all duration-300 open:border-[#0f2744] open:bg-[#0f2744] open:shadow-lg open:shadow-[#0f2744]/15">
+    <details className="group rounded-2xl border border-[#eef2f6] bg-[#f9fafb] transition-all duration-300 open:border-[#1278ce] open:bg-[#1278ce] open:shadow-lg open:shadow-[#1278ce]/15">
       <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 sm:px-7 sm:py-6">
-        <span className="text-[16px] font-semibold leading-snug text-[#0f2744] group-open:text-white sm:text-[17px]">
+        <span className="text-[16px] font-semibold leading-snug text-[#1278ce] group-open:text-white sm:text-[17px]">
           {q}
         </span>
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#eef2f6] text-xl font-light text-[#0f2744] transition-all duration-300 group-open:rotate-45 group-open:bg-white/15 group-open:text-white">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#eef2f6] text-xl font-light text-[#1278ce] transition-all duration-300 group-open:rotate-45 group-open:bg-white/15 group-open:text-white">
           +
         </span>
       </summary>
@@ -98,7 +98,7 @@ export default function CustomHomesPage() {
       <section className="relative flex min-h-[72vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-32 sm:pb-20 sm:pt-40">
         <Image
           src="/custom-home-services.webp"
-          alt="JRA Construction custom home Auckland"
+          alt="Bear Construction custom home Auckland"
           fill
           priority
           className="object-cover opacity-40"
@@ -149,7 +149,7 @@ export default function CustomHomesPage() {
         <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
           <AnimateOnScroll variant="fade-right">
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Sound Familiar?</p>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Sound Familiar?</p>
               <ul className="space-y-4">
                 {[
                   "Dreaming of a custom-designed home but overwhelmed by the building process?",
@@ -157,7 +157,7 @@ export default function CustomHomesPage() {
                   "Want to work with builders who understand your unique vision?",
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-3 rounded-xl border border-[#eef2f6] bg-[#f9fafb] px-5 py-4">
-                    <span className="mt-0.5 text-[#0f2744]">
+                    <span className="mt-0.5 text-[#1278ce]">
                       <svg viewBox="0 0 24 24" className="h-5 w-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
                         <path d="M12 8v4M12 16h.01" strokeLinecap="round" />
@@ -172,17 +172,17 @@ export default function CustomHomesPage() {
 
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="space-y-5">
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 Creating Exceptional New Build Homes
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                At JRA Construction, we deliver vision, precision, and unwavering dedication to quality. Our comprehensive project management approach ensures complete transparency throughout your building journey — from securing Auckland Council building consents to final sign-off.
+                At Bear Construction, we deliver vision, precision, and unwavering dedication to quality. Our comprehensive project management approach ensures complete transparency throughout your building journey — from securing Auckland Council building consents to final sign-off.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
                 With our team of Licensed Building Practitioners and partnerships with leading architects, we've established ourselves as trusted new builds Auckland specialists. Our fixed-price contracts, proven systems, and dedicated client support ensure your building experience is seamless.
               </p>
               <div className="flex flex-wrap gap-3 pt-2">
-                <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-[#0f2744] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#16385f]">
+                <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-[#1278ce] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#16385f]">
                   Contact Us <span aria-hidden="true">→</span>
                 </Link>
               </div>
@@ -196,7 +196,7 @@ export default function CustomHomesPage() {
         <Container>
           <AnimateOnScroll variant="fade-up" className="mb-12 text-center">
             <p className="section-tab mx-auto w-fit mb-4">The JRA Advantage</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#0f2744] sm:text-[48px]">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[48px]">
               Always Informed. Always in Control.
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-[17px] text-[#5f7286]">
@@ -207,9 +207,9 @@ export default function CustomHomesPage() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {advantages.map((item, i) => (
               <AnimateOnScroll key={item.text} variant="scale-in" delay={i * 70}>
-                <div className="flex items-start gap-4 rounded-2xl border border-[#e8edf2] bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-[#0f2744]/8">
+                <div className="flex items-start gap-4 rounded-2xl border border-[#e8edf2] bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-[#1278ce]/8">
                   <span className="text-2xl">{item.icon}</span>
-                  <p className="text-[15px] font-medium leading-snug text-[#0f2744]">{item.text}</p>
+                  <p className="text-[15px] font-medium leading-snug text-[#1278ce]">{item.text}</p>
                 </div>
               </AnimateOnScroll>
             ))}
@@ -219,7 +219,7 @@ export default function CustomHomesPage() {
 
       {/* ── SETTING THE STANDARD ─────────────────────────────────── */}
       <section
-        className="bg-[#0f2744] bg-cover bg-center py-16 sm:py-20"
+        className="bg-[#1278ce] bg-cover bg-center py-16 sm:py-20"
         style={{
           backgroundImage:
             "linear-gradient(rgba(15,39,68,0.92), rgba(15,39,68,0.92)), url('/JRA-Belle-Vue-Website-Ready-27-e4e5bfc3-49d4-4872-b806-0fe6aa29407b.png')",
@@ -237,7 +237,7 @@ export default function CustomHomesPage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#0f2744] transition hover:bg-zinc-100"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1278ce] transition hover:bg-zinc-100"
               >
                 Start Your Journey <span aria-hidden="true">→</span>
               </Link>
@@ -264,7 +264,7 @@ export default function CustomHomesPage() {
         <Container className="space-y-14">
           <AnimateOnScroll variant="fade-up" className="text-center space-y-4">
             <p className="section-tab mx-auto w-fit">How It Works</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[42px] font-extrabold leading-[1.04] tracking-tight text-[#0f2744] sm:text-[52px]">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[42px] font-extrabold leading-[1.04] tracking-tight text-[#1278ce] sm:text-[52px]">
               How We Put Your Custom Home to Action
             </h2>
             <p className="mx-auto max-w-2xl text-[17px] text-[#5f7286]">
@@ -275,9 +275,9 @@ export default function CustomHomesPage() {
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {processSteps.map((s, i) => (
               <AnimateOnScroll key={s.step} variant="fade-up" delay={i * 60}>
-                <div className="flex h-full flex-col rounded-2xl border border-[#e8edf2] bg-[#f9fafb] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#0f2744]/20 hover:shadow-lg hover:shadow-[#0f2744]/8">
-                  <span className="mb-4 text-[13px] font-bold uppercase tracking-[0.18em] text-[#0f2744]/30">{s.step}</span>
-                  <h3 className="mb-2 text-[18px] font-bold text-[#0f2744]">{s.title}</h3>
+                <div className="flex h-full flex-col rounded-2xl border border-[#e8edf2] bg-[#f9fafb] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#1278ce]/20 hover:shadow-lg hover:shadow-[#1278ce]/8">
+                  <span className="mb-4 text-[13px] font-bold uppercase tracking-[0.18em] text-[#1278ce]/30">{s.step}</span>
+                  <h3 className="mb-2 text-[18px] font-bold text-[#1278ce]">{s.title}</h3>
                   <p className="text-[14px] leading-[1.6] text-[#5f7286]">{s.body}</p>
                 </div>
               </AnimateOnScroll>
@@ -291,7 +291,7 @@ export default function CustomHomesPage() {
         <Container className="grid gap-12 lg:grid-cols-[1fr_420px] lg:items-center lg:gap-16">
           <AnimateOnScroll variant="fade-right" className="space-y-6">
             <p className="section-tab w-fit">Consents & Compliance</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[38px] font-extrabold leading-[1.08] tracking-tight text-[#0f2744] sm:text-[46px]">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[38px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[46px]">
               Navigating Council Consents & Compliance
             </h2>
             <div className="space-y-4 text-[17px] leading-[1.65] text-[#4d6277]">
@@ -309,7 +309,7 @@ export default function CustomHomesPage() {
 
           <AnimateOnScroll variant="scale-in" delay={200}>
             <div className="rounded-2xl border border-[#e8edf2] bg-white p-8 shadow-[0_8px_32px_rgba(15,39,68,0.08)] space-y-5">
-              <h3 className="text-[22px] font-extrabold text-[#0f2744]">What We Manage For You</h3>
+              <h3 className="text-[22px] font-extrabold text-[#1278ce]">What We Manage For You</h3>
               <ul className="space-y-3">
                 {[
                   "Resource consent documentation",
@@ -327,7 +327,7 @@ export default function CustomHomesPage() {
               </ul>
               <Link
                 href="/contact"
-                className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#0f2744] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#16385f]"
+                className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1278ce] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#16385f]"
               >
                 Discuss Your Project <span aria-hidden="true">→</span>
               </Link>
@@ -341,7 +341,7 @@ export default function CustomHomesPage() {
         <Container className="space-y-12">
           <AnimateOnScroll variant="fade-up" className="text-center space-y-4">
             <p className="section-tab mx-auto w-fit">Our Promise</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#0f2744] sm:text-[48px]">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[48px]">
               Building Excellence Guaranteed
             </h2>
             <p className="mx-auto max-w-2xl text-[17px] text-[#5f7286]">
@@ -352,9 +352,9 @@ export default function CustomHomesPage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {qualityPoints.map((item, i) => (
               <AnimateOnScroll key={item.title} variant="scale-in" delay={i * 80}>
-                <div className="flex flex-col gap-4 rounded-2xl border border-[#eef2f6] bg-[#f9fafb] p-6 text-center transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0f2744]/8">
+                <div className="flex flex-col gap-4 rounded-2xl border border-[#eef2f6] bg-[#f9fafb] p-6 text-center transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#1278ce]/8">
                   <span className="mx-auto text-4xl">{item.icon}</span>
-                  <h3 className="text-[16px] font-bold text-[#0f2744]">{item.title}</h3>
+                  <h3 className="text-[16px] font-bold text-[#1278ce]">{item.title}</h3>
                   <p className="text-[14px] leading-[1.6] text-[#5f7286]">{item.body}</p>
                 </div>
               </AnimateOnScroll>
@@ -368,7 +368,7 @@ export default function CustomHomesPage() {
         <Container className="grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:items-start lg:gap-16">
           <AnimateOnScroll variant="fade-right" className="space-y-5 lg:sticky lg:top-28">
             <p className="section-tab w-fit">FAQ</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[38px] font-extrabold leading-[1.08] tracking-tight text-[#0f2744] sm:text-[46px]">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[38px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[46px]">
               Common Questions About Custom Homes
             </h2>
             <p className="text-[17px] leading-relaxed text-[#5f7286]">
@@ -376,7 +376,7 @@ export default function CustomHomesPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-[#0f2744] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#16385f]"
+              className="inline-flex items-center gap-2 rounded-full bg-[#1278ce] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#16385f]"
             >
               Ask Us Anything <span aria-hidden="true">→</span>
             </Link>
@@ -393,7 +393,7 @@ export default function CustomHomesPage() {
       {/* ── CONSULTATION CTA ─────────────────────────────────────── */}
       <section
         id="consultation"
-        className="scroll-mt-24 bg-[#0f2744] bg-cover bg-center bg-no-repeat py-14 sm:py-16"
+        className="scroll-mt-24 bg-[#1278ce] bg-cover bg-center bg-no-repeat py-14 sm:py-16"
         style={{
           backgroundImage:
             "linear-gradient(rgba(15,39,68,0.86), rgba(15,39,68,0.86)), url('/JRA-Belle-Vue-Website-Ready-27-e4e5bfc3-49d4-4872-b806-0fe6aa29407b.png')",
@@ -434,11 +434,11 @@ export default function CustomHomesPage() {
         <Container className="flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-between sm:text-left">
           <div>
             <p className="text-[13px] font-semibold uppercase tracking-widest text-[#8a9aab]">Explore More</p>
-            <h3 className="mt-1 text-[22px] font-extrabold text-[#0f2744]">View All Our Services</h3>
+            <h3 className="mt-1 text-[22px] font-extrabold text-[#1278ce]">View All Our Services</h3>
           </div>
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 rounded-full border border-[#0f2744] px-7 py-3 text-sm font-semibold text-[#0f2744] transition hover:bg-[#0f2744] hover:text-white"
+            className="inline-flex items-center gap-2 rounded-full border border-[#1278ce] px-7 py-3 text-sm font-semibold text-[#1278ce] transition hover:bg-[#1278ce] hover:text-white"
           >
             ← Back to Services
           </Link>

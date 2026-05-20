@@ -6,9 +6,9 @@ import type { Metadata } from "next";
 import { ImageGallery } from "@/components/ui/ImageGallery";
 
 export const metadata: Metadata = {
-  title: "Taipari Road, Te Atatu | JRA Construction",
+  title: "Taipari Road, Te Atatu | Bear Construction",
   description:
-    "Explore the Taipari Road, Te Atatu project by JRA Construction: a remarkable external reclad and renovation rejuvenating an outdated property.",
+    "Explore the Taipari Road, Te Atatu project by Bear Construction: a remarkable external reclad and renovation rejuvenating an outdated property.",
 };
 
 const projectDetails = [
@@ -86,23 +86,23 @@ export default function TaipariRoadTeAtatuPage() {
         <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <AnimateOnScroll variant="fade-right">
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Project Details</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Project Details</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 Project Overview
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                Welcome to the Taipari Road, Te Atatu project—where JRA Construction took on the task of rejuvenating an outdated property through an external reclad and renovation. Our expertise and commitment to excellence shine through in the remarkable transformation of this home for Amelia and Mat.
+                Welcome to the Taipari Road, Te Atatu project—where Bear Construction took on the task of rejuvenating an outdated property through an external reclad and renovation. Our expertise and commitment to excellence shine through in the remarkable transformation of this home for Amelia and Mat.
               </p>
             </div>
           </AnimateOnScroll>
 
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="space-y-4 rounded-2xl border border-[#eef2f6] bg-[#f9fafb] p-6 shadow-sm">
-              <h3 className="text-[18px] font-bold text-[#0f2744]">Key Information</h3>
+              <h3 className="text-[18px] font-bold text-[#1278ce]">Key Information</h3>
               <ul className="space-y-3">
                 {projectDetails.map((item) => (
                   <li key={item.label} className="flex justify-between gap-4 text-[15px] leading-relaxed text-[#5f7286]">
-                    <span className="font-medium text-[#0f2744]">{item.label}:</span>
+                    <span className="font-medium text-[#1278ce]">{item.label}:</span>
                     <span>{item.value || "N/A"}</span>
                   </li>
                 ))}
@@ -117,12 +117,12 @@ export default function TaipariRoadTeAtatuPage() {
         <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
           <AnimateOnScroll variant="fade-right">
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Our Work</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Our Work</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 What We Did
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                At JRA Construction, we recognized the need to breathe new life into the property on Taipari Road. Amelia and Mat entrusted us with the task of carrying out an external reclad and renovation to give their home a fresh and modern look.
+                At Bear Construction, we recognized the need to breathe new life into the property on Taipari Road. Amelia and Mat entrusted us with the task of carrying out an external reclad and renovation to give their home a fresh and modern look.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
                 Our experienced team meticulously executed the recladding process, ensuring the exterior of the property was not only aesthetically pleasing but also well-protected against the elements. We utilized quality materials and employed industry best practices to achieve a durable and visually appealing finish. In addition to the external reclad, we undertook a comprehensive renovation of the property’s interior. Our aim was to create a space that Amelia and Mat would be proud to call home. We upgraded outdated features, enhanced the functionality of different areas, and incorporated modern design elements that reflect their personal style and preferences. Throughout the project, we prioritized attention to detail, craftsmanship, and quality. Our goal was to not only improve the aesthetics but also enhance the overall functionality and livability of the home.
@@ -159,12 +159,12 @@ export default function TaipariRoadTeAtatuPage() {
           </AnimateOnScroll>
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Achieved Outcomes</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Achieved Outcomes</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 Final Result
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                The Taipari Road, Te Atatu project showcases JRA Construction’s commitment to delivering exceptional results through external reclad and renovation projects. The final outcome is a transformed property that exudes modernity and sophistication.
+                The Taipari Road, Te Atatu project showcases Bear Construction’s commitment to delivering exceptional results through external reclad and renovation projects. The final outcome is a transformed property that exudes modernity and sophistication.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
                 The external reclad has revitalized the appearance of the home, giving it a fresh and appealing look. The carefully chosen materials and expert installation ensure long-term durability and protection. Inside the home, the comprehensive renovation has created a space that truly reflects Amelia and Mat’s lifestyle and preferences. The updated features, improved layout, and modern design elements have transformed the property into a comfortable and inviting haven.
@@ -179,7 +179,7 @@ export default function TaipariRoadTeAtatuPage() {
         <Container>
           <AnimateOnScroll variant="fade-up" className="mb-12 text-center space-y-4">
             <p className="section-tab mx-auto w-fit">Gallery</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#0f2744] sm:text-[48px]">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[48px]">
               Project Showcase
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-[17px] text-[#5f7286]">
@@ -200,7 +200,7 @@ export default function TaipariRoadTeAtatuPage() {
         <Container className="text-center">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#0f2744] transition hover:gap-4"
+            className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#1278ce] transition hover:gap-4"
           >
             <span aria-hidden="true">←</span> Back to All Projects
           </Link>

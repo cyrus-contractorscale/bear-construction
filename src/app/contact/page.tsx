@@ -43,11 +43,11 @@ export default function ContactPage() {
       {/* Banner Section */}
       <section className="relative overflow-hidden bg-zinc-950 py-24 sm:py-32 lg:py-40">
         <Image
-          src="/jra-slider-1.png"
+          src="/page-header-bg.webp"
           alt="Contact Us banner background"
           fill
           priority
-          className="object-cover opacity-30"
+          className="object-cover opacity-50"
           sizes="100vw"
         />
         <Container className="relative z-10 text-center">
@@ -80,47 +80,47 @@ export default function ContactPage() {
               Completely synergize resource taxing relationships niche markets. Professionally cultivate one-to-one customer service.
             </p>
             <div className="flex items-start space-x-3">
-              <IconMapPin className="mt-0.5 h-6 w-6 shrink-0 text-[#0f2744]" />
+              <IconMapPin className="mt-0.5 h-6 w-6 shrink-0 text-[#1278ce]" />
               <div className="space-y-1">
-                <h3 className="font-bold text-[#0f2744]">Address:</h3>
-                <p>45 Brighton Road, Parnell,<br />Auckland 1052, New Zealand</p>
+                <h3 className="font-bold text-[#1278ce]">Address:</h3>
+                <p>191 Thorndon Quay, Pipitea,<br />Wellington 6011, New Zealand</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <IconPhone className="mt-0.5 h-6 w-6 shrink-0 text-[#0f2744]" />
+              <IconPhone className="mt-0.5 h-6 w-6 shrink-0 text-[#1278ce]" />
               <div className="space-y-1">
-                <h3 className="font-bold text-[#0f2744]">Phone:</h3>
-                <p>+64 9 884 0915</p>
+                <h3 className="font-bold text-[#1278ce]">Phone:</h3>
+                <p>021 824 419</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <IconEmail className="mt-0.5 h-6 w-6 shrink-0 text-[#0f2744]" />
+              <IconEmail className="mt-0.5 h-6 w-6 shrink-0 text-[#1278ce]" />
               <div className="space-y-1">
-                <h3 className="font-bold text-[#0f2744]">Email:</h3>
-                <p>jraconstruction.co.nz</p>
+                <h3 className="font-bold text-[#1278ce]">Email:</h3>
+                <p>phil@bearconstruction.co.nz</p>
               </div>
             </div>
           </div>
 
           {/* Right Column: Placeholder Form */}
           <div className="space-y-6">
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-3xl font-extrabold leading-tight tracking-tight text-[#0f2744] sm:text-4xl">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-3xl font-extrabold leading-tight tracking-tight text-[#1278ce] sm:text-4xl">
               Send Us A Message
             </h2>
             <form className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-[#4d6277]">Name</label>
-                <input type="text" id="name" name="name" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0f2744] focus:ring-[#0f2744] sm:text-sm" />
+                <input type="text" id="name" name="name" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1278ce] focus:ring-[#1278ce] sm:text-sm" />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-[#4d6277]">Email</label>
-                <input type="email" id="email" name="email" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0f2744] focus:ring-[#0f2744] sm:text-sm" />
+                <input type="email" id="email" name="email" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1278ce] focus:ring-[#1278ce] sm:text-sm" />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-[#4d6277]">Message</label>
-                <textarea id="message" name="message" rows={4} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0f2744] focus:ring-[#0f2744] sm:text-sm"></textarea>
+                <textarea id="message" name="message" rows={4} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1278ce] focus:ring-[#1278ce] sm:text-sm"></textarea>
               </div>
-              <button type="submit" className="inline-flex items-center justify-center rounded-full bg-[#0f2744] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-black/30 transition hover:bg-[#1a3d5e]">
+              <button type="submit" className="inline-flex items-center justify-center rounded-full bg-[#1278ce] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-black/30 transition hover:bg-[#1a3d5e]">
                 Submit
               </button>
             </form>

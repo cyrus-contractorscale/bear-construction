@@ -6,9 +6,9 @@ import type { Metadata } from "next";
 import { ImageGallery } from "@/components/ui/ImageGallery";
 
 export const metadata: Metadata = {
-  title: "Sandringham Project | JRA Construction",
+  title: "Sandringham Project | Bear Construction",
   description:
-    "Explore the Sandringham Project by JRA Construction: a remarkable home renovation and extension in Auckland, completed with precision and innovative design.",
+    "Explore the Sandringham Project by Bear Construction: a remarkable home renovation and extension in Auckland, completed with precision and innovative design.",
 };
 
 const projectDetails = [
@@ -91,26 +91,26 @@ export default function SandringhamProjectPage() {
         <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <AnimateOnScroll variant="fade-right">
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Project Details</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Project Details</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 Project Overview
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                Sandringham Project is a remarkable renovation and extension undertaken by JRA Construction in collaboration with the esteemed architects, Harbour City Plans. This project showcases our expertise in transforming existing homes into stunning, functional spaces that meet our client’s unique requirements.
+                Sandringham Project is a remarkable renovation and extension undertaken by Bear Construction in collaboration with the esteemed architects, Harbour City Plans. This project showcases our expertise in transforming existing homes into stunning, functional spaces that meet our client’s unique requirements.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                At JRA Construction, we undertook a comprehensive renovation of the Sandringham residence, breathing new life into its existing structure. The focal point of this project was the creation of an expansive open living area, seamlessly integrating the dining and kitchen spaces. Our skilled team of professionals meticulously executed the design, ensuring a harmonious flow between the different sections of the home.
+                At Bear Construction, we undertook a comprehensive renovation of the Sandringham residence, breathing new life into its existing structure. The focal point of this project was the creation of an expansive open living area, seamlessly integrating the dining and kitchen spaces. Our skilled team of professionals meticulously executed the design, ensuring a harmonious flow between the different sections of the home.
               </p>
             </div>
           </AnimateOnScroll>
 
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="space-y-4 rounded-2xl border border-[#eef2f6] bg-[#f9fafb] p-6 shadow-sm">
-              <h3 className="text-[18px] font-bold text-[#0f2744]">Key Information</h3>
+              <h3 className="text-[18px] font-bold text-[#1278ce]">Key Information</h3>
               <ul className="space-y-3">
                 {projectDetails.map((item) => (
                   <li key={item.label} className="flex justify-between gap-4 text-[15px] leading-relaxed text-[#5f7286]">
-                    <span className="font-medium text-[#0f2744]">{item.label}:</span>
+                    <span className="font-medium text-[#1278ce]">{item.label}:</span>
                     <span>{item.value}</span>
                   </li>
                 ))}
@@ -125,12 +125,12 @@ export default function SandringhamProjectPage() {
         <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
           <AnimateOnScroll variant="fade-right">
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Our Work</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Our Work</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 What We Did
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                At JRA Construction, we undertook a comprehensive renovation of the Sandringham residence, breathing new life into its existing structure. The focal point of this project was the creation of an expansive open living area, seamlessly integrating the dining and kitchen spaces.
+                At Bear Construction, we undertook a comprehensive renovation of the Sandringham residence, breathing new life into its existing structure. The focal point of this project was the creation of an expansive open living area, seamlessly integrating the dining and kitchen spaces.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
                 Our skilled team of professionals meticulously executed the design, ensuring a harmonious flow between the different sections of the home. Additionally, we undertook a visionary approach by opening up the existing roof space and transforming it into a beautiful studio. This innovative use of space not only increased the property&apos;s functionality but also added an element of uniqueness and charm to the overall design.
@@ -169,8 +169,8 @@ export default function SandringhamProjectPage() {
           </AnimateOnScroll>
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Achieved Outcomes</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Achieved Outcomes</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 Final Result
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
@@ -189,7 +189,7 @@ export default function SandringhamProjectPage() {
         <Container>
           <AnimateOnScroll variant="fade-up" className="mb-12 text-center space-y-4">
             <p className="section-tab mx-auto w-fit">Gallery</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#0f2744] sm:text-[48px]">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[48px]">
               Project Showcase
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-[17px] text-[#5f7286]">
@@ -210,7 +210,7 @@ export default function SandringhamProjectPage() {
         <Container className="text-center">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#0f2744] transition hover:gap-4"
+            className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#1278ce] transition hover:gap-4"
           >
             <span aria-hidden="true">←</span> Back to All Projects
           </Link>

@@ -3,10 +3,10 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Container } from "@/components/ui/Container";
 
-const fixedHeadingStart = "Build Right Contractors";
-const revealLineOne = " in";
-const revealLineTwo = "Auckland By JRA";
-const revealLineThree = "Construction";
+const fixedHeadingStart = "Independent, Licensed Builders";
+const revealLineOne = " &";
+const revealLineTwo = "Master Builders";
+const revealLineThree = "";
 const revealText = `${revealLineOne}${revealLineTwo}${revealLineThree}`;
 
 export function Statement() {
@@ -127,31 +127,23 @@ export function Statement() {
   return (
     <section ref={sectionRef} className="bg-white py-14 sm:py-20">
       <Container>
-        <div className="grid gap-10 lg:grid-cols-[35%_65%] lg:items-start lg:gap-16">
-          <div className="max-w-sm space-y-5">
-            <h3 className="text-[24px] font-extrabold leading-[1.1] tracking-tight text-[#102539]">
-              We Are Licensed & Certified
-              <br />
-              Home Builders in Auckland
-            </h3>
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
+          <div>
             <p className="text-[18px] leading-[1.62] text-[#516577]">
-              As leading home builders in Auckland, we ensure quality construction, compliance with
-              local codes, and beautifully designed homes. Our expert team delivers durability and
-              value, enhancing aesthetics and ensuring safety.
+              As a trusted home renovation company Wellington homeowners recommend, we take the fear out of complex builds. From second-storey additions to permanent weathertightness remediation, we deliver quality workmanship backed by clear communication and a solid 10-Year Building Guarantee.
             </p>
           </div>
-
-          <div className="max-w-full pt-1">
-            <h2 className="max-w-[800px] font-[ui-sans-serif,system-ui,sans-serif] text-[46px] font-extrabold leading-[1.05] tracking-tight text-[#102539] sm:text-[54px] lg:text-[68px]">
+          <div>
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[46px] font-extrabold leading-[1.05] tracking-tight !text-[#000] sm:text-[54px] lg:text-[60px]">
               {fixedHeadingStart}
               <span className="whitespace-pre">{firstLineReveal.visible}</span>
-              <span className="whitespace-pre text-[#102539]/30">{firstLineReveal.hidden}</span>
+              <span className="whitespace-pre text-[#000]/30">{firstLineReveal.hidden}</span>
               <br />
               <span className="whitespace-pre">{secondLineReveal.visible}</span>
-              <span className="whitespace-pre text-[#102539]/30">{secondLineReveal.hidden}</span>
+              <span className="whitespace-pre text-[#000]/30">{secondLineReveal.hidden}</span>
               <br />
               <span className="whitespace-pre">{thirdLineReveal.visible}</span>
-              <span className="whitespace-pre text-[#102539]/30">{thirdLineReveal.hidden}</span>
+              <span className="whitespace-pre text-[#000]/30">{thirdLineReveal.hidden}</span>
             </h2>
           </div>
         </div>

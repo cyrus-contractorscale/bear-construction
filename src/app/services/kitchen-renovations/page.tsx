@@ -6,9 +6,9 @@ import { ContactForm } from "@/components/sections/ContactForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Kitchen Renovations Auckland | JRA Construction",
+  title: "Kitchen Renovations Auckland | Bear Construction",
   description:
-    "Transform your kitchen with JRA Construction's Auckland kitchen renovation specialists. Bespoke designs, fixed-price contracts, licensed builders. Free consultation.",
+    "Transform your kitchen with Bear Construction's Auckland kitchen renovation specialists. Bespoke designs, fixed-price contracts, licensed builders. Free consultation.",
 };
 
 const advantages = [
@@ -75,12 +75,12 @@ function CheckIcon() {
 
 function FaqItem({ q, a }: { q: string; a: string }) {
   return (
-    <details className="group rounded-2xl border border-[#eef2f6] bg-[#f9fafb] transition-all duration-300 open:border-[#0f2744] open:bg-[#0f2744] open:shadow-lg open:shadow-[#0f2744]/15">
+    <details className="group rounded-2xl border border-[#eef2f6] bg-[#f9fafb] transition-all duration-300 open:border-[#1278ce] open:bg-[#1278ce] open:shadow-lg open:shadow-[#1278ce]/15">
       <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 sm:px-7 sm:py-6">
-        <span className="text-[16px] font-semibold leading-snug text-[#0f2744] group-open:text-white sm:text-[17px]">
+        <span className="text-[16px] font-semibold leading-snug text-[#1278ce] group-open:text-white sm:text-[17px]">
           {q}
         </span>
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#eef2f6] text-xl font-light text-[#0f2744] transition-all duration-300 group-open:rotate-45 group-open:bg-white/15 group-open:text-white">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#eef2f6] text-xl font-light text-[#1278ce] transition-all duration-300 group-open:rotate-45 group-open:bg-white/15 group-open:text-white">
           +
         </span>
       </summary>
@@ -98,7 +98,7 @@ export default function KitchenRenovationsPage() {
       <section className="relative flex min-h-[72vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-32 sm:pb-20 sm:pt-40">
         <Image
           src="/kitchen-services.webp"
-          alt="JRA Construction kitchen renovations Auckland"
+          alt="Bear Construction kitchen renovations Auckland"
           fill
           priority
           className="object-cover opacity-40"
@@ -148,7 +148,7 @@ export default function KitchenRenovationsPage() {
         <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
           <AnimateOnScroll variant="fade-right">
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Sound Familiar?</p>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Sound Familiar?</p>
               <ul className="space-y-4">
                 {[
                   "Is your kitchen layout hampering your family's daily routines?",
@@ -156,7 +156,7 @@ export default function KitchenRenovationsPage() {
                   "Searching for experienced kitchen renovation Auckland specialists who understand your vision?",
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-3 rounded-xl border border-[#eef2f6] bg-[#f9fafb] px-5 py-4">
-                    <span className="mt-0.5 text-[#0f2744]">
+                    <span className="mt-0.5 text-[#1278ce]">
                       <svg viewBox="0 0 24 24" className="h-5 w-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
                         <path d="M12 8v4M12 16h.01" strokeLinecap="round" />
@@ -171,7 +171,7 @@ export default function KitchenRenovationsPage() {
 
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="space-y-5">
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 Crafting Your Dream Auckland Kitchen
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
@@ -181,7 +181,7 @@ export default function KitchenRenovationsPage() {
                 From heritage villas to contemporary apartments, we understand how to blend new-style kitchen elements with existing architecture, incorporating features like kitchen islands and open-plan layouts that suit modern living — creating spaces that feel both fresh and timeless.
               </p>
               <div className="flex flex-wrap gap-3 pt-2">
-                <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-[#0f2744] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#16385f]">
+                <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-[#1278ce] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#16385f]">
                   Contact Us <span aria-hidden="true">→</span>
                 </Link>
               </div>
@@ -195,7 +195,7 @@ export default function KitchenRenovationsPage() {
         <Container>
           <AnimateOnScroll variant="fade-up" className="mb-12 text-center">
             <p className="section-tab mx-auto w-fit mb-4">The JRA Advantage</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#0f2744] sm:text-[48px]">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[48px]">
               Your Kitchen Transformation Journey
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-[17px] text-[#5f7286]">
@@ -206,9 +206,9 @@ export default function KitchenRenovationsPage() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {advantages.map((item, i) => (
               <AnimateOnScroll key={item.text} variant="scale-in" delay={i * 70}>
-                <div className="flex items-start gap-4 rounded-2xl border border-[#e8edf2] bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-[#0f2744]/8">
+                <div className="flex items-start gap-4 rounded-2xl border border-[#e8edf2] bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-[#1278ce]/8">
                   <span className="text-2xl">{item.icon}</span>
-                  <p className="text-[15px] font-medium leading-snug text-[#0f2744]">{item.text}</p>
+                  <p className="text-[15px] font-medium leading-snug text-[#1278ce]">{item.text}</p>
                 </div>
               </AnimateOnScroll>
             ))}
@@ -218,7 +218,7 @@ export default function KitchenRenovationsPage() {
 
       {/* ── SETTING THE STANDARD ─────────────────────────────────── */}
       <section
-        className="bg-[#0f2744] bg-cover bg-center py-16 sm:py-20"
+        className="bg-[#1278ce] bg-cover bg-center py-16 sm:py-20"
         style={{
           backgroundImage:
             "linear-gradient(rgba(15,39,68,0.92), rgba(15,39,68,0.92)), url('/JRA-Belle-Vue-Website-Ready-27-e4e5bfc3-49d4-4872-b806-0fe6aa29407b.png')",
@@ -236,7 +236,7 @@ export default function KitchenRenovationsPage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#0f2744] transition hover:bg-zinc-100"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1278ce] transition hover:bg-zinc-100"
               >
                 Start Your Journey <span aria-hidden="true">→</span>
               </Link>
@@ -263,7 +263,7 @@ export default function KitchenRenovationsPage() {
         <Container className="space-y-14">
           <AnimateOnScroll variant="fade-up" className="text-center space-y-4">
             <p className="section-tab mx-auto w-fit">How It Works</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[42px] font-extrabold leading-[1.04] tracking-tight text-[#0f2744] sm:text-[52px]">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[42px] font-extrabold leading-[1.04] tracking-tight text-[#1278ce] sm:text-[52px]">
               How We Put Your Kitchen Renovation Plan to Action
             </h2>
             <p className="mx-auto max-w-2xl text-[17px] text-[#5f7286]">
@@ -274,9 +274,9 @@ export default function KitchenRenovationsPage() {
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {processSteps.map((s, i) => (
               <AnimateOnScroll key={s.step} variant="fade-up" delay={i * 60}>
-                <div className="flex h-full flex-col rounded-2xl border border-[#e8edf2] bg-[#f9fafb] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#0f2744]/20 hover:shadow-lg hover:shadow-[#0f2744]/8">
-                  <span className="mb-4 text-[13px] font-bold uppercase tracking-[0.18em] text-[#0f2744]/30">{s.step}</span>
-                  <h3 className="mb-2 text-[18px] font-bold text-[#0f2744]">{s.title}</h3>
+                <div className="flex h-full flex-col rounded-2xl border border-[#e8edf2] bg-[#f9fafb] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#1278ce]/20 hover:shadow-lg hover:shadow-[#1278ce]/8">
+                  <span className="mb-4 text-[13px] font-bold uppercase tracking-[0.18em] text-[#1278ce]/30">{s.step}</span>
+                  <h3 className="mb-2 text-[18px] font-bold text-[#1278ce]">{s.title}</h3>
                   <p className="text-[14px] leading-[1.6] text-[#5f7286]">{s.body}</p>
                 </div>
               </AnimateOnScroll>
@@ -291,7 +291,7 @@ export default function KitchenRenovationsPage() {
           <AnimateOnScroll variant="fade-right">
             <div className="space-y-5">
               <p className="section-tab w-fit">Latest Trends</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 Modern Kitchen Design Trends
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
@@ -309,7 +309,7 @@ export default function KitchenRenovationsPage() {
                 <AnimateOnScroll key={pt.title} variant="scale-in" delay={i * 80}>
                   <div className="flex flex-col gap-3 rounded-2xl border border-[#e8edf2] bg-white p-5 shadow-sm">
                     <span className="text-3xl">{pt.icon}</span>
-                    <h3 className="text-[15px] font-bold text-[#0f2744]">{pt.title}</h3>
+                    <h3 className="text-[15px] font-bold text-[#1278ce]">{pt.title}</h3>
                     <p className="text-[14px] leading-relaxed text-[#5f7286]">{pt.body}</p>
                   </div>
                 </AnimateOnScroll>
@@ -322,7 +322,7 @@ export default function KitchenRenovationsPage() {
       {/* ── CONSULTATION CTA ─────────────────────────────────────── */}
       <section
         id="consultation"
-        className="scroll-mt-24 bg-[#0f2744] bg-cover bg-center py-16 sm:py-20"
+        className="scroll-mt-24 bg-[#1278ce] bg-cover bg-center py-16 sm:py-20"
         style={{
           backgroundImage:
             "linear-gradient(rgba(15,39,68,0.93), rgba(15,39,68,0.93)), url('/JRA-Belle-Vue-Website-Ready-27-e4e5bfc3-49d4-4872-b806-0fe6aa29407b.png')",
@@ -362,7 +362,7 @@ export default function KitchenRenovationsPage() {
         <Container className="max-w-3xl space-y-8">
           <AnimateOnScroll variant="fade-up" className="text-center space-y-3">
             <p className="section-tab mx-auto w-fit">FAQs</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-tight tracking-tight text-[#0f2744]">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-tight tracking-tight text-[#1278ce]">
               Frequently Asked Questions
             </h2>
           </AnimateOnScroll>
@@ -381,7 +381,7 @@ export default function KitchenRenovationsPage() {
         <Container className="text-center">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#0f2744] transition hover:gap-4"
+            className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#1278ce] transition hover:gap-4"
           >
             <span aria-hidden="true">←</span> Back to All Services
           </Link>

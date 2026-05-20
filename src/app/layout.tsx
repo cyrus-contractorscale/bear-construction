@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Lora, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -18,9 +19,9 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "JRA Construction | Commercial & Residential Builds",
+  title: "Wellington Home Renovation Builders | Bear Construction",
   description:
-    "Licensed general contractor delivering precision framing, renovations, and turnkey construction across the region.",
+    "Looking for home renovation builders in Wellington? Bear Construction delivers quality renovations, extensions, and building services across Wellington, Upper Hutt, Lower Hutt, and Porirua.",
 };
 
 export default function RootLayout({
@@ -37,6 +38,7 @@ export default function RootLayout({
           <MainNav />
           {children}
           <Footer />
+          <Script src="https://link.contractorscale.com/js/form_embed.js" strategy="afterInteractive" />
         </body>
       </html>
   );

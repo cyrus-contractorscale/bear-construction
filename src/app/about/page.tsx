@@ -9,12 +9,12 @@ export default function AboutUsPage() {
     <>
       {/* Banner Section */}
       <section className="relative overflow-hidden bg-zinc-950 py-24 sm:py-32 lg:py-40">
-        <Image
-          src="/jra-slider-1.png"
+          <Image
+          src="/page-header-bg.webp"
           alt="About Us banner background"
           fill
           priority
-          className="object-cover opacity-30"
+          className="object-cover opacity-50"
           sizes="100vw"
         />
         <Container className="relative z-10 text-center">
@@ -43,11 +43,11 @@ export default function AboutUsPage() {
         <Container className="max-w-[1200px] grid gap-10 lg:grid-cols-2 lg:gap-14 lg:items-center">
           {/* Text Column */}
           <div className="space-y-6">
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-4xl font-extrabold leading-tight tracking-tight text-[#0f2744] sm:text-5xl">
-              JRA Construction: Your Trusted Building Partner
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-4xl font-extrabold leading-tight tracking-tight text-[#1278ce] sm:text-5xl">
+              Bear Construction: Your Trusted Building Partner
             </h2>
             <p className="text-[16px] leading-relaxed text-[#4d6277]">
-              At JRA Construction, we are a full-service construction and management company that
+              At Bear Construction, we are a full-service construction and management company that
               specializes in residential renovations, extensions, and alterations. As a New
               Zealand-owned company, we take pride in our customer service excellence and work
               closely with our clients to find the best solutions that fit their budget and timeline.
@@ -62,10 +62,10 @@ export default function AboutUsPage() {
               Practitioners.
             </p>
             <p className="text-[16px] leading-relaxed text-[#4d6277]">
-              Quality service is at the core of everything we do at JRA Construction. We ensure
+              Quality service is at the core of everything we do at Bear Construction. We ensure
               that all work and sub-trades meet our high expectations and are up to current
               standards. Once a project is complete, we conduct a thorough walk-through using our
-              JRA Quality Checklist to ensure that it meets both our standards and the client’s
+              Bear Quality Checklist to ensure that it meets both our standards and the client’s
               expectations.
             </p>
             <p className="text-[16px] leading-relaxed text-[#4d6277]">
@@ -74,7 +74,7 @@ export default function AboutUsPage() {
               site safety plans alongside our own to ensure the utmost safety on every site.
             </p>
             <p className="text-[16px] leading-relaxed text-[#4d6277]">
-              At JRA Construction, we aim to make every project run as smoothly and effortlessly as
+              At Bear Construction, we aim to make every project run as smoothly and effortlessly as
               possible, with joint satisfaction being one of our top priorities. So, if you’re
               ready to take the first step towards your dream project, contact us today to schedule
               a FREE consultation. Let us be your trusted building partner and build your dream
@@ -85,8 +85,8 @@ export default function AboutUsPage() {
           {/* Image Column */}
           <div className="relative h-[400px] w-full overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5 lg:h-[600px]">
             <Image
-              src="/jra-about.png"
-              alt="JRA Construction team discussing plans"
+              src="/Phil-scaled.webp"
+              alt="Phil Ashton - Bear Construction"
               fill
               className="object-cover"
               sizes="(min-width: 1024px) 50vw, 100vw"

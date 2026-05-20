@@ -50,18 +50,18 @@ export function Blog() {
       <Container>
         <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between lg:gap-10">
           <AnimateOnScroll variant="fade-left" className="min-w-0 space-y-5">
-            <div className="section-tab border-[#d5dde6] bg-white text-[#0f2744]">
+            <div className="section-tab border-[#d5dde6] bg-white text-[#1278ce]">
               <NewspaperIcon />
               <span>News &amp; Blog</span>
             </div>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#0f2744] sm:text-[48px] lg:text-[52px]">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[48px] lg:text-[52px]">
               Our Latest News &amp; Blogs
             </h2>
           </AnimateOnScroll>
           <AnimateOnScroll variant="fade-right" delay={150} className="self-start">
             <Link
               href="#"
-              className="inline-flex shrink-0 items-center justify-center rounded-xl border border-[#cfd8e2] bg-white px-5 py-2.5 text-[15px] font-medium text-[#6b7c8f] shadow-sm transition hover:border-[#b8c5d3] hover:text-[#0f2744] lg:mt-2"
+              className="inline-flex shrink-0 items-center justify-center rounded-xl border border-[#cfd8e2] bg-white px-5 py-2.5 text-[15px] font-medium text-[#6b7c8f] shadow-sm transition hover:border-[#b8c5d3] hover:text-[#1278ce] lg:mt-2"
             >
               View All Blogs
             </Link>
@@ -87,7 +87,7 @@ export function Blog() {
                     <span className="text-[#c5ced8]"> • </span>
                     {post.category}
                   </p>
-                  <h3 className="mt-3 text-[1.05rem] font-bold leading-snug text-[#0f2744] sm:text-[1.2rem]">
+                  <h3 className="mt-3 text-[1.05rem] font-bold leading-snug text-[#1278ce] sm:text-[1.2rem]">
                     <Link href={post.href} className="transition hover:text-[#1a3d5c]">
                       {post.title}
                     </Link>
@@ -97,7 +97,7 @@ export function Blog() {
                   </p>
                   <Link
                     href={post.href}
-                    className="mt-5 inline-flex items-center gap-1.5 text-[15px] font-bold text-[#0f2744] transition hover:gap-3"
+                    className="mt-5 inline-flex items-center gap-1.5 text-[15px] font-bold text-[#1278ce] transition hover:gap-3"
                   >
                     Read More
                     <span aria-hidden="true" className="text-lg leading-none">→</span>

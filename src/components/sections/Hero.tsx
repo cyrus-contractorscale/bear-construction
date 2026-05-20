@@ -5,27 +5,18 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { useEffect, useMemo, useRef, useState } from "react";
 
-const heroSlides = ["/jra-slider-1.png", "/jra-slider-2.png"];
-const baseHeading = "Build Your Dream";
-const fadedFirstLine = " Home";
-const fadedSecondLine = "With JRA Construction";
+const baseHeading = "Transform Your Home With Bear Construction,";
+const fadedFirstLine = " Expert Wellington";
+const fadedSecondLine = "Home Renovation Builders";
 const revealText = `${fadedFirstLine}${fadedSecondLine}`;
-const customerImages = [
-  "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=160&q=80",
-  "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=160&q=80",
-  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80",
-  "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&q=80",
-  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80",
-];
 
 export function Hero() {
-  const [activeSlide, setActiveSlide] = useState(0);
   const [revealedLetters, setRevealedLetters] = useState(0);
   const heroRef = useRef<HTMLElement>(null);
   const touchStartY = useRef<number | null>(null);
   const totalRevealLetters = revealText.length;
   const [isVideoOpen, setIsVideoOpen] = useState(false);
-  const videoId = "NAaXgHLW51Q"; // YouTube video ID
+  const videoId = "xRMsp2zs9c4"; // YouTube Shorts video ID
 
   const firstLineReveal = useMemo(() => {
     const lineCount = Math.min(revealedLetters, fadedFirstLine.length);
@@ -43,14 +34,6 @@ export function Hero() {
       hidden: fadedSecondLine.slice(clamped),
     };
   }, [revealedLetters]);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveSlide((current) => (current + 1) % heroSlides.length);
-    }, 6500);
-
-    return () => clearInterval(interval);
-  }, []);
 
   useEffect(() => {
     function canControlReveal() {
@@ -164,19 +147,14 @@ export function Hero() {
             ref={heroRef}
             className="relative flex min-h-screen items-center overflow-hidden bg-zinc-900"
         >
-            {heroSlides.map((slide, index) => (
-                <Image
-                    key={slide}
-                    src={slide}
-                    alt={`JRA Construction project showcase ${index + 1}`}
-                    fill
-                    priority={index === 0}
-                    className={`object-cover transition-opacity duration-[1300ms] ease-in-out ${
-            activeSlide === index ? "opacity-100" : "opacity-0"
-          }`}
-                    sizes="100vw"
-                />
-            ))}
+            <Image
+                src="/hp-hero.webp"
+                alt="Bear Construction hero"
+                fill
+                priority
+                className="object-cover"
+                sizes="100vw"
+            />
             <div className="absolute inset-0 bg-zinc-950/55" />
 
             <Container className="relative z-10 py-28 sm:py-36 lg:py-44">
@@ -197,17 +175,15 @@ export function Hero() {
                             {secondLineReveal.hidden}
                         </span>
                     </h1>
-                    <p className="mx-auto max-w-2xl text-sm leading-relaxed text-white/85 sm:text-base">
-                        Our quantity surveying services ensure your budget is well looked after. Reputable
-                        builders in Auckland blend expert craftsmanship with precise surveying, ensuring your
-                        dream home is built flawlessly within budget.
+                    <p className="mx-auto w-full text-sm leading-relaxed text-white/85 sm:text-base">
+                        Discovering a structural issue or planning a major extension is stressful. We are the residential builders Wellington families trust to protect their biggest asset with practical planning, clear communication, and guaranteed results — all without the franchise red tape.
                     </p>
                     <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-center">
                         <Link
                             href="#contact"
                             className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 shadow-lg shadow-black/30 transition hover:bg-zinc-100"
                         >
-                            Start Your Project
+                            Book Your Consultation
                         </Link>
                         <Link
                             href="#services"
@@ -222,26 +198,7 @@ export function Hero() {
             <Container className="pointer-events-none absolute inset-x-0 bottom-6 z-20">
                 <div className="flex items-end justify-between gap-6">
                     <div className="pointer-events-auto text-white">
-                        <div className="flex items-center -space-x-2.5">
-                            {customerImages.map((src, index) => (
-                                <div
-                                    key={src}
-                                    className="relative h-14 w-14 overflow-hidden rounded-full border-[3px] border-white shadow-lg shadow-black/30"
-                                >
-                                    <Image
-                                        src={src}
-                                        alt={`Satisfied customer ${index + 1}`}
-                                        fill
-                                        className="object-cover"
-                                        sizes="56px"
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                        <p className="mt-3 text-[18px] font-extrabold leading-none tracking-tight">7K+</p>
-                        <p className="mt-1 text-[12px] font-medium tracking-wide text-white/95">
-                            Satisfied Customers
-                        </p>
+                        <p className="mt-3 text-[18px] font-extrabold leading-none tracking-tight">20+ Years Experience | Registered Master Builders</p>
                     </div>
 
                     <button

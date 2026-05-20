@@ -6,9 +6,9 @@ import type { Metadata } from "next";
 import { ImageGallery } from "@/components/ui/ImageGallery";
 
 export const metadata: Metadata = {
-  title: "Te Wiata Place, Avondale | JRA Construction",
+  title: "Te Wiata Place, Avondale | Bear Construction",
   description:
-    "Explore the Te Wiata Place, Avondale extension and renovation project by JRA Construction and Drawn Architects.",
+    "Explore the Te Wiata Place, Avondale extension and renovation project by Bear Construction and Drawn Architects.",
 };
 
 const projectDetails = [
@@ -91,23 +91,23 @@ export default function TeWiataPlaceAvondalePage() {
         <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <AnimateOnScroll variant="fade-right">
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Project Details</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Project Details</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 Project Overview
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                Welcome to the Te Wiata Place, Avondale extension and renovation project—where JRA Construction joined forces with Drawn Architects to bring Grace and Jaden’s vision to life. This project exemplifies our commitment to creating spaces that cater to the unique needs of families, particularly in anticipation of a new little family member.
+                Welcome to the Te Wiata Place, Avondale extension and renovation project—where Bear Construction joined forces with Drawn Architects to bring Grace and Jaden’s vision to life. This project exemplifies our commitment to creating spaces that cater to the unique needs of families, particularly in anticipation of a new little family member.
               </p>
             </div>
           </AnimateOnScroll>
 
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="space-y-4 rounded-2xl border border-[#eef2f6] bg-[#f9fafb] p-6 shadow-sm">
-              <h3 className="text-[18px] font-bold text-[#0f2744]">Key Information</h3>
+              <h3 className="text-[18px] font-bold text-[#1278ce]">Key Information</h3>
               <ul className="space-y-3">
                 {projectDetails.map((item) => (
                   <li key={item.label} className="flex justify-between gap-4 text-[15px] leading-relaxed text-[#5f7286]">
-                    <span className="font-medium text-[#0f2744]">{item.label}:</span>
+                    <span className="font-medium text-[#1278ce]">{item.label}:</span>
                     <span>{item.value || "N/A"}</span>
                   </li>
                 ))}
@@ -122,12 +122,12 @@ export default function TeWiataPlaceAvondalePage() {
         <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
           <AnimateOnScroll variant="fade-right">
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Our Work</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Our Work</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 What We Did
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                JRA Construction embarked on an exciting extension and renovation project at Te Wiata Place, Avondale, with the clock ticking to create a livable space for Grace, Jaden, and their growing family. In collaboration with Drawn Architects, we meticulously rebuilt and renovated the existing master bedroom, adding a new ensuite to enhance the functionality and comfort of the space.
+                Bear Construction embarked on an exciting extension and renovation project at Te Wiata Place, Avondale, with the clock ticking to create a livable space for Grace, Jaden, and their growing family. In collaboration with Drawn Architects, we meticulously rebuilt and renovated the existing master bedroom, adding a new ensuite to enhance the functionality and comfort of the space.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
                 Our team worked diligently to create a master bedroom that would be a welcoming sanctuary for the family. The rebuilt bedroom was designed to accommodate the needs of raising a family, with ample space for a growing child and their belongings. Every detail, from the layout to the finishes, was carefully considered to create a harmonious and comfortable environment. To complement the rejuvenated master bedroom, we added a new ensuite that offers convenience and privacy. The ensuite was thoughtfully designed to ensure it meets the requirements of Grace, Jaden, and their little one. The incorporation of modern fixtures and finishes elevates the space, creating a functional and aesthetically pleasing retreat. Throughout the extension and renovation process, we paid meticulous attention to detail and craftsmanship. Our goal was to deliver a space that not only met the family’s immediate needs but also provided a foundation for a happy and comfortable home for years to come.
@@ -164,12 +164,12 @@ export default function TeWiataPlaceAvondalePage() {
           </AnimateOnScroll>
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Achieved Outcomes</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Achieved Outcomes</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 Final Result
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                The Te Wiata Place, Avondale project showcases JRA Construction’s dedication to delivering exceptional results tailored to the specific needs of our clients. The final outcome is a transformed master bedroom and a new ensuite that provide a welcoming and functional space for Grace, Jaden, and their growing family.
+                The Te Wiata Place, Avondale project showcases Bear Construction’s dedication to delivering exceptional results tailored to the specific needs of our clients. The final outcome is a transformed master bedroom and a new ensuite that provide a welcoming and functional space for Grace, Jaden, and their growing family.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
                 The rebuilt master bedroom offers ample space for the family to create lasting memories. The new ensuite enhances convenience and privacy, ensuring a comfortable living environment. The attention to detail and quality craftsmanship evident in every aspect of the project reflect our commitment to client satisfaction.
@@ -184,7 +184,7 @@ export default function TeWiataPlaceAvondalePage() {
         <Container>
           <AnimateOnScroll variant="fade-up" className="mb-12 text-center space-y-4">
             <p className="section-tab mx-auto w-fit">Gallery</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#0f2744] sm:text-[48px]">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[48px]">
               Project Showcase
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-[17px] text-[#5f7286]">
@@ -205,7 +205,7 @@ export default function TeWiataPlaceAvondalePage() {
         <Container className="text-center">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#0f2744] transition hover:gap-4"
+            className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#1278ce] transition hover:gap-4"
           >
             <span aria-hidden="true">←</span> Back to All Projects
           </Link>

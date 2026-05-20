@@ -32,6 +32,14 @@ h6 {
   font-family: ui-sans-serif, system-ui, sans-serif;
 }
 
+h2 {
+  color: #1278ce;
+}
+
+h3 {
+  color: #000000;
+}
+
 .section-tab {
   display: inline-flex;
   align-items: center;

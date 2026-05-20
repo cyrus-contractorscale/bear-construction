@@ -6,54 +6,26 @@ import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 
 const faqs = [
   {
-    question: "What services does JRA Construction offer?",
-    answer: "JRA Construction offers a range of services including: Custom Homes, Home renovations, Home extensions, Kitchen renovations, Bathroom renovations, Quantity surveying",
+    question: "Do you handle the council consents and planning?",
+    answer: "Yes. We have long-standing relationships with architects and can help coordinate the planning and council consent process to ensure your project stays on track and meets all current Building Code requirements.",
   },
   {
-    question: "Is JRA Construction a licensed and certified builder?",
-    answer: "Yes, JRA Construction is a licensed and certified builder. We are proud members of several accredited organizations, including Registered Master Builders, New Zealand Certified Builders, and Licensed Building Practitioners.",
+    question: "How much will my renovation or extension cost?",
+    answer: "Every home is different. Rather than guessing, we provide realistic budget ranges during our initial consultation based on your specific property and goals. This ensures your expectations and budget are aligned early on.",
   },
   {
-    question: "What areas does JRA Construction serve?",
-    answer: "JRA Construction primarily serves the Auckland area as a home builder and renovation specialist.",
+    question: "Are you licensed and insured?",
+    answer: "Absolutely. Phil is a Licensed Building Practitioner (LBP) and a Certified Building Surveyor (CBS). Bear Construction is also a proud member of Registered Master Builders. Every project is fully insured and backed by our 10-Year Ironclad Guarantee.",
   },
   {
-    question: "How does JRA Construction ensure quality in their projects?",
-    answer: "We ensure quality by: Setting high expectations for all work and sub-trades, Adhering to current standards, Conducting a thorough walk-through using our JRA Quality Checklist upon project completion",
-  },
-  {
-    question: "What are JRA Construction's operating hours?",
-    answer: "Our operating hours are Monday to Friday, from 7:30 am to 5:30 pm.",
-  },
-  {
-    question: "How does JRA Construction handle project communication?",
-    answer: "We prioritize communication by: Providing a direct point of contact for every project, Implementing a 24-hour call back policy, Offering constant project updates to keep clients informed",
-  },
-  {
-    question: "Does JRA Construction offer quantity surveying services?",
-    answer: "Yes, we offer quantity surveying services to help maximize your project's value and understand the true cost before getting started.",
-  },
-  {
-    question: "Can JRA Construction help with kitchen and bathroom renovations?",
-    answer: "Absolutely! We specialize in both kitchen and bathroom renovations, creating functional and stylish spaces tailored to your needs.",
-  },
-  {
-    question: "How does JRA Construction approach new home builds?",
-    answer: "For new builds, we focus on creating homes tailored to your lifestyle. We work closely with clients to understand their needs and preferences, ensuring the final result is their dream home.",
-  },
-  {
-    question: "Does JRA Construction offer home extension services?",
-    answer: "Yes, we provide seamless home extension services for those who need more space but don't want to move. We help expand your living area with minimal hassle.",
-  },
-  {
-    question: "How does JRA Construction handle project budgeting?",
-    answer: "We prioritize budget management through our quantity surveying services. This ensures your budget is well looked after throughout the project.",
+    question: "Can we live in the house while you renovate?",
+    answer: "This depends entirely on the scope of the work. For smaller projects or targeted extensions, it is often possible. For full home transformations or major structural reclads, moving out is usually safer and faster. We will discuss this with you upfront.",
   },
 ];
 
 function QuestionMarkIcon() {
   return (
-    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#c5d0dc] bg-white text-[13px] font-bold text-[#0f2744]">
+    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#c5d0dc] bg-white text-[13px] font-bold text-[#1278ce]">
       ?
     </span>
   );
@@ -103,9 +75,9 @@ export function Faq() {
         <AnimateOnScroll variant="fade-up" className="mb-10 space-y-5 sm:mb-12">
           <div className="inline-flex items-center gap-2.5 rounded-[10px] border border-[#dfe7ef] bg-[#fafbfc] px-3.5 py-2 text-[12px] font-bold uppercase tracking-[0.2em] text-[#4f6678]">
             <QuestionMarkIcon />
-            <span className="text-[#0f2744]">FAQ</span>
+            <span className="text-[#1278ce]">Common Questions About Our Services</span>
           </div>
-          <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[48px] lg:text-[52px]">
+          <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.1] tracking-tight sm:text-[48px] lg:text-[52px]">
             Frequently Asked Questions
           </h2>
         </AnimateOnScroll>
@@ -122,8 +94,8 @@ export function Faq() {
                 <div
                   className={`overflow-hidden rounded-2xl border transition-all duration-300 ${
                     isOpen
-                      ? "border-[#0f2744] bg-[#0f2744] shadow-lg shadow-[#0f2744]/15"
-                      : "border-[#eef2f6] bg-[#f9fafb] hover:border-[#c8d5e2] hover:shadow-md hover:shadow-[#0f2744]/5 hover:-translate-y-0.5"
+                      ? "border-[#1278ce] bg-[#1278ce] shadow-lg shadow-[#1278ce]/15"
+                      : "border-[#eef2f6] bg-[#f9fafb] hover:border-[#c8d5e2] hover:shadow-md hover:shadow-[#1278ce]/5 hover:-translate-y-0.5"
                   }`}
                 >
                   <button
@@ -134,7 +106,7 @@ export function Faq() {
                   >
                     <span
                       className={`text-[16px] font-semibold leading-snug sm:text-[17px] transition-colors duration-200 ${
-                        isOpen ? "text-white" : "text-[#0f2744]"
+                        isOpen ? "text-white" : "text-[#1278ce]"
                       }`}
                     >
                       {item.question}
@@ -143,7 +115,7 @@ export function Faq() {
                       className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-xl font-light leading-none transition-all duration-300 sm:h-10 sm:w-10 ${
                         isOpen
                           ? "rotate-45 bg-white/15 text-white"
-                          : "bg-[#eef2f6] text-[#0f2744] hover:bg-[#e2e8f0]"
+                          : "bg-[#eef2f6] text-[#1278ce] hover:bg-[#e2e8f0]"
                       }`}
                       aria-hidden
                     >

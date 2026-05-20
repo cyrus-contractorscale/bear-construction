@@ -103,7 +103,7 @@ function IconLinkedIn({ className }: { className?: string }) {
 
 export function Footer() {
   return (
-    <footer className="bg-[#1a2433] pb-0 text-[#c8d0dc]">
+    <footer className="bg-[#000] pb-0 text-[#c8d0dc]">
       <Container className="pt-14 pb-10 sm:pt-16 sm:pb-12 lg:pt-20 lg:pb-12">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 xl:gap-14">
           <div className="min-w-0">
@@ -112,8 +112,8 @@ export function Footer() {
               className="relative mb-6 block h-12 w-[min(100%,220px)] sm:h-14 sm:w-[260px]"
             >
               <Image
-                src="/jra-logo-white-transparent.png"
-                alt="JRA Construction"
+                src="/bear-logo-light.png"
+                alt="Bear Construction"
                 fill
                 className="object-contain object-left"
                 sizes="260px"
@@ -121,12 +121,11 @@ export function Footer() {
               />
             </Link>
             <p className="max-w-sm text-[15px] leading-relaxed text-[#aeb8c4]">
-              JRA Construction builds custom homes and renovations in Auckland with clear
-              communication, disciplined execution, and lasting quality craftsmanship.
+              Independent, owner-operated builders delivering high-quality renovations, extensions, and exterior cladding solutions across the Wellington region.
             </p>
             <div className="mt-7 flex gap-3">
               <a
-                href="https://www.facebook.com/JRAconstructionltd/"
+                href="https://www.facebook.com/bearconstructionnz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-[#3d4f63] text-white transition hover:bg-[#4a5f77]"
@@ -135,25 +134,7 @@ export function Footer() {
                 <IconFacebook className="h-[18px] w-[18px]" />
               </a>
               <a
-                href="https://www.youtube.com/@jraconstructionltd"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-[#3d4f63] text-white transition hover:bg-[#4a5f77]"
-                aria-label="YouTube"
-              >
-                <IconYouTube className="h-[18px] w-[18px]" />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/jraconstruction/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-[#3d4f63] text-white transition hover:bg-[#4a5f77]"
-                aria-label="LinkedIn"
-              >
-                <IconLinkedIn className="h-[18px] w-[18px]" />
-              </a>
-              <a
-                href="https://www.instagram.com/jra.construction/"
+                href="https://www.instagram.com/bearconstructionnz/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-[#3d4f63] text-white transition hover:bg-[#4a5f77]"
@@ -165,12 +146,12 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-[18px] font-bold text-white sm:text-[19px]">Services</h3>
+            <h3 className="text-[18px] font-bold !text-white sm:text-[19px]">Services</h3>
             <ul className="mt-5 space-y-3 text-[15px]">
               <li>
-                <Link href="/services/custom-homes" className="group flex items-center gap-2 transition hover:text-white">
+                <Link href="/services/home-extensions" className="group flex items-center gap-2 transition hover:text-white">
                   <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  Custom Homes
+                  Home Extensions
                 </Link>
               </li>
               <li>
@@ -180,9 +161,9 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services/home-extensions" className="group flex items-center gap-2 transition hover:text-white">
+                <Link href="/services/exterior-cladding" className="group flex items-center gap-2 transition hover:text-white">
                   <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  Home Extensions
+                  Exterior Cladding
                 </Link>
               </li>
               <li>
@@ -192,34 +173,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services/quantity-surveying" className="group flex items-center gap-2 transition hover:text-white">
-                  <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  Quantity Surveying
-                </Link>
-              </li>
-              <li>
                 <Link href="/services/bathroom-renovations" className="group flex items-center gap-2 transition hover:text-white">
                   <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   Bathroom Renovations
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/granny-flats" className="group flex items-center gap-2 transition hover:text-white">
-                  <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  Granny Flats
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/minor-dwellings" className="group flex items-center gap-2 transition hover:text-white">
-                  <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  Minor Dwellings
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-[18px] font-bold text-white sm:text-[19px]">Useful Links</h3>
+            <h3 className="text-[18px] font-bold !text-white sm:text-[19px]">Useful Links</h3>
             <ul className="mt-5 space-y-3 text-[15px]">
               <li>
                 <Link href="/" className="group flex items-center gap-2 transition hover:text-white">
@@ -267,19 +230,19 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-[18px] font-bold text-white sm:text-[19px]">Contact Us</h3>
+            <h3 className="text-[18px] font-bold !text-white sm:text-[19px]">Contact Us</h3>
             <ul className="mt-5 space-y-4 text-[15px]">
               <li className="flex gap-3">
                 <IconMapPin className="mt-0.5 h-5 w-5 shrink-0 text-[#8fa3b8]" />
-                <span>Auckland, New Zealand</span>
+                <span>191 Thorndon Quay, Pipitea, Wellington 6011, New Zealand</span>
               </li>
               <li>
                 <Link
-                  href="tel:+64000000000"
+                  href="tel:+6421824419"
                   className="group flex items-center gap-3 transition hover:text-white"
                 >
                   <IconPhone className="mt-0.5 h-5 w-5 shrink-0 text-[#8fa3b8]" />
-                  +64 000 000 000
+                  021 824 419
                 </Link>
               </li>
               <li>
@@ -293,11 +256,11 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="mailto:info@jraconstruction.co.nz"
+                  href="mailto:phil@bearconstruction.co.nz"
                   className="group flex items-center gap-3 break-all transition hover:text-white"
                 >
                   <IconEmail className="mt-0.5 h-5 w-5 shrink-0 text-[#8fa3b8]" />
-                  info@jraconstruction.co.nz
+                  phil@bearconstruction.co.nz
                 </Link>
               </li>
             </ul>
@@ -307,7 +270,7 @@ export function Footer() {
         <div className="mt-12 border-t border-white/[0.08] pt-8">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <p className="text-[14px] text-[#aeb8c4]">
-              © Copyright JRA Construction 2026. All Right Reserved.
+              © Copyright Bear Construction 2026. All Rights Reserved.
             </p>
             <p className="text-[14px] text-[#aeb8c4] lg:text-right">
               <Link href="#" className="transition hover:text-white">

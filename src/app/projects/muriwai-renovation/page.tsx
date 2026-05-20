@@ -6,9 +6,9 @@ import type { Metadata } from "next";
 import { ImageGallery } from "@/components/ui/ImageGallery";
 
 export const metadata: Metadata = {
-  title: "Muriwai Renovation | JRA Construction",
+  title: "Muriwai Renovation | Bear Construction",
   description:
-    "Explore the Muriwai Renovation project by JRA Construction: enhancing outdoor spaces with new fencing, gates, and sheds complementing the natural surroundings.",
+    "Explore the Muriwai Renovation project by Bear Construction: enhancing outdoor spaces with new fencing, gates, and sheds complementing the natural surroundings.",
 };
 
 const projectDetails = [
@@ -79,23 +79,23 @@ export default function MuriwaiRenovationPage() {
         <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <AnimateOnScroll variant="fade-right">
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Project Details</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Project Details</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 Project Overview
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                JRA Construction collaborated with Robin to enhance the outdoor spaces of their property. Our focus for this project was on incorporating new fencing, gates, and sheds that complement the natural surroundings of Muriwai—offering both functionality and aesthetic appeal.
+                Bear Construction collaborated with Robin to enhance the outdoor spaces of their property. Our focus for this project was on incorporating new fencing, gates, and sheds that complement the natural surroundings of Muriwai—offering both functionality and aesthetic appeal.
               </p>
             </div>
           </AnimateOnScroll>
 
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="space-y-4 rounded-2xl border border-[#eef2f6] bg-[#f9fafb] p-6 shadow-sm">
-              <h3 className="text-[18px] font-bold text-[#0f2744]">Key Information</h3>
+              <h3 className="text-[18px] font-bold text-[#1278ce]">Key Information</h3>
               <ul className="space-y-3">
                 {projectDetails.map((item) => (
                   <li key={item.label} className="flex justify-between gap-4 text-[15px] leading-relaxed text-[#5f7286]">
-                    <span className="font-medium text-[#0f2744]">{item.label}:</span>
+                    <span className="font-medium text-[#1278ce]">{item.label}:</span>
                     <span>{item.value || "N/A"}</span>
                   </li>
                 ))}
@@ -110,8 +110,8 @@ export default function MuriwaiRenovationPage() {
         <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
           <AnimateOnScroll variant="fade-right">
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Our Work</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Our Work</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 What We Did
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
@@ -152,12 +152,12 @@ export default function MuriwaiRenovationPage() {
           </AnimateOnScroll>
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2744]/50">Achieved Outcomes</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#0f2744] sm:text-[42px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Achieved Outcomes</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
                 Final Result
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                The Muriwai Renovation project showcases JRA Construction's dedication to enhancing outdoor spaces with careful consideration for the natural surroundings. The final outcome is a property that exudes both functionality and aesthetic appeal.
+                The Muriwai Renovation project showcases Bear Construction's dedication to enhancing outdoor spaces with careful consideration for the natural surroundings. The final outcome is a property that exudes both functionality and aesthetic appeal.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
                 The new fencing provides privacy and security while blending seamlessly with the natural beauty of Muriwai. The gates offer an inviting entrance that reflects the character of the area. The sheds not only provide additional storage and utility but also harmonize with the natural surroundings—enhancing the overall visual appeal of the property.
@@ -172,7 +172,7 @@ export default function MuriwaiRenovationPage() {
         <Container>
           <AnimateOnScroll variant="fade-up" className="mb-12 text-center space-y-4">
             <p className="section-tab mx-auto w-fit">Gallery</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#0f2744] sm:text-[48px]">
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[48px]">
               Project Showcase
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-[17px] text-[#5f7286]">
@@ -193,7 +193,7 @@ export default function MuriwaiRenovationPage() {
         <Container className="text-center">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#0f2744] transition hover:gap-4"
+            className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#1278ce] transition hover:gap-4"
           >
             <span aria-hidden="true">←</span> Back to All Projects
           </Link>

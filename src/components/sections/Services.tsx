@@ -8,40 +8,34 @@ import { useRef } from "react";
 
 const services = [
   {
-    title: "Custom Homes",
-    category: "CUSTOM HOMES",
-    body: "Want to build a new home? We take you from concept to completion, building homes that perfectly fit your lifestyle and needs.",
-    image: "/custom-home-services.webp",
+    title: "Home Extensions",
+    category: "EXTENSIONS",
+    body: "Need more space but love where you live? We build seamless home extensions and second-storey additions that grow your footprint without the disruption of moving.",
+    image: "/Services/Home Extensions Services.png",
   },
   {
     title: "Home Renovations",
     category: "RENOVATIONS",
-    body: "Time to update your home? Our home renovation services refresh and renew every part of your space, making your home look and feel brand new.",
-    image: "/home-renovation-services.webp",
+    body: "For homeowners planning structural changes, layout upgrades, or full-home transformations. We manage the entire project so the process stays organised and on track.",
+    image: "/Services/Home Renovations Services.png",
   },
   {
-    title: "Home Extensions",
-    category: "EXTENSIONS",
-    body: "Feeling cramped in your current home? Our home extension services add space seamlessly, giving you the extra room you need without the hassle of relocating.",
-    image: "/home-extension-services.jpg",
+    title: "Exterior Cladding",
+    category: "EXTERIOR CLADDING",
+    body: "Worried about a leaky home? Protect your biggest asset. We specialise in exterior cladding replacement and leaky home remediation, permanently resolving weathertightness issues and upgrading your home's street appeal.",
+    image: "/Services/Exterior Cladding Services.png",
   },
   {
     title: "Kitchen Renovations",
     category: "KITCHENS",
-    body: "Does your kitchen need an upgrade? Our kitchen renovation services transform your kitchen into a space that is both functional and stylish, making it the true heart of your home.",
-    image: "/kitchen-services.webp",
-  },
-  {
-    title: "Quantity Surveying",
-    category: "QS SERVICES",
-    body: "Maximize your projects value and understand the true cost before getting started.",
-    image: "/quantity_surveying-services.jpg",
+    body: "Turn an outdated, cramped kitchen into a practical, hardworking space with better flow, better storage, and modern durability.",
+    image: "/Services/Kitchen Renovations Services.png",
   },
   {
     title: "Bathroom Renovations",
     category: "BATHROOM",
-    body: "Ready for a new bathroom? Our bathroom renovation services turn your bathroom into a relaxing retreat, enhancing both its comfort and style.",
-    image: "/bathroom-services.webp",
+    body: "We build high-quality, functional bathrooms designed for long-term performance and everyday use.",
+    image: "/Services/Bathroom Renovations Services.png",
   },
 ];
 
@@ -81,21 +75,20 @@ export function Services() {
               </svg>
               Services
             </p>
-            <h2 className="w-full font-[ui-sans-serif,system-ui,sans-serif] text-[42px] font-extrabold leading-[1.03] tracking-tight text-[#0f2744] sm:text-[52px]">
-              Building Solutions for Every Need
+            <h2 className="w-full font-[ui-sans-serif,system-ui,sans-serif] text-[42px] font-extrabold leading-[1.03] tracking-tight sm:text-[52px]">
+              Building Solutions for Wellington Homeowners
             </h2>
             <p className="max-w-xl text-[16px] text-[#4a6075]">
-              From custom homes to remodels and additions, we deliver inspector-backed construction
-              that ensures quality, safety, and lasting value for your family.
+              From adding a second storey to completely transforming your layout, we are the home improvement builders Wellington relies on for projects that fundamentally improve how a home functions.
             </p>
           </AnimateOnScroll>
           <AnimateOnScroll variant="fade-up" delay={150} className="flex items-center justify-start gap-3 lg:justify-end">
-            <button
-              type="button"
-              className="h-[42px] rounded-sm border border-[#d9e2eb] bg-white px-5 text-[14px] font-semibold text-[#223750] transition hover:bg-zinc-50"
+            <Link
+              href="/services"
+              className="h-[42px] inline-flex items-center rounded-sm border border-[#d9e2eb] bg-white px-5 text-[14px] font-semibold text-[#223750] transition hover:bg-zinc-50"
             >
               View All Services
-            </button>
+            </Link>
             <button
               type="button"
               onClick={() => scrollServices("prev")}
@@ -126,7 +119,7 @@ export function Services() {
               delay={index * 90}
               className="group min-w-[86%] snap-start sm:min-w-[64%] lg:min-w-[calc((100%-3rem)/3)]"
             >
-              <article className="h-full rounded-[20px] border border-transparent bg-white shadow-[0_3px_10px_#f3f4f6] transition duration-300 hover:border-[#0f2744]/8 hover:shadow-[0_18px_38px_rgba(15,39,68,0.2)]">
+              <article className="h-full rounded-[20px] border border-transparent bg-white shadow-[0_3px_10px_#f3f4f6] transition duration-300 hover:border-[#1278ce]/8 hover:shadow-[0_18px_38px_rgba(15,39,68,0.2)]">
                 <div className="relative h-[210px] w-full overflow-hidden rounded-t-[20px]">
                   <Image
                     src={service.image}
@@ -137,11 +130,11 @@ export function Services() {
                   />
                 </div>
                 <div className="space-y-3 p-5">
-                  <h3 className="font-[ui-sans-serif,system-ui,sans-serif] text-[28px] font-extrabold leading-tight text-[#0f2744]">
+                  <h3 className="font-[ui-sans-serif,system-ui,sans-serif] text-[28px] font-extrabold leading-tight text-[#1278ce]">
                     {service.title}
                   </h3>
                   <p className="text-[15px] leading-[1.55] text-[#3f5367]">{service.body}</p>
-                  <Link href="#" className="inline-flex items-center gap-2 text-[13px] font-semibold text-[#0f2744]">
+                  <Link href="#" className="inline-flex items-center gap-2 text-[13px] font-semibold text-[#1278ce]">
                     View Details <span aria-hidden="true">→</span>
                   </Link>
                 </div>

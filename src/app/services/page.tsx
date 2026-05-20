@@ -7,52 +7,34 @@ import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 
 const services = [
   {
-    title: "Custom Homes",
-    body: "Want to build a new home? We take you from concept to completion, building homes that perfectly fit your lifestyle and needs.",
-    image: "/custom-home-services.webp",
-    href: "/services/custom-homes",
-  },
-  {
-    title: "Home Renovations",
-    body: "Time to update your home? Our home renovation services refresh and renew every part of your space, making your home look and feel brand new.",
-    image: "/home-renovation-services.webp",
-    href: "/services/home-renovations",
-  },
-  {
     title: "Home Extensions",
-    body: "Feeling cramped in your current home? Our home extension services add space seamlessly, giving you the extra room you need without the hassle of relocating.",
-    image: "/home-extension-services.jpg",
+    body: "Need more space but love where you live? We build seamless home extensions and second-storey additions that grow your footprint without the disruption of moving.",
+    image: "/Services/Home Extensions Services.png",
     href: "/services/home-extensions",
   },
   {
+    title: "Home Renovations",
+    body: "For homeowners planning structural changes, layout upgrades, or full-home transformations. We manage the entire project so the process stays organised and on track.",
+    image: "/Services/Home Renovations Services.png",
+    href: "/services/home-renovations",
+  },
+  {
+    title: "Exterior Cladding",
+    body: "Worried about a leaky home? Protect your biggest asset. We specialise in exterior cladding replacement and leaky home remediation, permanently resolving weathertightness issues and upgrading your home's street appeal.",
+    image: "/Services/Exterior Cladding Services.png",
+    href: "/services/exterior-cladding",
+  },
+  {
     title: "Kitchen Renovations",
-    body: "Does your kitchen need an upgrade? Our kitchen renovation services transform your kitchen into a space that's both functional and stylish, making it the true heart of your home.",
-    image: "/kitchen-services.webp",
+    body: "Turn an outdated, cramped kitchen into a practical, hardworking space with better flow, better storage, and modern durability.",
+    image: "/Services/Kitchen Renovations Services.png",
     href: "/services/kitchen-renovations",
   },
   {
-    title: "Quantity Surveying",
-    body: "Maximize your project's value and understand the true cost before getting started with expert quantity surveying services.",
-    image: "/quantity_surveying-services.jpg",
-    href: "/services/quantity-surveying",
-  },
-  {
     title: "Bathroom Renovations",
-    body: "Ready for a new bathroom? Our bathroom renovation services turn your bathroom into a relaxing retreat, enhancing both its comfort and style.",
-    image: "/bathroom-services.webp",
+    body: "We build high-quality, functional bathrooms designed for long-term performance and everyday use.",
+    image: "/Services/Bathroom Renovations Services.png",
     href: "/services/bathroom-renovations",
-  },
-  {
-    title: "Granny Flats",
-    body: "Granny flats are quickly becoming a popular solution for Auckland homeowners who need more usable space without moving or doing a major renovation.",
-    image: "/granny-flats_services.webp",
-    href: "/services/granny-flats",
-  },
-  {
-    title: "Minor Dwellings",
-    body: "These dwellings are becoming a popular choice across Auckland for homeowners who want to support extended family, create space for adult children, or provide a private unit for guests.",
-    image: "/minor-dwelling-services.webp",
-    href: "/services/minor-dwellings",
   },
 ];
 
@@ -62,11 +44,11 @@ export default function ServicesPage() {
       {/* Banner Section */}
       <section className="relative overflow-hidden bg-zinc-950 py-24 sm:py-32 lg:py-40">
         <Image
-          src="/jra-slider-1.png"
+          src="/page-header-bg.webp"
           alt="Services banner background"
           fill
           priority
-          className="object-cover opacity-30"
+          className="object-cover opacity-50"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent" />
@@ -80,7 +62,7 @@ export default function ServicesPage() {
             Our Services
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-[17px] leading-relaxed text-white/70">
-            From bespoke custom homes to meticulous renovations and essential quantity surveying — we deliver quality that lasts.
+            From home extensions to exterior cladding remediation — independent, owner-operated builders delivering quality workmanship across Wellington.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-center">
             <Link
@@ -103,15 +85,15 @@ export default function ServicesPage() {
       <section id="services-list" className="scroll-mt-24 bg-white py-16 sm:py-20 lg:py-24">
         <Container className="max-w-[1200px]">
           <AnimateOnScroll variant="fade-up" className="text-center mb-12">
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-4xl font-extrabold leading-tight tracking-tight text-[#0f2744] sm:text-5xl">
-              Explore Our Comprehensive Building Services
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-4xl font-extrabold leading-tight tracking-tight text-[#1278ce] sm:text-5xl">
+              Building Solutions for Wellington Homeowners
             </h2>
             <p className="mt-4 text-[16px] leading-relaxed text-[#4d6277] max-w-2xl mx-auto">
-              JRA Construction offers a full spectrum of services tailored to your needs — each backed by our licensed team and quality guarantee.
+              From adding a second storey to completely transforming your layout, we are the home improvement builders Wellington relies on for projects that fundamentally improve how a home functions.
             </p>
           </AnimateOnScroll>
 
-          <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
               <AnimateOnScroll key={service.title} variant="fade-up" delay={index * 65}>
                 <article className="group flex h-full flex-col overflow-hidden rounded-[18px] border border-[#e8edf2] bg-white shadow-[0_4px_24px_rgba(15,39,68,0.06)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_40px_rgba(15,39,68,0.12)]">
@@ -125,7 +107,7 @@ export default function ServicesPage() {
                     />
                   </div>
                   <div className="flex flex-1 flex-col px-5 pb-6 pt-5 sm:px-6">
-                    <h3 className="text-[1.1rem] font-bold leading-snug text-[#0f2744] sm:text-[1.2rem]">
+                    <h3 className="text-[1.1rem] font-bold leading-snug text-[#1278ce] sm:text-[1.2rem]">
                       {service.title}
                     </h3>
                     <p className="mt-3 line-clamp-3 flex-1 text-[15px] leading-relaxed text-[#5f7286]">
@@ -133,7 +115,7 @@ export default function ServicesPage() {
                     </p>
                     <Link
                       href={service.href}
-                      className="mt-5 inline-flex items-center gap-1.5 text-[15px] font-bold text-[#0f2744] transition hover:gap-3"
+                      className="mt-5 inline-flex items-center gap-1.5 text-[15px] font-bold text-[#1278ce] transition hover:gap-3"
                     >
                       View Service
                       <span aria-hidden="true" className="text-lg leading-none">→</span>

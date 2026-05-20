@@ -4,7 +4,7 @@ import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 const testimonials = [
   {
     quote:
-      "From the initial consultation to the final walkthrough, the team at JRA was professional and transparent. They made our renovation stress-free.",
+      "From the initial consultation to the final walkthrough, the team at Bear Construction was professional and transparent. They made our renovation stress-free.",
     name: "Sarah Jenkins",
     handle: "@sarah_jk",
     initials: "SJ",
@@ -12,7 +12,7 @@ const testimonials = [
   },
   {
     quote:
-      "We hired JRA for a major home extension. They stayed on budget, finished on time, and the quality of workmanship is absolutely top-notch. Couldn't be happier.",
+      "We hired Bear Construction for a major home extension. They stayed on budget, finished on time, and the quality of workmanship is absolutely top-notch. Couldn't be happier.",
     name: "Marcus Thorne",
     handle: "@marcus_t",
     initials: "MT",
@@ -28,7 +28,7 @@ const testimonials = [
   },
   {
     quote:
-      "Our new custom home is everything we dreamed of. JRA listened to our needs and delivered a beautiful, functional space for our family.",
+      "Our new custom home is everything we dreamed of. Bear Construction listened to our needs and delivered a beautiful, functional space for our family.",
     name: "Sophie Clark",
     handle: "@sophie_c",
     initials: "SC",
@@ -36,7 +36,7 @@ const testimonials = [
   },
   {
     quote:
-      "Reliable, skilled, and honest. It's hard to find good builders, but JRA Construction ticks all the boxes. Their bathroom renovation is flawless.",
+      "Reliable, skilled, and honest. It's hard to find good builders, but Bear Construction ticks all the boxes. Their bathroom renovation is flawless.",
     name: "Liam O'Connor",
     handle: "@liam_o",
     initials: "LO",
@@ -44,7 +44,7 @@ const testimonials = [
   },
   {
     quote:
-      "From the initial consultation to the final walkthrough, the team at JRA was professional and transparent. They made our renovation stress-free.",
+      "From the initial consultation to the final walkthrough, the team at Bear Construction was professional and transparent. They made our renovation stress-free.",
     name: "Elena Rodriguez",
     handle: "@elena_rod",
     initials: "ER",
@@ -65,8 +65,8 @@ export function Testimonials() {
     <section id="testimonials" className="scroll-mt-24 overflow-hidden bg-[#f9fafb] py-16 sm:py-20">
       <Container>
         <AnimateOnScroll variant="fade-up" className="space-y-4 text-center">
-          <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[56px] font-extrabold leading-[1.04] tracking-tight text-[#0f2744]">
-            Trusted by Homeowners Across Auckland
+          <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[56px] font-extrabold leading-[1.04] tracking-tight text-[#1278ce]">
+            Trusted by Homeowners Across Wellington
           </h2>
           <p className="mx-auto max-w-2xl text-[18px] text-[#5f7286]">
             See what our clients have to say about their experience building their dream homes and

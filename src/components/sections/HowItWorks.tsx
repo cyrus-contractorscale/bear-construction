@@ -2,14 +2,12 @@ import { Container } from "@/components/ui/Container";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 
 const steps = [
-  { step: "01", title: "Initial Contact", body: "We offer an obligation-free meeting to ensure we are the right fit for your project and discuss your initial ideas.", icon: "phone" },
-  { step: "02", title: "Site Meeting", body: "We'll organize a site visit to discuss your project in depth and provide useful guides and examples.", icon: "pin" },
-  { step: "03", title: "Working with Consultants", body: "We help engage the right consultants or work alongside your existing architect early in the planning stage.", icon: "users" },
-  { step: "04", title: "Estimate of Costs", body: "We evaluate the feasibility of your design to ensure it fits perfectly within your budget.", icon: "calculator" },
-  { step: "05", title: "Quotation", body: "Once designs are submitted to the council, we provide a transparent quotation with fixed subcontractor prices.", icon: "doc" },
-  { step: "06", title: "Contract Agreements", body: "We finalize the design, proposed contract sum, and timeline before signing transparent contract agreements.", icon: "contract" },
-  { step: "07", title: "Construction Phase", body: "We keep you informed throughout the build and discuss options for any changes you wish to make.", icon: "helmet" },
-  { step: "08", title: "The Completion Phase", body: "We hand over the keys and walk you through the completed project to ensure your total satisfaction.", icon: "key" },
+  { step: "01", title: "Initial Consultation", body: "We start by understanding your goals, your timeline, and your expected investment level to ensure we are the right fit for the job.", icon: "phone" },
+  { step: "02", title: "Scope & Feasibility", body: "We walk through the property and the structural requirements, giving you practical advice on what it will actually take to bring your vision to life.", icon: "pin" },
+  { step: "03", title: "Design & Consenting", body: "We help clarify the work involved, coordinating with architects to ensure plans are practical and all local council requirements are met.", icon: "users" },
+  { step: "04", title: "Pricing & Contracts", body: "We provide transparent, fair pricing based on detailed planning, ensuring expectations and budgets are aligned before we start.", icon: "calculator" },
+  { step: "05", title: "The Build Phase", body: "The work is carried out by our trusted network of trades. We focus on tight project management, keeping the site clean, and making sure you are updated every step of the way.", icon: "helmet" },
+  { step: "06", title: "Handover & Guarantee", body: "We bring the project through to completion with meticulous attention to detail, backed by our 10-Year Building Guarantee.", icon: "key" },
 ];
 
 function StepIcon({ type }: { type: string }) {
@@ -33,25 +31,25 @@ export function HowItWorks() {
             <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" aria-hidden="true">
               <path d="M3 10.5L12 3l9 7.5v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9z" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            How It Works
+            How We Work
           </p>
-          <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[52px] font-extrabold leading-[1.02] tracking-tight text-[#0f2744]">
-            Our Custom Home Building Process
+          <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[52px] font-extrabold leading-[1.02] tracking-tight">
+            A Straightforward Building Process
           </h2>
         </AnimateOnScroll>
 
-        <ol className="grid gap-y-12 sm:grid-cols-2 sm:gap-x-10 lg:grid-cols-4 lg:gap-x-8">
+        <ol className="grid gap-y-12 sm:grid-cols-2 sm:gap-x-10 lg:grid-cols-3 lg:gap-x-8">
           {steps.map((item, index) => (
             <AnimateOnScroll key={item.step} variant="scale-in" delay={index * 75} duration={600}>
               <li className="relative text-center">
-                {index % 4 !== 3 ? (
+                {index % 3 !== 2 ? (
                   <span className="absolute left-1/2 top-[39px] z-0 hidden h-px w-[calc(100%+2rem)] bg-[#d8e0eb] lg:block" />
                 ) : null}
                 <div className="relative z-10 mx-auto flex w-full max-w-[260px] items-center justify-center">
-                  <div className="flex h-[78px] w-[78px] items-center justify-center rounded-full bg-[#0f2744] shadow-[0_8px_18px_rgba(15,39,68,0.18)] transition duration-300 hover:shadow-[0_12px_28px_rgba(15,39,68,0.32)] hover:scale-110">
+                  <div className="flex h-[78px] w-[78px] items-center justify-center rounded-full bg-[#1278ce] shadow-[0_8px_18px_rgba(15,39,68,0.18)] transition duration-300 hover:shadow-[0_12px_28px_rgba(15,39,68,0.32)] hover:scale-110">
                     <StepIcon type={item.icon} />
                   </div>
-                  <span className="-ml-3 mt-12 inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#446288] text-[12px] font-bold text-white">
+                  <span className="-ml-3 mt-12 inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#000] text-[12px] font-bold text-white">
                     {item.step}
                   </span>
                 </div>

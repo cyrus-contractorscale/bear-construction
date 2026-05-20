@@ -11,11 +11,11 @@ export default function TestimonialsPage() {
       {/* Banner Section */}
       <section className="relative overflow-hidden bg-zinc-950 py-24 sm:py-32 lg:py-40">
         <Image
-          src="/jra-slider-1.png"
+          src="/page-header-bg.webp"
           alt="Testimonials banner background"
           fill
           priority
-          className="object-cover opacity-30"
+          className="object-cover opacity-50"
           sizes="100vw"
         />
         <Container className="relative z-10 text-center">
