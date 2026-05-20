@@ -5,9 +5,20 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Container } from "@/components/ui/Container";
 
-const navItems = [
+const navItems: {
+  label: string;
+  href: string;
+  children?: { label: string; href: string }[];
+}[] = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
+  {
+    label: "About",
+    href: "/about",
+    children: [
+      { label: "Why Choose Us", href: "/why-choose-us" },
+      { label: "Guarantee", href: "/guarantee" },
+    ],
+  },
   { label: "Services", href: "/services" },
   { label: "Projects", href: "/projects" },
   { label: "Contact Us", href: "/contact" },
@@ -134,15 +145,43 @@ export function MainNav() {
 
         {/* Desktop nav links */}
         <nav className="hidden items-center gap-6 text-[12px] font-semibold uppercase tracking-widest lg:flex">
-          {navItems.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="text-white/80 transition hover:text-white"
-            >
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) =>
+            item.children ? (
+              <div key={item.label} className="group relative flex items-center">
+                <Link
+                  href={item.href}
+                  className="flex items-center gap-1 text-white/80 transition hover:text-white"
+                >
+                  {item.label}
+                  <svg viewBox="0 0 24 24" className="h-3 w-3 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </Link>
+                {/* Dropdown panel */}
+                <div className="pointer-events-none absolute left-1/2 top-full -translate-x-1/2 pt-3 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
+                  <div className="min-w-[180px] overflow-hidden rounded-xl border border-white/20 bg-[#1278ce] py-1 shadow-2xl">
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className="block px-5 py-2.5 text-[11px] font-semibold uppercase tracking-widest text-white transition hover:bg-white/15 hover:text-white"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="text-white/80 transition hover:text-white"
+              >
+                {item.label}
+              </Link>
+            )
+          )}
         </nav>
 
         {/* Right side: CTA + Phone */}
@@ -222,14 +261,34 @@ export function MainNav() {
 
         <nav className="mt-7 flex flex-col gap-2">
           {navItems.map((item) => (
-            <Link
-              key={`mobile-${item.label}`}
-              href={item.href}
-              onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg border border-white/10 px-4 py-3 text-[13px] font-semibold uppercase tracking-wider text-white/90 transition hover:bg-white/10 hover:text-white"
-            >
-              {item.label}
-            </Link>
+            <div key={`mobile-${item.label}`}>
+              <Link
+                href={item.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-between rounded-lg border border-white/10 px-4 py-3 text-[13px] font-semibold uppercase tracking-wider text-white/90 transition hover:bg-white/10 hover:text-white"
+              >
+                {item.label}
+                {item.children && (
+                  <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 text-white/40" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                )}
+              </Link>
+              {item.children && (
+                <div className="mt-1 ml-3 flex flex-col gap-1">
+                  {item.children.map((child) => (
+                    <Link
+                      key={`mobile-child-${child.href}`}
+                      href={child.href}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="rounded-lg border border-white/5 bg-white/5 px-4 py-2.5 text-[12px] font-semibold uppercase tracking-wider text-white/70 transition hover:bg-white/10 hover:text-white"
+                    >
+                      {child.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </nav>
 

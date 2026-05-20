@@ -2,68 +2,104 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
-import { ContactForm } from "@/components/sections/ContactForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Kitchen Renovations Auckland | Bear Construction",
+  title: "Expert Kitchen Renovations Wellington | Bear Construction",
   description:
-    "Transform your kitchen with Bear Construction's Auckland kitchen renovation specialists. Bespoke designs, fixed-price contracts, licensed builders. Free consultation.",
+    "Bear Construction delivers high-end kitchen renovations across Wellington. We manage structural changes, layout design, cabinetry, and complete installation.",
+  keywords: "kitchen renovations wellington",
 };
 
-const advantages = [
-  { icon: "🎨", text: "Personalised kitchen design consultation" },
-  { icon: "📐", text: "Custom new-style kitchen layout planning" },
-  { icon: "🪨", text: "Premium material and finish selection" },
-  { icon: "🚪", text: "Modern kitchen cabinetry customisation" },
-  { icon: "🍳", text: "Smart appliance coordination" },
-  { icon: "🔥", text: "Gas fitting and ventilation planning" },
-  { icon: "💡", text: "Contemporary lighting integration" },
-];
-
-const standards = [
-  "Fixed-price contracts",
-  "287-point quality system",
-  "Licensed practitioners",
-  "Master Builders guarantee",
-  "Waterproofing expertise",
-];
-
 const processSteps = [
-  { step: "01", title: "Initial Contact", body: "We start with a free, no-obligation chat to understand your goals and see if we're the right fit." },
-  { step: "02", title: "Site Meeting", body: "We visit your home to discuss your project in detail. We'll bring guides and examples to help you visualize the possibilities." },
-  { step: "03", title: "Working with Consultants", body: "We collaborate with your existing architect or connect you with trusted consultants. Early involvement helps prevent costly design changes later." },
-  { step: "04", title: "Estimate of Costs", body: "Before finalizing designs, we provide a cost estimate to ensure your plans align with your budget. This step helps avoid unexpected expenses." },
-  { step: "05", title: "Quotation", body: "Once designs are ready and submitted to the council, we compile a detailed, fixed-price quote including all subcontractor costs and assumptions." },
-  { step: "06", title: "Contract Agreements", body: "With the design, pricing, and timeline agreed upon, we formalize everything in a clear contract before construction begins." },
-  { step: "07", title: "Construction Phase", body: "Our licensed builders execute the project according to plan. You'll receive regular updates and can discuss any changes or decisions as needed." },
-  { step: "08", title: "The Completion Phase", body: "We conduct a thorough walkthrough with you to ensure satisfaction and provide all necessary documentation and ongoing support." },
+  {
+    step: "01",
+    title: "Initial Consultation",
+    body: "We start by assessing your current space and understanding exactly how you want to use the new kitchen. You meet directly with Phil Ashton to discuss your expected investment and confirm we are the right team to handle the fit-out.",
+  },
+  {
+    step: "02",
+    title: "Scope & Feasibility",
+    body: "We inspect the existing plumbing, electrical circuits, and load-bearing walls. This allows us to identify any structural roadblocks early and advise you on what layout changes are genuinely viable.",
+  },
+  {
+    step: "03",
+    title: "Design & Detailing",
+    body: "We help refine your chosen layout and confirm the specifications for your hardware and kitchen storage solutions. We manage the technical details to ensure the design is ready for a seamless installation.",
+  },
+  {
+    step: "04",
+    title: "Pricing & Contracts",
+    body: "We provide transparent, fair pricing based on a detailed assessment of the required work and custom joinery. Your budget is firmly aligned before any demolition takes place.",
+  },
+  {
+    step: "05",
+    title: "The Build Phase",
+    body: "Our trusted network of specialist trades takes over. We manage the demolition, the structural alterations, and the precise installation of your new finishes, keeping the site clean and updating you on our progress constantly.",
+  },
+  {
+    step: "06",
+    title: "Handover & Guarantee",
+    body: "We conduct a rigorous final inspection, ensuring the joinery alignment, plumbing, and fixtures meet our exacting standards. We hand back your flawless new kitchen, fully backed by our 10-Year Building Guarantee.",
+  },
 ];
 
-const qualityPoints = [
-  { icon: "👤", title: "Dedicated Project Consultant", body: "A single point of contact manages your kitchen renovation from concept to completion." },
-  { icon: "🚪", title: "Bespoke Storage Solutions", body: "Custom cabinetry and pantry designs tailored to your cooking and entertaining habits." },
-  { icon: "⚡", title: "Licensed Electricians", body: "All electrical work completed by certified professionals to the highest safety standards." },
-  { icon: "🔧", title: "Certified Plumbers", body: "Expert plumbers handle all water connections, gas fittings, and drainage requirements." },
+const trustPoints = [
+  {
+    title: "Direct Owner Involvement",
+    body: "You deal directly with Phil Ashton. We provide direct access to the owner to ensure your project runs smoothly.",
+  },
+  {
+    title: "Diagnostic Precision",
+    body: "We identify structural or plumbing risks before they become expensive variations.",
+  },
+  {
+    title: "Relentless Site Control",
+    body: "We respect your property and heavily manage our plumbers, sparkies, and joiners to ensure steady, reliable progress.",
+  },
+  {
+    title: "Master Builder Backing",
+    body: "We are proud members of Registered Master Builders. Our reputation is built on delivering a finish that speaks for itself.",
+  },
+];
+
+const guaranteePoints = [
+  "Structural Integrity: Long-term protection for any flooring, wall removals, or framing modifications we complete.",
+  "Total Weathertightness Protection: Ensuring any exterior alterations made during the renovation are completely sealed against Wellington's weather.",
+  "Materials and Workmanship: Coverage for the premium materials installed in your home.",
+  "Direct Accountability: You deal directly with the owner if you ever need support in the future.",
 ];
 
 const faqs = [
-  { q: "How long does a typical kitchen renovation take?", a: "Most projects take 4–6 weeks, depending on complexity and material selections." },
-  { q: "What's involved in the design process?", a: "We combine your ideas with our expertise to create detailed plans for your approval, helping you visualise the final result before construction starts." },
-  { q: "How do you handle appliance integration?", a: "We coordinate with suppliers and ensure all appliances fit perfectly within your new layout, including gas fittings and ventilation." },
-  { q: "Can you help with material selection?", a: "Our design team guides you through choosing materials, benchtops, cabinetry, splashbacks, and lighting that match your style and budget." },
-  { q: "What about temporary kitchen facilities?", a: "We help plan alternative cooking arrangements during the renovation to minimise disruption to your daily life." },
+  {
+    q: "How long does it take to complete a kitchen?",
+    a: "Timelines vary based on the complexity of the structural changes and the lead times for custom joinery. However, because we tightly schedule our plumbers, electricians, and cabinet makers, we maintain steady momentum and provide a highly realistic schedule upfront.",
+  },
+  {
+    q: "Do you handle all the different trades required?",
+    a: "Yes. You do not need to hire a separate plumber, electrician, or joiner. We manage our trusted network of specialist tradesmen to ensure the quality remains flawless across the entire build.",
+  },
+  {
+    q: "What happens if you find issues behind the walls after demolition?",
+    a: "This is where our diagnostic experience as a Certified Building Surveyor matters. We conduct a thorough feasibility check early on. If we do uncover hidden damage (like old wiring that needs replacing), we pause, present you with clear repair options, and agree on the cost before proceeding.",
+  },
+  {
+    q: "Can you help with the design and layout?",
+    a: "Absolutely. We provide practical advice on kitchen layouts to maximise space, improve workflow, and ensure your chosen appliances will integrate perfectly within the room's footprint.",
+  },
+  {
+    q: "Is the structural work guaranteed?",
+    a: "Yes. Any load-bearing changes or structural reframing we complete are executed to the highest industry standards, and our workmanship is backed by our 10-Year Ironclad Guarantee.",
+  },
 ];
 
-const consultItems = [
-  "Design Consultation",
-  "Site Walk-Thru and Inspection",
-  "Director's Consultation",
-  "Selections Checklist & Comparison",
-  "Rough Estimate and Budget Scope",
-  "Timeline Estimate and Move-In Date Expectations",
-  "Connection to our Preferred Partner Network",
+const serviceAreas = [
+  "Wellington City & Suburbs (including Churton Park and central suburbs)",
+  "Lower Hutt & The Valley (including Belmont)",
+  "Upper Hutt",
+  "Porirua & Northern Extent (including Pauatahanui and Paekākāriki)",
 ];
+
 
 function CheckIcon() {
   return (
@@ -77,10 +113,10 @@ function FaqItem({ q, a }: { q: string; a: string }) {
   return (
     <details className="group rounded-2xl border border-[#eef2f6] bg-[#f9fafb] transition-all duration-300 open:border-[#1278ce] open:bg-[#1278ce] open:shadow-lg open:shadow-[#1278ce]/15">
       <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 sm:px-7 sm:py-6">
-        <span className="text-[16px] font-semibold leading-snug text-[#1278ce] group-open:text-white sm:text-[17px]">
+        <span className="text-[16px] font-semibold leading-snug text-black group-open:text-white sm:text-[17px]">
           {q}
         </span>
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#eef2f6] text-xl font-light text-[#1278ce] transition-all duration-300 group-open:rotate-45 group-open:bg-white/15 group-open:text-white">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#eef2f6] text-xl font-light text-black transition-all duration-300 group-open:rotate-45 group-open:bg-white/15 group-open:text-white">
           +
         </span>
       </summary>
@@ -95,42 +131,31 @@ export default function KitchenRenovationsPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────── */}
-      <section className="relative flex min-h-[72vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-32 sm:pb-20 sm:pt-40">
+      <section className="relative flex min-h-[80vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-44 sm:pb-20 sm:pt-52 lg:pt-60">
         <Image
-          src="/kitchen-services.webp"
-          alt="Bear Construction kitchen renovations Auckland"
+          src="/Services/Kitchen Renovations Services.png"
+          alt="Kitchen Renovations Wellington — Bear Construction"
           fill
           priority
-          className="object-cover opacity-40"
+          className="object-cover opacity-45"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/40 to-transparent" />
 
         <Container className="relative z-10">
-          <nav className="mb-6 flex items-center gap-2 text-[13px] text-white/50">
-            <Link href="/" className="transition hover:text-white">Home</Link>
-            <span>/</span>
-            <Link href="/services" className="transition hover:text-white">Services</Link>
-            <span>/</span>
-            <span className="text-white/90">Kitchen Renovations</span>
-          </nav>
-
           <div className="max-w-3xl space-y-6">
             <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-widest text-white/80 backdrop-blur-sm">
-              Kitchens · Auckland
+              Kitchen Renovations · Wellington
             </span>
             <h1 className="font-[ui-sans-serif,system-ui,sans-serif] text-5xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Kitchen Renovations<br />in Auckland
+              Kitchen Renovations Wellington
             </h1>
-            <p className="max-w-xl text-[18px] leading-relaxed text-white/75">
-              Transforming ordinary kitchens into extraordinary living spaces — bespoke design, masterful craftsmanship.
-            </p>
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
                 href="#consultation"
                 className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 shadow-lg shadow-black/30 transition hover:bg-zinc-100"
               >
-                Free Consultation
+                Book Your Project Consultation
               </Link>
               <Link
                 href="#process"
@@ -151,11 +176,14 @@ export default function KitchenRenovationsPage() {
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Sound Familiar?</p>
               <ul className="space-y-4">
                 {[
-                  "Is your kitchen layout hampering your family's daily routines?",
-                  "Ready to upgrade to a space that reflects your cooking and entertaining style?",
-                  "Searching for experienced kitchen renovation Auckland specialists who understand your vision?",
+                  "Embarrassed by a dated, isolated layout that completely cuts you off from family and guests while you cook?",
+                  "Struggling to find prep space on cluttered counters because your current cupboards lack any practical storage solutions?",
+                  "Hesitant to pull the trigger on a remodel because you fear a builder will mismanage the trades and leave you living on takeaways for months?",
                 ].map((point) => (
-                  <li key={point} className="flex items-start gap-3 rounded-xl border border-[#eef2f6] bg-[#f9fafb] px-5 py-4">
+                  <li
+                    key={point}
+                    className="flex items-start gap-3 rounded-xl border border-[#eef2f6] bg-[#f9fafb] px-5 py-4"
+                  >
                     <span className="mt-0.5 text-[#1278ce]">
                       <svg viewBox="0 0 24 24" className="h-5 w-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
@@ -171,107 +199,91 @@ export default function KitchenRenovationsPage() {
 
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="space-y-5">
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
-                Crafting Your Dream Auckland Kitchen
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[34px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[42px]">
+                Stop Guessing. Start Planning.
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                Kitchen renovations in Auckland is our specialty. Creating exceptional spaces takes more than just construction expertise — it demands innovative kitchen design and meticulous planning. Our passion for modern kitchen designs drives every project, transforming ordinary kitchens into extraordinary living spaces.
+                The kitchen is the hardest-working room in your home. A bad renovation here does not just look cheap; it disrupts your daily life. When a builder rushes the design phase or fails to coordinate the trades properly, you end up with sinks in the wrong place, cabinet doors that hit each other, and a space that feels chaotic to work in.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                From heritage villas to contemporary apartments, we understand how to blend new-style kitchen elements with existing architecture, incorporating features like kitchen islands and open-plan layouts that suit modern living — creating spaces that feel both fresh and timeless.
+                Bear Construction brings meticulous planning to every project. Led by Phil Ashton, a Certified Building Surveyor and Registered Master Builder, we eliminate the chaos of poorly executed fit-outs. We manage the demolition, the structural alterations, and the precise installation of your high-end finishes, ensuring your new space performs flawlessly.
               </p>
-              <div className="flex flex-wrap gap-3 pt-2">
-                <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-[#1278ce] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#16385f]">
-                  Contact Us <span aria-hidden="true">→</span>
-                </Link>
+              <p className="text-[17px] leading-[1.65] text-[#4d6277]">
+                When you are looking for kitchen renovation builders Wellington families trust, you need a team that executes with absolute control. Whether it is a sleek entertainer&apos;s hub or a highly functional family space, we deliver a stunning result, on time, and built to handle the demands of everyday life.
+              </p>
+              <Link
+                href="#consultation"
+                className="inline-flex items-center gap-2 rounded-full bg-[#1278ce] px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+              >
+                Book Your Consultation <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          </AnimateOnScroll>
+        </Container>
+      </section>
+
+      {/* ── LOCAL EXPERTISE ──────────────────────────────────────── */}
+      <section className="bg-[#f9fafb] py-16 sm:py-20 border-t border-[#e8edf2]">
+        <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center max-w-[1200px]">
+          <AnimateOnScroll variant="fade-right">
+            <div className="space-y-6">
+              <div className="section-tab w-fit">Local Expertise</div>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[34px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[40px]">
+                Executing High-End Kitchen Upgrades in Wellington
+              </h2>
+              <div className="space-y-5 text-[17px] leading-[1.65] text-[#4d6277]">
+                <p>
+                  Delivering premium kitchen renovations Wellington-wide requires a deep understanding of spatial design and structural engineering. Older homes in the capital often feature closed-off, isolated cooking areas. Opening these spaces up to create fluid, modern kitchens Wellington families desire usually involves removing load-bearing walls — requiring expert structural knowledge.
+                </p>
+                <p>
+                  As a Certified Building Surveyor, Phil Ashton brings total structural authority to our kitchen upgrades. We assess the existing framing and load paths before we finalise the design, ensuring that when we open up your space to improve the flow, the ceiling lines are flush and the structure is permanently secure.
+                </p>
+                <p>
+                  A truly successful space relies on flawless kitchen layouts. Every measurement matters. We coordinate closely with specialist joiners to ensure your custom cabinetry is installed with millimetre precision. From heavy stone benchtops to seamless appliance integration, we tightly manage our trusted network of local plumbers, electricians, and cabinet makers.
+                </p>
+              </div>
+            </div>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll variant="fade-left" delay={120}>
+            <div className="grid grid-cols-2 gap-3">
+              <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
+                <Image
+                  src="/projects/103-105 Victoria Street/103-105-Victoria-St-10-scaled.webp"
+                  alt="Bear Construction kitchen renovation Wellington"
+                  fill
+                  className="object-cover"
+                  sizes="25vw"
+                />
+              </div>
+              <div className="relative aspect-[3/4] mt-8 overflow-hidden rounded-2xl">
+                <Image
+                  src="/projects/103-105 Victoria Street/103-105-Victoria-St-11-scaled.webp"
+                  alt="Bear Construction premium kitchen finish Wellington"
+                  fill
+                  className="object-cover"
+                  sizes="25vw"
+                />
               </div>
             </div>
           </AnimateOnScroll>
         </Container>
       </section>
 
-      {/* ── JRA ADVANTAGE ────────────────────────────────────────── */}
-      <section className="bg-[#f9fafb] py-16 sm:py-20">
-        <Container>
-          <AnimateOnScroll variant="fade-up" className="mb-12 text-center">
-            <p className="section-tab mx-auto w-fit mb-4">The JRA Advantage</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[48px]">
-              Your Kitchen Transformation Journey
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-[17px] text-[#5f7286]">
-              Our proven approach to modern kitchen designs ensures seamless project delivery every time.
-            </p>
-          </AnimateOnScroll>
-
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {advantages.map((item, i) => (
-              <AnimateOnScroll key={item.text} variant="scale-in" delay={i * 70}>
-                <div className="flex items-start gap-4 rounded-2xl border border-[#e8edf2] bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-[#1278ce]/8">
-                  <span className="text-2xl">{item.icon}</span>
-                  <p className="text-[15px] font-medium leading-snug text-[#1278ce]">{item.text}</p>
-                </div>
-              </AnimateOnScroll>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* ── SETTING THE STANDARD ─────────────────────────────────── */}
-      <section
-        className="bg-[#1278ce] bg-cover bg-center py-16 sm:py-20"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(15,39,68,0.92), rgba(15,39,68,0.92)), url('/JRA-Belle-Vue-Website-Ready-27-e4e5bfc3-49d4-4872-b806-0fe6aa29407b.png')",
-        }}
-      >
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
-          <AnimateOnScroll variant="fade-right">
-            <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/50">Our Commitment</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-white sm:text-[48px]">
-                Why Choose JRA for Your Kitchen Makeover
-              </h2>
-              <p className="text-[17px] leading-[1.65] text-white/70">
-                Trust and craftsmanship define every Auckland kitchen renovation project we undertake. As Master Builders, our work is backed by industry-leading guarantees, comprehensive insurance, and a reputation for excellence. Each renovation undergoes our rigorous quality control procedures, ensuring every detail meets the highest standards.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1278ce] transition hover:bg-zinc-100"
-              >
-                Start Your Journey <span aria-hidden="true">→</span>
-              </Link>
-            </div>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll variant="fade-left" delay={150}>
-            <ul className="space-y-4">
-              {standards.map((item, i) => (
-                <AnimateOnScroll key={item} variant="fade-up" delay={i * 80}>
-                  <li className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 px-6 py-4 backdrop-blur-sm">
-                    <CheckIcon />
-                    <span className="text-[16px] font-semibold text-white">{item}</span>
-                  </li>
-                </AnimateOnScroll>
-              ))}
-            </ul>
-          </AnimateOnScroll>
-        </Container>
-      </section>
-
-      {/* ── PROCESS ─────────────────────────────────────────────── */}
+      {/* ── 6-STEP PROCESS ───────────────────────────────────────── */}
       <section id="process" className="scroll-mt-24 bg-white py-16 sm:py-20">
-        <Container className="space-y-14">
+        <Container className="space-y-14 max-w-[1200px]">
           <AnimateOnScroll variant="fade-up" className="text-center space-y-4">
             <p className="section-tab mx-auto w-fit">How It Works</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[42px] font-extrabold leading-[1.04] tracking-tight text-[#1278ce] sm:text-[52px]">
-              How We Put Your Kitchen Renovation Plan to Action
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.04] tracking-tight text-[#1278ce] sm:text-[50px]">
+              The Bear Construction Roadmap: Your Kitchen Process
             </h2>
             <p className="mx-auto max-w-2xl text-[17px] text-[#5f7286]">
-              Our proven 8-step process ensures your kitchen renovation is delivered beautifully and on time.
+              Remodelling the heart of your home requires strict sequencing. We use a disciplined 6-step framework to ensure every trade arrives at exactly the right time, keeping your project moving efficiently.
             </p>
           </AnimateOnScroll>
 
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {processSteps.map((s, i) => (
               <AnimateOnScroll key={s.step} variant="fade-up" delay={i * 60}>
                 <div className="flex h-full flex-col rounded-2xl border border-[#e8edf2] bg-[#f9fafb] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#1278ce]/20 hover:shadow-lg hover:shadow-[#1278ce]/8">
@@ -282,76 +294,139 @@ export default function KitchenRenovationsPage() {
               </AnimateOnScroll>
             ))}
           </div>
-        </Container>
-      </section>
 
-      {/* ── MODERN DESIGN TRENDS ─────────────────────────────────── */}
-      <section className="bg-[#f9fafb] py-16 sm:py-20">
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
-          <AnimateOnScroll variant="fade-right">
-            <div className="space-y-5">
-              <p className="section-tab w-fit">Latest Trends</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
-                Modern Kitchen Design Trends
-              </h2>
-              <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                Renovating your kitchen with JRA means gaining insight into the latest design trends and innovations. Consider sleek, handle-less cabinetry for a clean look, expansive stone or engineered stone benchtops, and multipurpose kitchen islands that serve as cooking areas, dining bars, and storage all in one.
-              </p>
-              <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                Homeowners in Auckland are also embracing smart kitchen technology — from Wi-Fi-enabled ovens to smart fridges — and we&apos;re experienced in integrating these seamlessly into your new layout. Layout and lighting play a huge role in a kitchen&apos;s success, with open-plan configurations creating social hubs ideal for entertaining.
-              </p>
-            </div>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll variant="fade-left" delay={150}>
-            <div className="grid grid-cols-2 gap-4">
-              {qualityPoints.map((pt, i) => (
-                <AnimateOnScroll key={pt.title} variant="scale-in" delay={i * 80}>
-                  <div className="flex flex-col gap-3 rounded-2xl border border-[#e8edf2] bg-white p-5 shadow-sm">
-                    <span className="text-3xl">{pt.icon}</span>
-                    <h3 className="text-[15px] font-bold text-[#1278ce]">{pt.title}</h3>
-                    <p className="text-[14px] leading-relaxed text-[#5f7286]">{pt.body}</p>
-                  </div>
-                </AnimateOnScroll>
-              ))}
-            </div>
+          <AnimateOnScroll variant="fade-up" className="text-center">
+            <p className="mx-auto max-w-2xl text-[17px] leading-[1.65] text-[#4d6277]">
+              By maintaining strict control over this process, we ensure your kitchen is built correctly from the subfloor to the splashback.
+            </p>
+            <Link
+              href="/contact"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#1278ce] px-7 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+            >
+              Get a Realistic Project Assessment <span aria-hidden="true">→</span>
+            </Link>
           </AnimateOnScroll>
         </Container>
       </section>
 
-      {/* ── CONSULTATION CTA ─────────────────────────────────────── */}
+      {/* ── WHY CHOOSE US ────────────────────────────────────────── */}
       <section
-        id="consultation"
-        className="scroll-mt-24 bg-[#1278ce] bg-cover bg-center py-16 sm:py-20"
+        className="bg-cover bg-center py-16 sm:py-20"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(15,39,68,0.93), rgba(15,39,68,0.93)), url('/JRA-Belle-Vue-Website-Ready-27-e4e5bfc3-49d4-4872-b806-0fe6aa29407b.png')",
+            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/Churton%20Park/Churton-Park-1-scaled.webp')",
         }}
       >
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
+        <Container className="max-w-[1200px]">
+          <AnimateOnScroll variant="fade-up" className="mb-12 text-center">
+            <p className="section-tab mx-auto w-fit mb-4 !border-white/20 !bg-white/10 !text-white/70">Why Choose Bear</p>
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.04] tracking-tight !text-white sm:text-[48px]">
+              Why Wellington Clients Trust Bear Construction
+            </h2>
+          </AnimateOnScroll>
+
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {trustPoints.map((pt, i) => (
+              <AnimateOnScroll key={pt.title} variant="fade-up" delay={i * 80}>
+                <div className="flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1278ce]">
+                    <svg viewBox="0 0 24 24" className="h-5 w-5 text-white" aria-hidden="true">
+                      <circle cx="12" cy="12" r="9.2" fill="none" stroke="currentColor" strokeWidth="2" />
+                      <path d="M8.3 12.2l2.2 2.2 5.1-5.1" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                  <h3 className="text-[16px] font-bold !text-white">{pt.title}</h3>
+                  <p className="text-[14px] leading-relaxed text-white/65">{pt.body}</p>
+                </div>
+              </AnimateOnScroll>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* ── COMPLEXITY + STANDARD ────────────────────────────────── */}
+      <section className="bg-white py-16 sm:py-20">
+        <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center max-w-[1200px]">
           <AnimateOnScroll variant="fade-right">
-            <div className="space-y-6">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/50">Let&apos;s Get Started</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-white sm:text-[48px]">
-                Claim Your Free Design &amp; Build Consultation
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <div className="section-tab w-fit">Our Expertise</div>
+                <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[32px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[38px]">
+                  Architectural Complexity Handled With Precision
+                </h2>
+                <p className="text-[17px] leading-[1.65] text-[#4d6277]">
+                  We specialise in the technical demands of a high-end kitchen remodel that Wellington homeowners expect. Whether your project involves relocating major plumbing lines, removing structural walls, or executing intricate island designs, our team excels under pressure.
+                </p>
+                <p className="text-[17px] leading-[1.65] text-[#4d6277]">
+                  We apply a rigorous quality control system across every critical phase, especially the cabinetry installation. You receive the efficiency of a dedicated project manager combined with the deep technical insight of a Certified Building Surveyor.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[32px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[38px]">
+                  The Bear Construction Standard of Excellence
+                </h2>
+                <p className="text-[17px] leading-[1.65] text-[#4d6277]">
+                  Rebuilding the most critical room in your house requires total trust in your contractor. We operate under a strict internal policy that demands absolute accountability for the safety, cleanliness, and sequencing of your site. We refuse to accept &ldquo;good enough.&rdquo;
+                </p>
+                <p className="text-[17px] leading-[1.65] text-[#4d6277]">
+                  We aim for zero defects at handover because we know true quality lies in the meticulous alignment of every door and drawer.
+                </p>
+              </div>
+            </div>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll variant="fade-left" delay={100}>
+            <div className="relative aspect-[3/4] overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5">
+              <Image
+                src="/projects/Esplanade/BC-take2-17-scaled.webp"
+                alt="Bear Construction kitchen quality Wellington"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+              />
+            </div>
+          </AnimateOnScroll>
+        </Container>
+      </section>
+
+      {/* ── 10-YEAR GUARANTEE ────────────────────────────────────── */}
+      <section className="bg-[#f9fafb] py-16 sm:py-20 border-t border-[#e8edf2]">
+        <Container className="max-w-[1200px] grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
+          <AnimateOnScroll variant="fade-right">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5">
+              <Image
+                src="/projects/Esplanade/BC-take2-27-scaled.webp"
+                alt="Bear Construction 10-year guarantee Wellington kitchen"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+              />
+            </div>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll variant="fade-left" delay={100}>
+            <div className="space-y-5">
+              <div className="section-tab w-fit">Our Guarantee</div>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[34px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[42px]">
+                The 10-Year Ironclad Guarantee
               </h2>
-              <p className="text-[17px] leading-[1.65] text-white/70">
-                This Design &amp; Build Consult covers everything you need to get started with confidence.
+              <p className="text-[17px] leading-[1.65] text-[#4d6277]">
+                As a Registered Master Builder, we back our major projects with a comprehensive 10-Year Guarantee.
               </p>
-              <ul className="space-y-3">
-                {consultItems.map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-[16px] text-white/85">
+              <ul className="space-y-4">
+                {guaranteePoints.map((point) => (
+                  <li key={point} className="flex items-start gap-3 text-[16px] text-[#2d4560]">
                     <CheckIcon />
-                    {item}
+                    <span>{point}</span>
                   </li>
                 ))}
               </ul>
-            </div>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll variant="fade-left" delay={200}>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:p-8">
-              <ContactForm />
+              <Link
+                href="/guarantee"
+                className="inline-flex items-center gap-2 text-[15px] font-bold text-[#1278ce] transition hover:gap-3"
+              >
+                Learn more about our Guarantee <span aria-hidden="true">→</span>
+              </Link>
             </div>
           </AnimateOnScroll>
         </Container>
@@ -362,8 +437,8 @@ export default function KitchenRenovationsPage() {
         <Container className="max-w-3xl space-y-8">
           <AnimateOnScroll variant="fade-up" className="text-center space-y-3">
             <p className="section-tab mx-auto w-fit">FAQs</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-tight tracking-tight text-[#1278ce]">
-              Frequently Asked Questions
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[38px] font-extrabold leading-tight tracking-tight text-zinc-900">
+              Frequently Asked Questions about Kitchen Renovations
             </h2>
           </AnimateOnScroll>
           <div className="space-y-4">
@@ -376,15 +451,107 @@ export default function KitchenRenovationsPage() {
         </Container>
       </section>
 
-      {/* ── BACK TO SERVICES ─────────────────────────────────────── */}
-      <section className="bg-[#f9fafb] py-10">
-        <Container className="text-center">
-          <Link
-            href="/services"
-            className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#1278ce] transition hover:gap-4"
-          >
-            <span aria-hidden="true">←</span> Back to All Services
-          </Link>
+      {/* ── CONSULTATION CTA + FORM ───────────────────────────────── */}
+      <section
+        id="consultation"
+        className="scroll-mt-24 bg-cover bg-center py-16 sm:py-20"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/Churton%20Park/Churton-Park-1-scaled.webp')",
+        }}
+      >
+        <Container className="max-w-[1200px] grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
+          <AnimateOnScroll variant="fade-right">
+            <div className="space-y-6">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/50">
+                Plan for Success From Day One
+              </p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[38px] font-extrabold leading-[1.08] tracking-tight !text-white sm:text-[46px]">
+                Upgrade The Heart Of Your Home With Confidence
+              </h2>
+              <p className="text-[17px] leading-[1.65] text-white/70">
+                Do not leave the most important room in your house to chance. Secure your investment against poor layouts and cheap finishes by choosing a builder who understands the demands of a modern, hardworking space.
+              </p>
+              <p className="text-[17px] font-semibold text-white">
+                Your daily routine deserves a premium space. Book a Project Consultation to align your vision with a realistic budget and secure the high-quality finish you expect.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="tel:+6421824419"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                >
+                  <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>
+                  021 824 419
+                </a>
+                <a
+                  href="mailto:phil@bearconstruction.co.nz"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                >
+                  <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+                  phil@bearconstruction.co.nz
+                </a>
+              </div>
+            </div>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll variant="fade-left" delay={200}>
+            <div className="w-full overflow-hidden rounded-2xl bg-white">
+              <iframe
+                src="https://link.contractorscale.com/widget/form/JUmWw969pNoKIq9jDbMf"
+                style={{ width: "100%", height: "815px", border: "none", borderRadius: "7px" }}
+                id="inline-JUmWw969pNoKIq9jDbMf"
+                data-layout='{"id":"INLINE"}'
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="New Lead - Short"
+                data-height="815"
+                data-layout-iframe-id="inline-JUmWw969pNoKIq9jDbMf"
+                data-form-id="JUmWw969pNoKIq9jDbMf"
+                title="New Lead - Short"
+              />
+            </div>
+          </AnimateOnScroll>
+        </Container>
+      </section>
+
+      {/* ── AREAS WE SERVICE ─────────────────────────────────────── */}
+      <section className="bg-[#f9fafb] py-16 sm:py-20 border-t border-[#e8edf2]">
+        <Container className="max-w-[1200px] grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
+          <AnimateOnScroll variant="fade-right">
+            <div className="space-y-5">
+              <div className="section-tab w-fit">Service Area</div>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[34px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[40px]">
+                Areas We Service
+              </h2>
+              <p className="text-[17px] leading-[1.65] text-[#4d6277]">
+                To maintain strict quality control and ensure direct owner involvement on every site, Bear Construction operates within a dedicated 50-minute travel radius from Wellington CBD.
+              </p>
+              <ul className="space-y-3">
+                {serviceAreas.map((area) => (
+                  <li key={area} className="flex items-start gap-3 text-[16px] text-[#2d4560]">
+                    <CheckIcon />
+                    <span>{area}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll variant="fade-left" delay={100}>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5">
+              <Image
+                src="/projects/Esplanade/BC-take2-66-scaled.webp"
+                alt="Bear Construction Wellington service area"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+              />
+            </div>
+          </AnimateOnScroll>
         </Container>
       </section>
     </>

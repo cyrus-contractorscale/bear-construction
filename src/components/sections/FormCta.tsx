@@ -7,7 +7,7 @@ export function FormCta() {
       className="scroll-mt-24 bg-[#111] bg-cover bg-center bg-no-repeat py-14 sm:py-16"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.82)), url('/JRA-Belle-Vue-Website-Ready-27-e4e5bfc3-49d4-4872-b806-0fe6aa29407b.png')",
+          "linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.82)), url('/projects/Churton%20Park/Churton-Park-1-scaled.webp')",
       }}
     >
       <Container className="grid gap-8 lg:grid-cols-[1fr_520px] lg:items-center">
@@ -23,9 +23,9 @@ export function FormCta() {
           <p className="mt-5 text-[15px] font-semibold text-zinc-300">In this consultation, we cover:</p>
           <ul className="mt-3 space-y-3 text-[16px] text-zinc-100">
             {[
-              "Your project goals and must-haves",
-              "Realistic budget ranges for your type of build",
-              "Timeline expectations",
+              "Your project goals and the specific upgrades you are looking for",
+              "Realistic budget ranges for architectural extensions and major renovations",
+              "Timeline expectations and our process for keeping things running smoothly",
               "Whether your project is a good fit for our team",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">

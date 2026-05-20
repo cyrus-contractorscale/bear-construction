@@ -219,7 +219,7 @@ export default function GrannyFlatsPage() {
         className="bg-[#1278ce] bg-cover bg-center py-16 sm:py-20"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(15,39,68,0.92), rgba(15,39,68,0.92)), url('/JRA-Belle-Vue-Website-Ready-27-e4e5bfc3-49d4-4872-b806-0fe6aa29407b.png')",
+            "linear-gradient(rgba(15,39,68,0.92), rgba(15,39,68,0.92)), url('/projects/Churton%20Park/Churton-Park-1-scaled.webp')",
         }}
       >
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
@@ -316,7 +316,7 @@ export default function GrannyFlatsPage() {
         className="scroll-mt-24 bg-[#1278ce] bg-cover bg-center py-16 sm:py-20"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(15,39,68,0.93), rgba(15,39,68,0.93)), url('/JRA-Belle-Vue-Website-Ready-27-e4e5bfc3-49d4-4872-b806-0fe6aa29407b.png')",
+            "linear-gradient(rgba(15,39,68,0.93), rgba(15,39,68,0.93)), url('/projects/Churton%20Park/Churton-Park-1-scaled.webp')",
         }}
       >
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">

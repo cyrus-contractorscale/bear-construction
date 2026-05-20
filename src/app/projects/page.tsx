@@ -1,9 +1,15 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 import { Container } from "@/components/ui/Container";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Projects | Wellington Renovation Builders | Bear Construction",
+  description:
+    "Explore recent projects by Bear Construction. We deliver flawless architectural extensions, full renovations, and leaky home repairs across the Wellington region.",
+  keywords: "renovation builders wellington",
+};
 
 const projects = [
   {
@@ -30,40 +36,35 @@ export default function ProjectsPage() {
   return (
     <>
       {/* Banner Section */}
-      <section className="relative overflow-hidden bg-zinc-950 py-24 sm:py-32 lg:py-40">
+      <section className="relative overflow-hidden bg-zinc-950 pt-44 pb-20 sm:pt-52 sm:pb-24 lg:pt-60 lg:pb-28">
         <Image
           src="/page-header-bg.webp"
           alt="Projects banner background"
           fill
           priority
-          className="object-cover opacity-50"
+          className="object-cover opacity-40"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-zinc-950/30 to-transparent" />
         <Container className="relative z-10 text-center">
-          <nav className="mb-6 flex items-center justify-center gap-2 text-[13px] text-white/50">
-            <Link href="/" className="transition hover:text-white">Home</Link>
-            <span>/</span>
-            <span className="text-white/90">Projects</span>
-          </nav>
-          <h1 className="font-[ui-sans-serif,system-ui,sans-serif] text-5xl font-extrabold uppercase leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
+          <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-widest text-white/80 backdrop-blur-sm">
+            Our Projects · Wellington
+          </span>
+          <h1 className="mt-6 font-[ui-sans-serif,system-ui,sans-serif] text-5xl font-extrabold uppercase leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
             Our Projects
           </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-[17px] leading-relaxed text-white/70">
-            Explore our portfolio of exceptional construction projects, where vision meets precision and quality lasts.
-          </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-center">
             <Link
-              href="/contact"
+              href="#consultation"
               className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 shadow-lg shadow-black/30 transition hover:bg-zinc-100"
             >
-              Start Your Project
+              Book Your Consultation
             </Link>
             <Link
-              href="#projects-list"
+              href="/services"
               className="inline-flex items-center justify-center rounded-full border border-white/40 px-7 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
             >
-              Browse Projects
+              View Services
             </Link>
           </div>
         </Container>

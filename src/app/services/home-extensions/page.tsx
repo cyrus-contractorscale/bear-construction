@@ -2,68 +2,104 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
-import { ContactForm } from "@/components/sections/ContactForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home Extensions Auckland | Bear Construction",
+  title: "Expert Home Extensions Wellington | Bear Construction",
   description:
-    "Expert home extensions in Auckland by Bear Construction. Add space to your home without moving — fixed-price contracts, 10-year Master Builders guarantee.",
+    "Bear Construction specialises in home extensions and second-storey additions across Wellington. We manage structural work, consents, and construction.",
+  keywords: "home extensions wellington",
 };
 
-const advantages = [
-  { icon: "📡", text: "Track real-time construction progress" },
-  { icon: "📍", text: "View and approve project milestones" },
-  { icon: "📁", text: "Access all project documentation and consents" },
-  { icon: "💬", text: "Communicate directly with your project manager" },
-  { icon: "🗓️", text: "Monitor timelines and scheduled works" },
-  { icon: "✅", text: "Review and approve any variations" },
-  { icon: "📸", text: "Access progress photos and updates" },
-];
-
-const standards = [
-  "Fixed-Price Contracts",
-  "287-Point Quality Checklist",
-  "Licensed Building Practitioners",
-  "Master Builders Guarantee",
-  "Transparent Project Management",
-];
-
 const processSteps = [
-  { step: "01", title: "Initial Contact", body: "We start with a free, no-obligation chat to understand your goals and see if we're the right fit." },
-  { step: "02", title: "Site Meeting", body: "We visit your home to discuss your project in detail. We'll bring guides and examples to help you visualize the possibilities." },
-  { step: "03", title: "Working with Consultants", body: "We collaborate with your existing architect and structural engineer, or connect you with trusted consultants. Early involvement helps prevent costly design changes later." },
-  { step: "04", title: "Estimate of Costs", body: "Before finalizing designs, we provide a cost estimate to ensure your plans align with your budget. This step helps avoid unexpected expenses." },
-  { step: "05", title: "Quotation", body: "Once designs are ready and submitted to the council, we compile a detailed, fixed-price quote including all subcontractor costs and assumptions." },
-  { step: "06", title: "Contract Agreements", body: "With the design, pricing, and timeline agreed upon, we formalize everything in a clear contract before construction begins." },
-  { step: "07", title: "Construction Phase", body: "Our licensed builders execute the project according to plan. You'll receive regular updates and can discuss any changes or decisions as needed." },
-  { step: "08", title: "The Completion Phase", body: "We conduct a thorough walkthrough with you to ensure satisfaction and provide all necessary documentation. We remain available for any post-project support." },
+  {
+    step: "01",
+    title: "Initial Consultation",
+    body: "We start by assessing your site and understanding your goals for the extra living space. You meet directly with Phil Ashton to discuss your expected investment level and confirm we are the right fit for the job.",
+  },
+  {
+    step: "02",
+    title: "Scope & Feasibility",
+    body: "We walk through the property to assess the foundations and load-bearing walls. We give you practical advice on what it will actually take to structurally integrate a new addition into your existing home.",
+  },
+  {
+    step: "03",
+    title: "Design & Consenting",
+    body: "We coordinate with architects to ensure the extension planning is both beautiful and buildable. We manage the details and secure the necessary council consent so your project meets all Wellington town planning rules.",
+  },
+  {
+    step: "04",
+    title: "Pricing & Contracts",
+    body: "Before any major work begins, we provide transparent, fair pricing based on detailed quantity surveying. Expectations and budgets are firmly aligned before we even pick up a hammer.",
+  },
+  {
+    step: "05",
+    title: "The Build Phase",
+    body: "The work is carried out by our trusted network of trades. We focus on tight project management — including weatherproofing your existing home — keeping the site clean, and making sure you are updated every step of the way.",
+  },
+  {
+    step: "06",
+    title: "Handover & Guarantee",
+    body: "We bring the project through to completion, ensuring the new extension seamlessly matches your existing home. Following a meticulous final walkthrough, we hand over the space backed by our 10-Year Building Guarantee.",
+  },
 ];
 
-const qualityPoints = [
-  { icon: "👤", title: "Dedicated Project Manager", body: "A single point of contact manages every detail of your extension from start to finish." },
-  { icon: "📡", title: "Real-Time Progress Updates", body: "Stay connected through our digital platform — milestones, photos, and documents at your fingertips." },
-  { icon: "🎨", title: "Professional Design Consultation", body: "We collaborate on designs that blend seamlessly with your existing home and neighbourhood character." },
-  { icon: "🏛️", title: "Council Compliance Expertise", body: "All consents, permits, and compliance documentation are handled by our experienced team." },
+const trustPoints = [
+  {
+    title: "Direct Owner Involvement",
+    body: "You deal directly with Phil Ashton, not a disconnected sales rep. Phil personally oversees every project from start to finish.",
+  },
+  {
+    title: "Transparent & Fair Pricing",
+    body: "We submit plans for detailed quantity surveying and provide transparent, fair pricing with no hidden surprises. Long-term relationships built on genuine value.",
+  },
+  {
+    title: "Expert Coordination",
+    body: "We stick to the schedule. We manage our trusted network of plumbers, electricians, and painters so your project never stalls.",
+  },
+  {
+    title: "Master Builder Quality",
+    body: "Phil is a Certified Building Surveyor (CBS) and a Licensed Building Practitioner. We prove our quality through flawless results.",
+  },
+];
+
+const guaranteePoints = [
+  "Total Weathertightness Protection: Ensuring your new extension is completely sealed against Wellington's harsh weather.",
+  "Structural Integrity: Long-term protection for the structural soundness of our framing and foundations.",
+  "Materials and Workmanship: Coverage for the premium, sustainable materials we use on your home.",
+  "Direct Accountability: You deal directly with the owner if you ever have a question down the track.",
 ];
 
 const faqs = [
-  { q: "How long does a typical house extension project take?", a: "Timeline varies depending on scope, but most extensions take 12–16 weeks from construction start to completion." },
-  { q: "What council permits are needed?", a: "Most extensions require building consent. We handle all paperwork and ensure compliance with local regulations, obtaining building consent and any required resource consents." },
-  { q: "How do you manage project costs?", a: "We provide fixed-price contracts and transparent change orders, with detailed cost breakdowns at every stage." },
-  { q: "Can we live in our home during construction?", a: "Yes, most clients do. We implement strict safety protocols and minimise disruption to your daily routine." },
-  { q: "What warranties do you offer?", a: "Our work comes with comprehensive guarantees through the Registered Master Builders Association, protecting your investment for up to 10 years." },
+  {
+    q: "Do you offer clear pricing from the start?",
+    a: "Yes. For extensions with a clearly defined scope, we submit plans for detailed quantity surveying to provide transparent, fair pricing upfront.",
+  },
+  {
+    q: "Can I use my own architect?",
+    a: "Absolutely. We collaborate with your chosen architect to ensure the house design matches your budget and is structurally practical.",
+  },
+  {
+    q: "Can we live in the house during the extension?",
+    a: "This depends entirely on the scope of the structural work. For some ground-floor additions, it is possible. For major second-storey additions, moving out is often safer and faster. We will discuss this with you upfront.",
+  },
+  {
+    q: "How long does a major extension take?",
+    a: "Timelines vary by complexity, but we provide a realistic schedule at the start and keep you updated throughout the entire build.",
+  },
+  {
+    q: "Do you handle the council consent process?",
+    a: "Yes. We have long-standing relationships with architects and can help coordinate the entire planning and consent process to keep your project moving.",
+  },
 ];
 
-const consultItems = [
-  "Design Consultation",
-  "Site Walk-Thru and Inspection",
-  "Director's Consultation",
-  "Selections Checklist & Comparison",
-  "Rough Estimate and Budget Scope",
-  "Timeline Estimate and Move-In Date Expectations",
-  "Connection to our Preferred Partner Network",
+const serviceAreas = [
+  "Wellington City & Suburbs (including Churton Park and central suburbs)",
+  "Lower Hutt & The Valley (including Belmont)",
+  "Upper Hutt",
+  "Porirua & Northern Extent (including Pauatahanui and Paekākāriki)",
 ];
+
 
 function CheckIcon() {
   return (
@@ -77,10 +113,10 @@ function FaqItem({ q, a }: { q: string; a: string }) {
   return (
     <details className="group rounded-2xl border border-[#eef2f6] bg-[#f9fafb] transition-all duration-300 open:border-[#1278ce] open:bg-[#1278ce] open:shadow-lg open:shadow-[#1278ce]/15">
       <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 sm:px-7 sm:py-6">
-        <span className="text-[16px] font-semibold leading-snug text-[#1278ce] group-open:text-white sm:text-[17px]">
+        <span className="text-[16px] font-semibold leading-snug text-black group-open:text-white sm:text-[17px]">
           {q}
         </span>
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#eef2f6] text-xl font-light text-[#1278ce] transition-all duration-300 group-open:rotate-45 group-open:bg-white/15 group-open:text-white">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#eef2f6] text-xl font-light text-black transition-all duration-300 group-open:rotate-45 group-open:bg-white/15 group-open:text-white">
           +
         </span>
       </summary>
@@ -95,42 +131,31 @@ export default function HomeExtensionsPage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────── */}
-      <section className="relative flex min-h-[72vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-32 sm:pb-20 sm:pt-40">
+      <section className="relative flex min-h-[80vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-44 sm:pb-20 sm:pt-52 lg:pt-60">
         <Image
-          src="/home-extension-services.jpg"
-          alt="Bear Construction home extensions Auckland"
+          src="/Services/Home Extensions Services.png"
+          alt="Home Extensions Wellington — Bear Construction"
           fill
           priority
-          className="object-cover opacity-40"
+          className="object-cover opacity-45"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/40 to-transparent" />
 
         <Container className="relative z-10">
-          <nav className="mb-6 flex items-center gap-2 text-[13px] text-white/50">
-            <Link href="/" className="transition hover:text-white">Home</Link>
-            <span>/</span>
-            <Link href="/services" className="transition hover:text-white">Services</Link>
-            <span>/</span>
-            <span className="text-white/90">Home Extensions</span>
-          </nav>
-
           <div className="max-w-3xl space-y-6">
             <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-widest text-white/80 backdrop-blur-sm">
-              Extensions · Auckland
+              Home Extensions · Wellington
             </span>
             <h1 className="font-[ui-sans-serif,system-ui,sans-serif] text-5xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Home Extensions<br />in Auckland
+              Home Extensions Wellington
             </h1>
-            <p className="max-w-xl text-[18px] leading-relaxed text-white/75">
-              Add space without moving — seamless extensions that blend with your existing home and neighbourhood.
-            </p>
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
                 href="#consultation"
                 className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 shadow-lg shadow-black/30 transition hover:bg-zinc-100"
               >
-                Free Consultation
+                Book Your Project Consultation
               </Link>
               <Link
                 href="#process"
@@ -151,9 +176,9 @@ export default function HomeExtensionsPage() {
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1278ce]/50">Sound Familiar?</p>
               <ul className="space-y-4">
                 {[
-                  "Struggling with a growing family but love your current neighbourhood too much to move?",
-                  "Does your home's layout no longer suit your lifestyle?",
-                  "Seeking trusted home extension contractors in Auckland who deliver quality within budget?",
+                  "Worried about extension costs blowing out halfway through the build?",
+                  "Concerned that adding extra living space will result in a disjointed, obvious add-on rather than a seamless integration?",
+                  "Frustrated by builders who operate without clear communication or respect for your property?",
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-3 rounded-xl border border-[#eef2f6] bg-[#f9fafb] px-5 py-4">
                     <span className="mt-0.5 text-[#1278ce]">
@@ -171,107 +196,80 @@ export default function HomeExtensionsPage() {
 
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="space-y-5">
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
-                Your Trusted Partner for House Extensions
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[34px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[42px]">
+                Don&apos;t Start Your Project Without A Clear Plan
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                As premier house additions and renovation specialists, Bear Construction brings extensive expertise to every home extension project we undertake. Our proven track record combines innovative design solutions with practical functionality, ensuring your investment adds lasting value to your property.
+                These are valid fears because most construction projects fail due to poor planning. You are investing significant capital into your biggest asset, and you deserve a builder who treats your money and your vision with absolute respect. Too often, the excitement of expanding a home is ruined by chaotic sites, missed deadlines, and vague promises from volume franchises.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                Unlike other contractors, we provide end-to-end project management through our sophisticated digital platform — from initial architectural designs and council consents through to final construction, giving you unprecedented visibility and control throughout your renovation journey.
+                Bear Construction operates differently. We bring a transparent and highly accountable approach to residential construction. Phil Ashton leads this company with over 20 years of local building experience, applying expert knowledge and rigorous project management to every site. We eliminate the guesswork and replace it with a clear, practical plan for execution.
               </p>
-              <div className="flex flex-wrap gap-3 pt-2">
-                <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-[#1278ce] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#16385f]">
-                  Contact Us <span aria-hidden="true">→</span>
-                </Link>
+              <p className="text-[17px] leading-[1.65] text-[#4d6277]">
+                As expert extension builders Wellington homeowners trust, we execute your vision with precision. Whether it is a complex architectural addition or a bespoke family expansion, we manage every detail to ensure the result matches the plan.
+              </p>
+              <Link
+                href="#consultation"
+                className="inline-flex items-center gap-2 rounded-full bg-[#1278ce] px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+              >
+                Book Your Consultation <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          </AnimateOnScroll>
+        </Container>
+      </section>
+
+      {/* ── LOCAL KNOWLEDGE ──────────────────────────────────────── */}
+      <section className="bg-[#f9fafb] py-16 sm:py-20 border-t border-[#e8edf2]">
+        <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
+          <AnimateOnScroll variant="fade-right">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5">
+              <Image
+                src="/projects/Churton Park/Bear-Construction-Action-Photos-2024-1335861-scaled.webp"
+                alt="Bear Construction home extension Wellington"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+              />
+            </div>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll variant="fade-left" delay={120}>
+            <div className="space-y-6">
+              <div className="section-tab w-fit">Local Expertise</div>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[34px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[40px]">
+                Understanding House Extensions Wellington and the Hutt Valley
+              </h2>
+              <div className="space-y-5 text-[17px] leading-[1.65] text-[#4d6277]">
+                <p>
+                  Building a high-end extension in the Wellington region requires more than just good carpentry. It requires detailed logistical planning and deep local knowledge. The terrain across the region varies significantly, from tight hillside access in Wellington Central to variable soil conditions in the Hutt Valley. Understanding these structural realities before design begins is critical to avoiding expensive foundation redesigns later.
+                </p>
+                <p>
+                  Navigating local regulations is another hurdle. Building room additions to Wellington properties often involves specific boundary rules or town-planning overlays. We understand these nuances. We ensure your architectural plans are not just beautiful but practical and compliant with the local council from day one.
+                </p>
+                <p>
+                  Furthermore, the supply chain for premium materials requires strict management. We manage these logistics with a highly organised approach, ordering materials well in advance to ensure your project never has to wait for a delivery.
+                </p>
               </div>
             </div>
           </AnimateOnScroll>
         </Container>
       </section>
 
-      {/* ── JRA ADVANTAGE ────────────────────────────────────────── */}
-      <section className="bg-[#f9fafb] py-16 sm:py-20">
-        <Container>
-          <AnimateOnScroll variant="fade-up" className="mb-12 text-center">
-            <p className="section-tab mx-auto w-fit mb-4">The JRA Advantage</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[48px]">
-              Always Informed. Always in Control.
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-[17px] text-[#5f7286]">
-              From day one, you&apos;ll have access to our client portal for complete project transparency.
-            </p>
-          </AnimateOnScroll>
-
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {advantages.map((item, i) => (
-              <AnimateOnScroll key={item.text} variant="scale-in" delay={i * 70}>
-                <div className="flex items-start gap-4 rounded-2xl border border-[#e8edf2] bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-[#1278ce]/8">
-                  <span className="text-2xl">{item.icon}</span>
-                  <p className="text-[15px] font-medium leading-snug text-[#1278ce]">{item.text}</p>
-                </div>
-              </AnimateOnScroll>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* ── SETTING THE STANDARD ─────────────────────────────────── */}
-      <section
-        className="bg-[#1278ce] bg-cover bg-center py-16 sm:py-20"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(15,39,68,0.92), rgba(15,39,68,0.92)), url('/JRA-Belle-Vue-Website-Ready-27-e4e5bfc3-49d4-4872-b806-0fe6aa29407b.png')",
-        }}
-      >
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
-          <AnimateOnScroll variant="fade-right">
-            <div className="space-y-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/50">Our Commitment</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-white sm:text-[48px]">
-                Why Choose Bear Construction
-              </h2>
-              <p className="text-[17px] leading-[1.65] text-white/70">
-                From our recent Balmoral modern living and kitchen extension project to our Avondale master bedroom rebuild, we understand how to maximise your home&apos;s potential. Our portfolio showcases successful home additions in Mount Eden, Point Chevalier, Waterview, and Sandringham — each demonstrating our ability to combine innovative design with practical functionality.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1278ce] transition hover:bg-zinc-100"
-              >
-                Start Your Journey <span aria-hidden="true">→</span>
-              </Link>
-            </div>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll variant="fade-left" delay={150}>
-            <ul className="space-y-4">
-              {standards.map((item, i) => (
-                <AnimateOnScroll key={item} variant="fade-up" delay={i * 80}>
-                  <li className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 px-6 py-4 backdrop-blur-sm">
-                    <CheckIcon />
-                    <span className="text-[16px] font-semibold text-white">{item}</span>
-                  </li>
-                </AnimateOnScroll>
-              ))}
-            </ul>
-          </AnimateOnScroll>
-        </Container>
-      </section>
-
-      {/* ── PROCESS ─────────────────────────────────────────────── */}
+      {/* ── 6-STEP PROCESS ───────────────────────────────────────── */}
       <section id="process" className="scroll-mt-24 bg-white py-16 sm:py-20">
-        <Container className="space-y-14">
+        <Container className="space-y-14 max-w-[1200px]">
           <AnimateOnScroll variant="fade-up" className="text-center space-y-4">
             <p className="section-tab mx-auto w-fit">How It Works</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[42px] font-extrabold leading-[1.04] tracking-tight text-[#1278ce] sm:text-[52px]">
-              How We Put Your Home Extension Plan to Action
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.04] tracking-tight text-[#1278ce] sm:text-[50px]">
+              The Bear Construction Roadmap: Your Extension Process
             </h2>
             <p className="mx-auto max-w-2xl text-[17px] text-[#5f7286]">
-              Our proven 8-step process takes your extension from concept to completion with total transparency.
+              Adding to an existing home is highly disruptive. Without a clear plan, sites become chaotic and timelines vanish. We use a straightforward 6-step framework to maintain order, safety, and progress.
             </p>
           </AnimateOnScroll>
 
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {processSteps.map((s, i) => (
               <AnimateOnScroll key={s.step} variant="fade-up" delay={i * 60}>
                 <div className="flex h-full flex-col rounded-2xl border border-[#e8edf2] bg-[#f9fafb] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#1278ce]/20 hover:shadow-lg hover:shadow-[#1278ce]/8">
@@ -282,76 +280,147 @@ export default function HomeExtensionsPage() {
               </AnimateOnScroll>
             ))}
           </div>
-        </Container>
-      </section>
 
-      {/* ── EXTENSION OPTIONS ────────────────────────────────────── */}
-      <section className="bg-[#f9fafb] py-16 sm:py-20">
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
-          <AnimateOnScroll variant="fade-right">
-            <div className="space-y-5">
-              <p className="section-tab w-fit">Versatile Solutions</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[36px] font-extrabold leading-[1.1] tracking-tight text-[#1278ce] sm:text-[42px]">
-                Versatile Extension Options for Your Home
-              </h2>
-              <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                Home additions come in many forms, and we have the expertise to execute them all. Whether you&apos;re considering a second-storey addition to gain extra bedrooms or a ground-floor extension to enlarge your living area, we tailor the solution to your needs.
-              </p>
-              <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                We also advise on unique extension ideas to maximise your property&apos;s potential — from converting an underutilised attic into a livable loft to extending outwards for indoor-outdoor entertaining areas. By exploring various house extension options with you, we help determine the best way to achieve more space and functionality.
-              </p>
-            </div>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll variant="fade-left" delay={150}>
-            <div className="grid grid-cols-2 gap-4">
-              {qualityPoints.map((pt, i) => (
-                <AnimateOnScroll key={pt.title} variant="scale-in" delay={i * 80}>
-                  <div className="flex flex-col gap-3 rounded-2xl border border-[#e8edf2] bg-white p-5 shadow-sm">
-                    <span className="text-3xl">{pt.icon}</span>
-                    <h3 className="text-[15px] font-bold text-[#1278ce]">{pt.title}</h3>
-                    <p className="text-[14px] leading-relaxed text-[#5f7286]">{pt.body}</p>
-                  </div>
-                </AnimateOnScroll>
-              ))}
-            </div>
+          <AnimateOnScroll variant="fade-up" className="text-center">
+            <p className="mx-auto max-w-2xl text-[17px] leading-[1.65] text-[#4d6277]">
+              By sticking rigidly to this framework, we remove the guesswork from building. You always know exactly where your project stands, what is happening next, and that the quality is being enforced daily.
+            </p>
+            <Link
+              href="/contact"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#1278ce] px-7 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+            >
+              Get a Realistic Project Assessment <span aria-hidden="true">→</span>
+            </Link>
           </AnimateOnScroll>
         </Container>
       </section>
 
-      {/* ── CONSULTATION CTA ─────────────────────────────────────── */}
+      {/* ── WHY CLIENTS TRUST US ─────────────────────────────────── */}
       <section
-        id="consultation"
-        className="scroll-mt-24 bg-[#1278ce] bg-cover bg-center py-16 sm:py-20"
+        className="bg-cover bg-center py-16 sm:py-20"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(15,39,68,0.93), rgba(15,39,68,0.93)), url('/JRA-Belle-Vue-Website-Ready-27-e4e5bfc3-49d4-4872-b806-0fe6aa29407b.png')",
+            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/Churton%20Park/Churton-Park-1-scaled.webp')",
         }}
       >
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
+        <Container className="max-w-[1200px]">
+          <AnimateOnScroll variant="fade-up" className="mb-12 text-center">
+            <p className="section-tab mx-auto w-fit mb-4 !border-white/20 !bg-white/10 !text-white/70">Why Choose Bear</p>
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.04] tracking-tight !text-white sm:text-[48px]">
+              Why Wellington Clients Trust Bear Construction
+            </h2>
+          </AnimateOnScroll>
+
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {trustPoints.map((pt, i) => (
+              <AnimateOnScroll key={pt.title} variant="fade-up" delay={i * 80}>
+                <div className="flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1278ce]">
+                    <svg viewBox="0 0 24 24" className="h-5 w-5 text-white" aria-hidden="true">
+                      <circle cx="12" cy="12" r="9.2" fill="none" stroke="currentColor" strokeWidth="2" />
+                      <path d="M8.3 12.2l2.2 2.2 5.1-5.1" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                  <h3 className="text-[16px] font-bold !text-white">{pt.title}</h3>
+                  <p className="text-[14px] leading-relaxed text-white/65">{pt.body}</p>
+                </div>
+              </AnimateOnScroll>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* ── ARCHITECTURAL COMPLEXITY + STANDARD ──────────────────── */}
+      <section className="bg-white py-16 sm:py-20">
+        <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center max-w-[1200px]">
           <AnimateOnScroll variant="fade-right">
-            <div className="space-y-6">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/50">Let&apos;s Get Started</p>
-              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-[1.08] tracking-tight text-white sm:text-[48px]">
-                Claim Your Free Design &amp; Build Consultation
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <div className="section-tab w-fit">Our Expertise</div>
+                <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[32px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[38px]">
+                  Architectural Complexity Handled With Precision
+                </h2>
+                <p className="text-[17px] leading-[1.65] text-[#4d6277]">
+                  We specialise in technically demanding work that scares other builders. From complex second-storey extensions to intricate leaky home remediation, our team thrives on difficult structural challenges.
+                </p>
+                <p className="text-[17px] leading-[1.65] text-[#4d6277]">
+                  We manage bespoke builds with a rigorous quality-control model that ensures flawless execution by every subcontractor. You get the efficiency of a dedicated project manager with the deep technical knowledge of a Certified Building Surveyor.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[32px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[38px]">
+                  The Bear Construction Standard of Excellence
+                </h2>
+                <p className="text-[17px] leading-[1.65] text-[#4d6277]">
+                  Major construction projects often raise concerns about quality and completion. We operate under a strict internal policy that holds us accountable for every detail of your project from the ground up. We aim for zero defects at handover because we believe the best advertising is a happy client.
+                </p>
+              </div>
+            </div>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll variant="fade-left" delay={100}>
+            <div className="grid grid-cols-2 gap-3">
+              <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
+                <Image
+                  src="/projects/103-105 Victoria Street/103-105-Victoria-St-5-scaled.webp"
+                  alt="Bear Construction extension Wellington"
+                  fill
+                  className="object-cover"
+                  sizes="25vw"
+                />
+              </div>
+              <div className="relative aspect-[3/4] overflow-hidden rounded-2xl mt-8">
+                <Image
+                  src="/projects/Churton Park/Churton-Park-4-scaled.webp"
+                  alt="Bear Construction Wellington project"
+                  fill
+                  className="object-cover"
+                  sizes="25vw"
+                />
+              </div>
+            </div>
+          </AnimateOnScroll>
+        </Container>
+      </section>
+
+      {/* ── 10-YEAR GUARANTEE ────────────────────────────────────── */}
+      <section className="bg-[#f9fafb] py-16 sm:py-20 border-t border-[#e8edf2]">
+        <Container className="max-w-[1200px] grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
+          <AnimateOnScroll variant="fade-right">
+            <div className="space-y-5">
+              <div className="section-tab w-fit">Our Guarantee</div>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[34px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[42px]">
+                The 10-Year Ironclad Guarantee
               </h2>
-              <p className="text-[17px] leading-[1.65] text-white/70">
-                This Design &amp; Build Consult covers everything you need to get started with confidence.
+              <p className="text-[17px] leading-[1.65] text-[#4d6277]">
+                As a Registered Master Builder, we back our work with a comprehensive 10-Year Guarantee on all major projects.
               </p>
-              <ul className="space-y-3">
-                {consultItems.map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-[16px] text-white/85">
+              <ul className="space-y-4">
+                {guaranteePoints.map((point) => (
+                  <li key={point} className="flex items-start gap-3 text-[16px] text-[#2d4560]">
                     <CheckIcon />
-                    {item}
+                    <span>{point}</span>
                   </li>
                 ))}
               </ul>
+              <Link
+                href="/guarantee"
+                className="inline-flex items-center gap-2 text-[15px] font-bold text-[#1278ce] transition hover:gap-3"
+              >
+                Learn more about our Guarantee <span aria-hidden="true">→</span>
+              </Link>
             </div>
           </AnimateOnScroll>
 
-          <AnimateOnScroll variant="fade-left" delay={200}>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:p-8">
-              <ContactForm />
+          <AnimateOnScroll variant="fade-left" delay={100}>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5">
+              <Image
+                src="/projects/Churton Park/Churton-Park-5-scaled.webp"
+                alt="Bear Construction completed Wellington home extension"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+              />
             </div>
           </AnimateOnScroll>
         </Container>
@@ -362,8 +431,8 @@ export default function HomeExtensionsPage() {
         <Container className="max-w-3xl space-y-8">
           <AnimateOnScroll variant="fade-up" className="text-center space-y-3">
             <p className="section-tab mx-auto w-fit">FAQs</p>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[40px] font-extrabold leading-tight tracking-tight text-[#1278ce]">
-              Frequently Asked Questions
+            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[38px] font-extrabold leading-tight tracking-tight text-zinc-900">
+              Frequently Asked Questions about Home Extensions
             </h2>
           </AnimateOnScroll>
           <div className="space-y-4">
@@ -376,15 +445,108 @@ export default function HomeExtensionsPage() {
         </Container>
       </section>
 
-      {/* ── BACK TO SERVICES ─────────────────────────────────────── */}
-      <section className="bg-[#f9fafb] py-10">
-        <Container className="text-center">
-          <Link
-            href="/services"
-            className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#1278ce] transition hover:gap-4"
-          >
-            <span aria-hidden="true">←</span> Back to All Services
-          </Link>
+      {/* ── CONSULTATION CTA + FORM ───────────────────────────────── */}
+      <section
+        id="consultation"
+        className="scroll-mt-24 bg-cover bg-center py-16 sm:py-20"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/Churton%20Park/Churton-Park-1-scaled.webp')",
+        }}
+      >
+        <Container className="max-w-[1200px] grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
+          <AnimateOnScroll variant="fade-right">
+            <div className="space-y-6">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/50">Plan for Success From Day One</p>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[38px] font-extrabold leading-[1.08] tracking-tight !text-white sm:text-[46px]">
+                Expand Your Home With Absolute Certainty
+              </h2>
+              <p className="text-[17px] leading-[1.65] text-white/70">
+                Adding to your footprint is a massive commitment, but it does not have to be a guessing game. Remove the risk of council delays and budget blowouts by partnering with an expert. Ensure your project starts with certainty — align your vision with a realistic budget and secure the outcome your home deserves.
+              </p>
+              <p className="text-[17px] font-semibold text-white">
+                Let&apos;s build the space your family needs.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="tel:+6421824419"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                >
+                  <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>
+                  021 824 419
+                </a>
+                <a
+                  href="mailto:phil@bearconstruction.co.nz"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                >
+                  <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+                  phil@bearconstruction.co.nz
+                </a>
+              </div>
+            </div>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll variant="fade-left" delay={200}>
+            <div className="w-full overflow-hidden rounded-2xl bg-white">
+              <iframe
+                src="https://link.contractorscale.com/widget/form/JUmWw969pNoKIq9jDbMf"
+                style={{ width: "100%", height: "815px", border: "none", borderRadius: "7px" }}
+                id="inline-JUmWw969pNoKIq9jDbMf"
+                data-layout='{"id":"INLINE"}'
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="New Lead - Short"
+                data-height="815"
+                data-layout-iframe-id="inline-JUmWw969pNoKIq9jDbMf"
+                data-form-id="JUmWw969pNoKIq9jDbMf"
+                title="New Lead - Short"
+              />
+            </div>
+          </AnimateOnScroll>
+        </Container>
+      </section>
+
+      {/* ── AREAS WE SERVICE ─────────────────────────────────────── */}
+      <section className="bg-[#f9fafb] py-16 sm:py-20 border-t border-[#e8edf2]">
+        <Container className="max-w-[1200px] grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
+          <AnimateOnScroll variant="fade-right">
+            <div className="space-y-5">
+              <div className="section-tab w-fit">Service Area</div>
+              <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[34px] font-extrabold leading-[1.08] tracking-tight text-[#1278ce] sm:text-[40px]">
+                Areas We Service
+              </h2>
+              <p className="text-[17px] leading-[1.65] text-[#4d6277]">
+                To maintain strict quality control and ensure direct owner involvement on every site, Bear Construction operates within a dedicated 50-minute travel radius from Wellington CBD. We provide expert Home Extensions across the following primary locations:
+              </p>
+              <ul className="space-y-3">
+                {serviceAreas.map((area) => (
+                  <li key={area} className="flex items-start gap-3 text-[16px] text-[#2d4560]">
+                    <CheckIcon />
+                    <span>{area}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-[16px] leading-relaxed text-[#4d6277]">
+                If your property is located within our coverage area, contact us to arrange an initial consultation.
+              </p>
+            </div>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll variant="fade-left" delay={100}>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5">
+              <Image
+                src="/projects/Esplanade/BC-take2-42-scaled.webp"
+                alt="Bear Construction Wellington service area"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+              />
+            </div>
+          </AnimateOnScroll>
         </Container>
       </section>
     </>

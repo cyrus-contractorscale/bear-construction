@@ -185,37 +185,19 @@ export function Footer() {
             <h3 className="text-[18px] font-bold !text-white sm:text-[19px]">Useful Links</h3>
             <ul className="mt-5 space-y-3 text-[15px]">
               <li>
-                <Link href="/" className="group flex items-center gap-2 transition hover:text-white">
-                  <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="#about" className="group flex items-center gap-2 transition hover:text-white">
-                  <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="#testimonials" className="group flex items-center gap-2 transition hover:text-white">
+                <Link href="/testimonials" className="group flex items-center gap-2 transition hover:text-white">
                   <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="group flex items-center gap-2 transition hover:text-white">
-                  <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link href="#service-areas" className="group flex items-center gap-2 transition hover:text-white">
+                <Link href="/service-areas" className="group flex items-center gap-2 transition hover:text-white">
                   <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   Service Areas
                 </Link>
               </li>
               <li>
-                <Link href="#faq" className="group flex items-center gap-2 transition hover:text-white">
+                <Link href="/faq" className="group flex items-center gap-2 transition hover:text-white">
                   <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   FAQs
                 </Link>
@@ -273,11 +255,11 @@ export function Footer() {
               © Copyright Bear Construction 2026. All Rights Reserved.
             </p>
             <p className="text-[14px] text-[#aeb8c4] lg:text-right">
-              <Link href="#" className="transition hover:text-white">
+              <Link href="/privacy-policy" className="transition hover:text-white">
                 Privacy Policy
               </Link>
               <span className="mx-2 text-white/25">|</span>
-              <Link href="#" className="transition hover:text-white">
+              <Link href="/terms-and-conditions" className="transition hover:text-white">
                 Terms &amp; Conditions
               </Link>
             </p>
