@@ -40,6 +40,12 @@ h3 {
   color: #000000;
 }
 
+/* Fluid H1 sizing — mirrors text-5xl → text-7xl but as a smooth continuous scale */
+.h1-fluid {
+  font-size: clamp(3rem, 4.5vw + 1.5rem, 4.5rem);
+  line-height: 1.05;
+}
+
 .section-tab {
   display: inline-flex;
   align-items: center;

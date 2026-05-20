@@ -1,9 +1,21 @@
-"use client";
-
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
+
+export const metadata: Metadata = {
+  title: "Building Services Wellington | Bear Construction",
+  description:
+    "Wellington building services by Bear Construction — home extensions, renovations, bathroom & kitchen upgrades, exterior cladding, and leaky home repairs.",
+  keywords: [
+    "building services wellington",
+    "home extensions wellington",
+    "renovation builders wellington",
+    "exterior cladding wellington",
+    "bear construction services",
+  ],
+};
 
 const services = [
   {
@@ -56,7 +68,7 @@ export default function ServicesPage() {
           <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-widest text-white/80 backdrop-blur-sm">
             Wellington Building Services
           </span>
-          <h1 className="mt-6 font-[ui-sans-serif,system-ui,sans-serif] text-5xl font-extrabold uppercase leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
+          <h1 className="mt-6 font-[ui-sans-serif,system-ui,sans-serif] h1-fluid font-extrabold uppercase tracking-tight text-white">
             Our Services
           </h1>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-center">

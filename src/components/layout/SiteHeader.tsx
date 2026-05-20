@@ -16,7 +16,7 @@ export function SiteHeader() {
           href="#top"
           className="font-serif text-lg font-semibold tracking-tight text-zinc-900 sm:text-xl"
         >
-          JRA <span className="text-amber-700">Construction</span>
+          Bear <span className="text-amber-700">Construction</span>
         </Link>
         <nav className="hidden items-center gap-8 text-sm font-medium text-zinc-600 md:flex">
           {navLinks.map((link) => (

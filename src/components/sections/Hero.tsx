@@ -158,20 +158,23 @@ export function Hero() {
             <div className="absolute inset-0 bg-zinc-950/55" />
 
             <Container className="relative z-10 py-28 sm:py-36 lg:py-44">
-                <div className="w-full space-y-6 text-center text-white">
-                    <h1 className="w-full font-[ui-sans-serif,system-ui,sans-serif] text-4xl font-extrabold uppercase leading-[1.05] tracking-tight [text-shadow:0_3px_18px_rgba(0,0,0,0.38)] sm:text-5xl lg:text-[72px]">
+                <div className="mx-auto w-full max-w-5xl space-y-6 text-center text-white">
+                    <h1
+                        className="w-full font-[ui-sans-serif,system-ui,sans-serif] font-extrabold uppercase leading-[1.1] tracking-tight [text-shadow:0_3px_18px_rgba(0,0,0,0.38)]"
+                        style={{ fontSize: "clamp(1.75rem, 4vw + 1rem, 3.5rem)" }}
+                    >
                         {baseHeading}
-                        <span className="whitespace-pre transition-opacity duration-150">
+                        <span className="whitespace-pre-wrap transition-opacity duration-150">
                             {firstLineReveal.visible}
                         </span>
-                        <span className="whitespace-pre text-white/30 transition-opacity duration-150">
+                        <span className="whitespace-pre-wrap text-white/30 transition-opacity duration-150">
                             {firstLineReveal.hidden}
                         </span>
-                        <br />
-                        <span className="whitespace-pre transition-opacity duration-150">
+                        <br className="hidden sm:block" />
+                        <span className="whitespace-pre-wrap transition-opacity duration-150">
                             {secondLineReveal.visible}
                         </span>
-                        <span className="whitespace-pre text-white/30 transition-opacity duration-150">
+                        <span className="whitespace-pre-wrap text-white/30 transition-opacity duration-150">
                             {secondLineReveal.hidden}
                         </span>
                     </h1>

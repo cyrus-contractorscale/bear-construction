@@ -29,12 +29,12 @@ export default function ContactPage() {
           <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-widest text-white/80 backdrop-blur-sm">
             Wellington Region · Independent Builders
           </span>
-          <h1 className="mt-6 font-[ui-sans-serif,system-ui,sans-serif] text-5xl font-extrabold uppercase leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
+          <h1 className="mt-6 font-[ui-sans-serif,system-ui,sans-serif] h1-fluid font-extrabold uppercase tracking-tight text-white">
             Contact Us
           </h1>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="#form-section"
+              href="https://go.bearconstruction.co.nz/book"
               className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 shadow-lg shadow-black/30 transition hover:bg-zinc-100"
             >
               Book Your Project Consultation
@@ -141,7 +141,7 @@ export default function ContactPage() {
                   Book a dedicated Project Consultation — this is where we sit down to discuss the specific renovation costs, feasibility, and timeline for your property to ensure we are the right fit for your job.
                 </p>
                 <Link
-                  href="/contact"
+                  href="https://go.bearconstruction.co.nz/book"
                   className="inline-flex items-center gap-2 rounded-full bg-[#1278ce] px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90"
                 >
                   Book Your Project Consultation <span aria-hidden="true">→</span>

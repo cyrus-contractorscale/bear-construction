@@ -87,6 +87,7 @@ function IconPhone() {
 
 export function MainNav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [expandedItem, setExpandedItem] = useState<string | null>(null);
 
   useEffect(() => {
     if (!mobileMenuOpen) return;
@@ -122,7 +123,7 @@ export function MainNav() {
             <span className="h-3 w-px bg-white/20" aria-hidden="true" />
             <span className="flex items-center gap-1.5">
               <IconMapPin />
-              Auckland, New Zealand
+              Wellington, New Zealand
             </span>
           </div>
         </Container>
@@ -187,7 +188,9 @@ export function MainNav() {
         {/* Right side: CTA + Phone */}
         <div className="hidden items-center gap-3 lg:flex">
           <Link
-            href="/contact"
+            href="https://calculator.bearconstruction.co.nz/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-sm px-5 py-2.5 text-[12px] font-bold uppercase tracking-widest text-white transition hover:opacity-90"
             style={{ backgroundColor: "#1278ce" }}
           >
@@ -209,7 +212,7 @@ export function MainNav() {
         {/* Mobile hamburger */}
         <button
           type="button"
-          onClick={() => setMobileMenuOpen(true)}
+          onClick={() => { setMobileMenuOpen(true); setExpandedItem(null); }}
           aria-label="Open menu"
           className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/35 text-white transition hover:bg-white/10 lg:hidden"
         >
@@ -236,11 +239,12 @@ export function MainNav() {
 
       {/* ── Mobile drawer ── */}
       <aside
-        className={`fixed right-0 top-0 z-[1000] h-screen w-[82%] max-w-[340px] border-l border-white/10 bg-[#0f1724] px-6 pb-8 pt-5 text-white shadow-2xl transition-transform duration-300 lg:hidden ${
+        className={`fixed right-0 top-0 z-[1000] flex h-screen w-[82%] max-w-[340px] flex-col border-l border-white/10 bg-zinc-950 px-6 pb-8 pt-5 text-white shadow-2xl transition-transform duration-300 lg:hidden ${
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
         aria-hidden={!mobileMenuOpen}
       >
+        {/* Drawer header */}
         <div className="flex items-center justify-between">
           <Image
             src="/bear-logo-light.png"
@@ -253,48 +257,77 @@ export function MainNav() {
             type="button"
             aria-label="Close menu"
             onClick={() => setMobileMenuOpen(false)}
-            className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/30 text-xl leading-none text-white transition hover:bg-white/10"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/20 text-xl leading-none text-white transition hover:bg-white/10"
           >
             ×
           </button>
         </div>
 
-        <nav className="mt-7 flex flex-col gap-2">
-          {navItems.map((item) => (
-            <div key={`mobile-${item.label}`}>
-              <Link
-                href={item.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-between rounded-lg border border-white/10 px-4 py-3 text-[13px] font-semibold uppercase tracking-wider text-white/90 transition hover:bg-white/10 hover:text-white"
-              >
-                {item.label}
-                {item.children && (
-                  <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 text-white/40" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden="true">
-                    <path d="M6 9l6 6 6-6" />
-                  </svg>
-                )}
-              </Link>
-              {item.children && (
-                <div className="mt-1 ml-3 flex flex-col gap-1">
-                  {item.children.map((child) => (
-                    <Link
-                      key={`mobile-child-${child.href}`}
-                      href={child.href}
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="rounded-lg border border-white/5 bg-white/5 px-4 py-2.5 text-[12px] font-semibold uppercase tracking-wider text-white/70 transition hover:bg-white/10 hover:text-white"
+        {/* Scrollable nav area */}
+        <nav className="mt-7 flex flex-col gap-1 overflow-y-auto flex-1">
+          {navItems.map((item) => {
+            const isExpanded = expandedItem === item.label;
+            return (
+              <div key={`mobile-${item.label}`}>
+                <div className="flex items-stretch rounded-lg border border-white/10 overflow-hidden">
+                  <Link
+                    href={item.href}
+                    onClick={() => {
+                      if (!item.children) setMobileMenuOpen(false);
+                    }}
+                    className="flex-1 px-4 py-3 text-[13px] font-semibold uppercase tracking-wider text-white/90 transition hover:bg-white/10 hover:text-white"
+                  >
+                    {item.label}
+                  </Link>
+                  {item.children && (
+                    <button
+                      type="button"
+                      aria-label={isExpanded ? `Collapse ${item.label}` : `Expand ${item.label}`}
+                      onClick={() => setExpandedItem(isExpanded ? null : item.label)}
+                      className="flex items-center justify-center border-l border-white/10 px-3 transition hover:bg-white/10"
                     >
-                      {child.label}
-                    </Link>
-                  ))}
+                      <svg
+                        viewBox="0 0 24 24"
+                        className={`h-3.5 w-3.5 text-white/60 transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M6 9l6 6 6-6" />
+                      </svg>
+                    </button>
+                  )}
                 </div>
-              )}
-            </div>
-          ))}
+                {item.children && isExpanded && (
+                  <div className="mt-1 ml-3 flex flex-col gap-1">
+                    {item.children.map((child) => (
+                      <Link
+                        key={`mobile-child-${child.href}`}
+                        href={child.href}
+                        onClick={() => {
+                          setMobileMenuOpen(false);
+                          setExpandedItem(null);
+                        }}
+                        className="rounded-lg border border-white/8 bg-white/5 px-4 py-2.5 text-[12px] font-semibold uppercase tracking-wider text-white/70 transition hover:bg-white/12 hover:text-white"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </nav>
 
-        <div className="mt-8 flex flex-col gap-3">
+        {/* CTA buttons */}
+        <div className="mt-6 flex flex-col gap-3">
           <Link
-            href="/contact"
+            href="https://calculator.bearconstruction.co.nz/"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setMobileMenuOpen(false)}
             className="inline-flex items-center justify-center gap-2 rounded-sm px-5 py-3 text-[12px] font-bold uppercase tracking-widest text-white"
             style={{ backgroundColor: "#1278ce" }}
@@ -304,7 +337,7 @@ export function MainNav() {
           </Link>
           <a
             href="tel:+6421824419"
-            className="flex items-center justify-center gap-2 rounded-sm border border-white/20 px-5 py-3 text-[13px] font-semibold text-white/80"
+            className="flex items-center justify-center gap-2 rounded-sm border border-white/20 px-5 py-3 text-[13px] font-semibold text-white/80 transition hover:border-white/40 hover:text-white"
           >
             <span className="flex h-6 w-6 items-center justify-center rounded-full text-white" style={{ backgroundColor: "#1278ce" }}>
               <IconPhone />

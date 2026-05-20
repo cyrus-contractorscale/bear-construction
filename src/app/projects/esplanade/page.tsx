@@ -55,7 +55,7 @@ export default function EsplanadePage() {
             <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-widest text-white/80 backdrop-blur-sm">
               Commercial Rebuild · Petone, Wellington
             </span>
-            <h1 className="font-[ui-sans-serif,system-ui,sans-serif] text-5xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl">
+            <h1 className="font-[ui-sans-serif,system-ui,sans-serif] h1-fluid font-extrabold tracking-tight text-white">
               Esplanade Warehouse Rebuild
             </h1>
             <p className="max-w-xl text-[18px] leading-relaxed text-white/75">

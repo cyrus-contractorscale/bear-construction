@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Service Areas | Local Renovation Specialists Wellington",
   description:
-    "Bear Construction services Wellington, Lower Hutt, Upper Hutt, and Porirua. We provide expert leaky home repair and architectural renovations within a 50-minute radius.",
+    "Bear Construction serves Wellington City, Lower Hutt, Upper Hutt and Porirua. Expert leaky home repairs and architectural renovations within a 50-minute radius.",
   keywords: "local renovation specialists wellington",
 };
 
@@ -67,7 +67,7 @@ export default function ServiceAreasPage() {
           <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-widest text-white/80 backdrop-blur-sm">
             Wellington Region · 50-Minute Radius
           </span>
-          <h1 className="mt-6 font-[ui-sans-serif,system-ui,sans-serif] text-5xl font-extrabold uppercase leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
+          <h1 className="mt-6 font-[ui-sans-serif,system-ui,sans-serif] h1-fluid font-extrabold uppercase tracking-tight text-white">
             Service Areas
           </h1>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -276,7 +276,7 @@ export default function ServiceAreasPage() {
               </ul>
               <div className="flex flex-wrap gap-4 pt-2">
                 <Link
-                  href="/contact"
+                  href="https://go.bearconstruction.co.nz/book"
                   className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 shadow-lg shadow-black/30 transition hover:bg-zinc-100"
                 >
                   Book Your Project Consultation

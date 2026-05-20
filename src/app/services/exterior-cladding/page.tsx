@@ -127,9 +127,39 @@ function FaqItem({ q, a }: { q: string; a: string }) {
   );
 }
 
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Exterior Cladding Wellington",
+  description: "Exterior cladding and leaky home remediation specialists in Wellington. Bear Construction replaces failing plaster systems and installs premium weathertight cladding.",
+  url: "https://www.bearconstruction.co.nz/services/exterior-cladding",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "Bear Construction",
+    url: "https://www.bearconstruction.co.nz",
+    telephone: "+6421824419",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Wellington",
+      addressCountry: "NZ",
+    },
+  },
+  areaServed: [
+    { "@type": "City", name: "Wellington" },
+    { "@type": "City", name: "Lower Hutt" },
+    { "@type": "City", name: "Upper Hutt" },
+    { "@type": "City", name: "Porirua" },
+  ],
+};
+
 export default function ExteriorCladdingPage() {
   return (
     <>
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       {/* ── HERO ─────────────────────────────────────────────────── */}
       <section className="relative flex min-h-[80vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-44 sm:pb-20 sm:pt-52 lg:pt-60">
         <Image
@@ -147,12 +177,12 @@ export default function ExteriorCladdingPage() {
             <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-widest text-white/80 backdrop-blur-sm">
               Exterior Cladding · Wellington
             </span>
-            <h1 className="font-[ui-sans-serif,system-ui,sans-serif] text-5xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl">
+            <h1 className="font-[ui-sans-serif,system-ui,sans-serif] h1-fluid font-extrabold tracking-tight text-white">
               Exterior Cladding Wellington
             </h1>
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
-                href="#consultation"
+                href="https://go.bearconstruction.co.nz/book"
                 className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 shadow-lg shadow-black/30 transition hover:bg-zinc-100"
               >
                 Book Your Project Consultation
