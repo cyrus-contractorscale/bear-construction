@@ -3,9 +3,6 @@ import Script from "next/script";
 import { Lora, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-import { MainNav } from "@/components/layout/MainNav";
-import { Footer } from "@/components/sections/Footer";
-
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-sans-body",
   subsets: ["latin"],
@@ -135,10 +132,13 @@ export default function RootLayout({
         className={`${plusJakarta.variable} ${lora.variable} h-full scroll-smooth antialiased`}
       >
         <body className="min-h-full flex flex-col font-sans">
-          <MainNav />
           {children}
-          <Footer />
           <Script src="https://link.contractorscale.com/js/form_embed.js" strategy="afterInteractive" />
+          <Script
+            src="https://link.contractorscale.com/js/external-tracking.js"
+            data-tracking-id="tk_bf41288bda444b048916515a9ac962f3"
+            strategy="afterInteractive"
+          />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
