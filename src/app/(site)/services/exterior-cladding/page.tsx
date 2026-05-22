@@ -181,7 +181,7 @@ export default function ExteriorCladdingPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       {/* ── HERO ─────────────────────────────────────────────────── */}
-      <section className="relative flex min-h-[80vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-44 sm:pb-20 sm:pt-52 lg:pt-60">
+      <section className="relative flex min-h-[50vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-44 sm:pb-20 sm:pt-52 lg:pt-60">
         <Image
           src="/Services/Exterior Cladding Services.png"
           alt="Exterior Cladding Wellington — Bear Construction"
@@ -202,7 +202,7 @@ export default function ExteriorCladdingPage() {
             </h1>
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
-                href="https://go.bearconstruction.co.nz/book"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 shadow-lg shadow-black/30 transition hover:bg-zinc-100"
               >
                 Book Your Project Consultation
@@ -262,7 +262,7 @@ export default function ExteriorCladdingPage() {
                 When you need exterior cladding Wellington locals trust to protect their homes, you need a team that executes with absolute control. Whether it is targeted remediation or a complete architectural facelift, we deliver a robust, beautiful result built to handle the harshest local weather.
               </p>
               <Link
-                href="#consultation"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-full bg-[#1278ce] px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90"
               >
                 Book Your Consultation <span aria-hidden="true">→</span>

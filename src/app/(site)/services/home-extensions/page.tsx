@@ -181,7 +181,7 @@ export default function HomeExtensionsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       {/* ── HERO ─────────────────────────────────────────────────── */}
-      <section className="relative flex min-h-[80vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-44 sm:pb-20 sm:pt-52 lg:pt-60">
+      <section className="relative flex min-h-[50vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-44 sm:pb-20 sm:pt-52 lg:pt-60">
         <Image
           src="/Services/Home Extensions Services.png"
           alt="Home Extensions Wellington — Bear Construction"
@@ -202,7 +202,7 @@ export default function HomeExtensionsPage() {
             </h1>
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
-                href="https://go.bearconstruction.co.nz/book"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 shadow-lg shadow-black/30 transition hover:bg-zinc-100"
               >
                 Book Your Project Consultation
@@ -259,7 +259,7 @@ export default function HomeExtensionsPage() {
                 As expert extension builders Wellington homeowners trust, we execute your vision with precision. Whether it is a complex architectural addition or a bespoke family expansion, we manage every detail to ensure the result matches the plan.
               </p>
               <Link
-                href="#consultation"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-full bg-[#1278ce] px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90"
               >
                 Book Your Consultation <span aria-hidden="true">→</span>

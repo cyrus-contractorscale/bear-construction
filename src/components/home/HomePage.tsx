@@ -1,5 +1,4 @@
 import { About } from "@/components/sections/About";
-import { Blog } from "@/components/sections/Blog";
 import { Faq } from "@/components/sections/Faq";
 import { FormCta } from "@/components/sections/FormCta";
 import { Hero } from "@/components/sections/Hero";
@@ -22,7 +21,6 @@ export function HomePage() {
         <HowItWorks />
         <FormCta />
         <Testimonials />
-        <Blog />
         <Guarantee />
         <Faq />
       </main>

@@ -181,7 +181,7 @@ export default function BathroomRenovationsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       {/* ── HERO ─────────────────────────────────────────────────── */}
-      <section className="relative flex min-h-[80vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-44 sm:pb-20 sm:pt-52 lg:pt-60">
+      <section className="relative flex min-h-[50vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-44 sm:pb-20 sm:pt-52 lg:pt-60">
         <Image
           src="/Services/Bathroom Renovations Services.png"
           alt="Bathroom Renovations Wellington — Bear Construction"
@@ -202,7 +202,7 @@ export default function BathroomRenovationsPage() {
             </h1>
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
-                href="https://go.bearconstruction.co.nz/book"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 shadow-lg shadow-black/30 transition hover:bg-zinc-100"
               >
                 Book Your Project Consultation
@@ -262,7 +262,7 @@ export default function BathroomRenovationsPage() {
                 When you are looking for bathroom renovation builders Wellington families trust, you need a team that executes with absolute control. Whether it is a luxury master ensuite or a highly functional family space, we deliver a flawless result, on time, and built to last.
               </p>
               <Link
-                href="#consultation"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-full bg-[#1278ce] px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90"
               >
                 Book Your Consultation <span aria-hidden="true">→</span>

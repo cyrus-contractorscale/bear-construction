@@ -84,7 +84,7 @@ export default function AboutUsPage() {
           </h1>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="#consultation"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 shadow-lg shadow-black/30 transition hover:bg-zinc-100"
             >
               Book Your Consultation

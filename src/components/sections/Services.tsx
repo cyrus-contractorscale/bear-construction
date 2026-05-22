@@ -12,30 +12,35 @@ const services = [
     category: "EXTENSIONS",
     body: "Need more space but love where you live? We build seamless home extensions and second-storey additions that grow your footprint without the disruption of moving.",
     image: "/Services/Home Extensions Services.png",
+    href: "/services/home-extensions",
   },
   {
     title: "Home Renovations",
     category: "RENOVATIONS",
     body: "For homeowners planning structural changes, layout upgrades, or full-home transformations. We manage the entire project so the process stays organised and on track.",
     image: "/Services/Home Renovations Services.png",
+    href: "/services/home-renovations",
   },
   {
     title: "Exterior Cladding",
     category: "EXTERIOR CLADDING",
     body: "Worried about a leaky home? Protect your biggest asset. We specialise in exterior cladding replacement and leaky home remediation, permanently resolving weathertightness issues and upgrading your home's street appeal.",
     image: "/Services/Exterior Cladding Services.png",
+    href: "/services/exterior-cladding",
   },
   {
     title: "Kitchen Renovations",
     category: "KITCHENS",
     body: "Turn an outdated, cramped kitchen into a practical, hardworking space with better flow, better storage, and modern durability.",
     image: "/Services/Kitchen Renovations Services.png",
+    href: "/services/kitchen-renovations",
   },
   {
     title: "Bathroom Renovations",
     category: "BATHROOM",
     body: "We build high-quality, functional bathrooms designed for long-term performance and everyday use.",
     image: "/Services/Bathroom Renovations Services.png",
+    href: "/services/bathroom-renovations",
   },
 ];
 
@@ -134,7 +139,7 @@ export function Services() {
                     {service.title}
                   </h3>
                   <p className="text-[15px] leading-[1.55] text-[#3f5367]">{service.body}</p>
-                  <Link href="#" className="inline-flex items-center gap-2 text-[13px] font-semibold text-[#1278ce]">
+                  <Link href={service.href} className="inline-flex items-center gap-2 text-[13px] font-semibold text-[#1278ce]">
                     View Details <span aria-hidden="true">→</span>
                   </Link>
                 </div>

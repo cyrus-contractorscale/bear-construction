@@ -202,12 +202,6 @@ export function Footer() {
                   FAQs
                 </Link>
               </li>
-              <li>
-                <Link href="#blog" className="group flex items-center gap-2 transition hover:text-white">
-                  <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  Blog
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -228,13 +222,10 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#"
-                  className="group flex items-center gap-3 transition hover:text-white"
-                >
+                <span className="flex items-center gap-3 text-[#b8cad9]">
                   <IconClock className="mt-0.5 h-5 w-5 shrink-0 text-[#8fa3b8]" />
                   9AM – 5PM (Mon–Fri)
-                </Link>
+                </span>
               </li>
               <li>
                 <Link
