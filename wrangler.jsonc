@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bear-construction",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-05-22",
+  "compatibility_flags": [
+    // Enable Node.js APIs (required for Next.js)
+    "nodejs_compat",
+    // Allow fetch to public URLs
+    "global_fetch_strictly_public"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      // Must match the "name" field above
+      "service": "bear-construction"
+    }
+  ]
+}
