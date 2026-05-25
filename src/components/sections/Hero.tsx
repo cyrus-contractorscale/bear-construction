@@ -3,13 +3,110 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 const videoId = "xRMsp2zs9c4";
 
+const fixedPart = "Transform Your Home With Bear Construction,";
+const revealLineOne = " Expert Wellington";
+const revealLineTwo = "Home Renovation Builders";
+const revealText = `${revealLineOne}${revealLineTwo}`;
+
 export function Hero() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const [revealedLetters, setRevealedLetters] = useState(0);
+  const heroRef = useRef<HTMLElement>(null);
+  const touchStartY = useRef<number | null>(null);
+  const totalRevealLetters = revealText.length;
 
+  const firstLineReveal = useMemo(() => {
+    const count = Math.min(revealedLetters, revealLineOne.length);
+    return {
+      visible: revealLineOne.slice(0, count),
+      hidden: revealLineOne.slice(count),
+    };
+  }, [revealedLetters]);
+
+  const secondLineReveal = useMemo(() => {
+    const count = Math.max(0, revealedLetters - revealLineOne.length);
+    const clamped = Math.min(count, revealLineTwo.length);
+    return {
+      visible: revealLineTwo.slice(0, clamped),
+      hidden: revealLineTwo.slice(clamped),
+    };
+  }, [revealedLetters]);
+
+  // Scroll-reveal effect — mirrors Statement.tsx behaviour
+  useEffect(() => {
+    function canControlReveal() {
+      const hero = heroRef.current;
+      if (!hero) return false;
+      const rect = hero.getBoundingClientRect();
+      return rect.top <= window.innerHeight * 0.55 && rect.bottom > window.innerHeight * 0.35;
+    }
+
+    function updateRevealFromDelta(deltaY: number) {
+      const step = Math.max(1, Math.round(Math.abs(deltaY) / 45));
+      setRevealedLetters((prev) => {
+        if (deltaY > 0) return Math.min(totalRevealLetters, prev + step);
+        if (deltaY < 0) return Math.max(0, prev - step);
+        return prev;
+      });
+    }
+
+    function onWheel(event: WheelEvent) {
+      if (!canControlReveal()) return;
+      const delta = event.deltaY;
+      const shouldLockDown = delta > 0 && revealedLetters < totalRevealLetters;
+      const shouldLockUp = delta < 0 && revealedLetters > 0;
+      if (!shouldLockDown && !shouldLockUp) return;
+      event.preventDefault();
+      updateRevealFromDelta(delta);
+    }
+
+    function onTouchStart(event: TouchEvent) {
+      touchStartY.current = event.touches[0]?.clientY ?? null;
+    }
+
+    function onTouchMove(event: TouchEvent) {
+      if (!canControlReveal() || touchStartY.current === null) return;
+      const currentY = event.touches[0]?.clientY ?? touchStartY.current;
+      const delta = touchStartY.current - currentY;
+      const shouldLockDown = delta > 0 && revealedLetters < totalRevealLetters;
+      const shouldLockUp = delta < 0 && revealedLetters > 0;
+      if (!shouldLockDown && !shouldLockUp) return;
+      event.preventDefault();
+      updateRevealFromDelta(delta);
+      touchStartY.current = currentY;
+    }
+
+    function onKeyDown(event: KeyboardEvent) {
+      if (!canControlReveal()) return;
+      const downKeys = ["ArrowDown", "PageDown", " ", "Spacebar"];
+      const upKeys = ["ArrowUp", "PageUp"];
+      const isDown = downKeys.includes(event.key);
+      const isUp = upKeys.includes(event.key);
+      if (!isDown && !isUp) return;
+      const shouldLockDown = isDown && revealedLetters < totalRevealLetters;
+      const shouldLockUp = isUp && revealedLetters > 0;
+      if (!shouldLockDown && !shouldLockUp) return;
+      event.preventDefault();
+      updateRevealFromDelta(isDown ? 55 : -55);
+    }
+
+    window.addEventListener("wheel", onWheel, { passive: false });
+    window.addEventListener("touchstart", onTouchStart, { passive: true });
+    window.addEventListener("touchmove", onTouchMove, { passive: false });
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      window.removeEventListener("wheel", onWheel);
+      window.removeEventListener("touchstart", onTouchStart);
+      window.removeEventListener("touchmove", onTouchMove);
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [revealedLetters, totalRevealLetters]);
+
+  // Video popup scroll lock
   useEffect(() => {
     if (isVideoOpen) {
       document.body.style.overflow = "hidden";
@@ -29,6 +126,7 @@ export function Hero() {
   return (
     <section
       id="top"
+      ref={heroRef}
       className="relative flex min-h-screen items-center overflow-hidden bg-zinc-900"
     >
       <Image
@@ -47,8 +145,12 @@ export function Hero() {
             className="w-full font-[ui-sans-serif,system-ui,sans-serif] font-extrabold uppercase leading-[1.1] tracking-tight [text-shadow:0_3px_18px_rgba(0,0,0,0.38)]"
             style={{ fontSize: "clamp(1.75rem, 4vw + 1rem, 3.5rem)" }}
           >
-            Transform Your Home With Bear Construction,{" "}
-            Expert Wellington Home Renovation Builders
+            {fixedPart}
+            <span className="whitespace-pre-wrap">{firstLineReveal.visible}</span>
+            <span className="whitespace-pre-wrap text-white/30">{firstLineReveal.hidden}</span>
+            <br className="hidden sm:block" />
+            <span className="whitespace-pre-wrap">{secondLineReveal.visible}</span>
+            <span className="whitespace-pre-wrap text-white/30">{secondLineReveal.hidden}</span>
           </h1>
           <p className="mx-auto w-full text-sm leading-relaxed text-white/85 sm:text-base">
             Discovering a structural issue or planning a major extension is stressful. We are the residential builders Wellington families trust to protect their biggest asset with practical planning, clear communication, and guaranteed results — all without the franchise red tape.

@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/services/home-renovations`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/services/bathroom-renovations`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/services/kitchen-renovations`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE_URL}/services/exterior-cladding`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/services/recladding`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/projects`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/projects/churton-park`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
     { url: `${BASE_URL}/projects/esplanade`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },

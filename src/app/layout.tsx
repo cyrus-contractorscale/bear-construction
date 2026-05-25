@@ -106,7 +106,7 @@ const localBusinessSchema = {
     "Home Renovations",
     "Bathroom Renovations",
     "Kitchen Renovations",
-    "Exterior Cladding",
+    "Recladding",
     "Leaky Home Repair",
   ],
   openingHoursSpecification: [

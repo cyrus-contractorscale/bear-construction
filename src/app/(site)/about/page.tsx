@@ -31,11 +31,50 @@ export const metadata: Metadata = {
   },
 };
 
+// --- Icon Components ---
+function IconLBP() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+      <path d="M12 2L3 7v10l9 5 9-5V7z"></path>
+      <path d="M12 7v10"></path>
+      <path d="M16.5 9.5L12 12l-4.5-2.5"></path>
+    </svg>
+  );
+}
+
+function IconCBS() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+      <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+      <path d="M2 17l10 5 10-5"></path>
+      <path d="M2 12l10 5 10-5"></path>
+    </svg>
+  );
+}
+
+function IconRMB() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+      <polyline points="9 22 9 12 15 12 15 22"></polyline>
+    </svg>
+  );
+}
+
+function IconYearsExp() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+      <circle cx="12" cy="12" r="10"></circle>
+      <polyline points="12 6 12 12 16 14"></polyline>
+    </svg>
+  );
+}
+
 const credentials = [
-  { label: "Licensed Building Practitioner", abbr: "LBP" },
-  { label: "Certified Building Surveyor", abbr: "CBS" },
-  { label: "Registered Master Builders", abbr: "RMB" },
-  { label: "Wellington Born & Raised", abbr: "20+ Yrs" },
+  { label: "Licensed Building Practitioner", icon: <IconLBP /> },
+  { label: "Certified Building Surveyor", icon: <IconCBS /> },
+  { label: "Registered Master Builders", icon: <IconRMB /> },
+  { label: "20+ Years Local Experience", icon: <IconYearsExp /> },
 ];
 
 const specialisms = [
@@ -133,11 +172,11 @@ export default function AboutUsPage() {
               <div className="grid grid-cols-2 gap-3 pt-2">
                 {credentials.map((c) => (
                   <div
-                    key={c.abbr}
+                    key={c.label}
                     className="flex items-center gap-3 rounded-xl border border-[#e8edf2] bg-[#f9fafb] px-4 py-3"
                   >
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#1278ce] text-[11px] font-extrabold text-white tracking-tight">
-                      {c.abbr}
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#1278ce] text-white">
+                      {c.icon}
                     </span>
                     <span className="text-[13px] font-semibold leading-snug text-[#2d4560]">
                       {c.label}

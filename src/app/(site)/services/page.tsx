@@ -51,10 +51,10 @@ const services = [
     href: "/services/home-renovations",
   },
   {
-    title: "Exterior Cladding",
-    body: "Worried about a leaky home? Protect your biggest asset. We specialise in exterior cladding replacement and leaky home remediation, permanently resolving weathertightness issues and upgrading your home's street appeal.",
+    title: "Recladding",
+    body: "Worried about a leaky home? Protect your biggest asset. We specialise in recladding and leaky home remediation, permanently resolving weathertightness issues and upgrading your home's street appeal.",
     image: "/Services/Exterior Cladding Services.png",
-    href: "/services/exterior-cladding",
+    href: "/services/recladding",
   },
   {
     title: "Kitchen Renovations",

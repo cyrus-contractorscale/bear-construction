@@ -161,9 +161,9 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services/exterior-cladding" className="group flex items-center gap-2 transition hover:text-white">
+                <Link href="/services/recladding" className="group flex items-center gap-2 transition hover:text-white">
                   <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  Exterior Cladding
+                  Recladding
                 </Link>
               </li>
               <li>

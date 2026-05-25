@@ -1,6 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/services/exterior-cladding",
+        destination: "/services/recladding",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     unoptimized: true,
     remotePatterns: [
