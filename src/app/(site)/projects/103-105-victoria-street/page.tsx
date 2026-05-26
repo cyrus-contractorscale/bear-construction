@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.bearconstruction.co.nz/projects/103-105 Victoria Street/103-105-Victoria-St-2-scaled.webp",
+        url: "https://www.bearconstruction.co.nz/projects/103-105-victoria-street/103-105-Victoria-St-2-scaled.webp",
         width: 1200,
         height: 800,
         alt: "103-105 Victoria Street Wellington — Bear Construction",
@@ -40,22 +40,22 @@ const projectDetails = [
 ];
 
 const galleryImages = [
-  "/projects/103-105 Victoria Street/103-105-Victoria-St-2-scaled.webp",
-  "/projects/103-105 Victoria Street/103-105-Victoria-St-5-scaled.webp",
-  "/projects/103-105 Victoria Street/103-105-Victoria-St-6-scaled.webp",
-  "/projects/103-105 Victoria Street/103-105-Victoria-St-7-scaled.webp",
-  "/projects/103-105 Victoria Street/103-105-Victoria-St-8-scaled.webp",
-  "/projects/103-105 Victoria Street/103-105-Victoria-St-9-scaled.webp",
-  "/projects/103-105 Victoria Street/103-105-Victoria-St-10-scaled.webp",
-  "/projects/103-105 Victoria Street/103-105-Victoria-St-11-scaled.webp",
-  "/projects/103-105 Victoria Street/Bear-Construction-July-2025-Photos-1414436-scaled.webp",
-  "/projects/103-105 Victoria Street/Bear-Construction-July-2025-Photos-1414439-scaled.webp",
-  "/projects/103-105 Victoria Street/Bear-Construction-July-2025-Photos-1414444-scaled.webp",
-  "/projects/103-105 Victoria Street/Bear-Construction-July-2025-Photos-1414452-scaled.webp",
-  "/projects/103-105 Victoria Street/Bear-Construction-July-2025-Photos-1414465-scaled.webp",
-  "/projects/103-105 Victoria Street/Bear-Construction-July-2025-Photos-1414477-scaled.webp",
-  "/projects/103-105 Victoria Street/Bear-Construction-July-2025-Photos-1414485-scaled.webp",
-  "/projects/103-105 Victoria Street/Bear-Construction-July-2025-Photos-1414497-scaled.webp",
+  "/projects/103-105-victoria-street/103-105-Victoria-St-2-scaled.webp",
+  "/projects/103-105-victoria-street/103-105-Victoria-St-5-scaled.webp",
+  "/projects/103-105-victoria-street/103-105-Victoria-St-6-scaled.webp",
+  "/projects/103-105-victoria-street/103-105-Victoria-St-7-scaled.webp",
+  "/projects/103-105-victoria-street/103-105-Victoria-St-8-scaled.webp",
+  "/projects/103-105-victoria-street/103-105-Victoria-St-9-scaled.webp",
+  "/projects/103-105-victoria-street/103-105-Victoria-St-10-scaled.webp",
+  "/projects/103-105-victoria-street/103-105-Victoria-St-11-scaled.webp",
+  "/projects/103-105-victoria-street/Bear-Construction-July-2025-Photos-1414436-scaled.webp",
+  "/projects/103-105-victoria-street/Bear-Construction-July-2025-Photos-1414439-scaled.webp",
+  "/projects/103-105-victoria-street/Bear-Construction-July-2025-Photos-1414444-scaled.webp",
+  "/projects/103-105-victoria-street/Bear-Construction-July-2025-Photos-1414452-scaled.webp",
+  "/projects/103-105-victoria-street/Bear-Construction-July-2025-Photos-1414465-scaled.webp",
+  "/projects/103-105-victoria-street/Bear-Construction-July-2025-Photos-1414477-scaled.webp",
+  "/projects/103-105-victoria-street/Bear-Construction-July-2025-Photos-1414485-scaled.webp",
+  "/projects/103-105-victoria-street/Bear-Construction-July-2025-Photos-1414497-scaled.webp",
 ];
 
 const breadcrumbSchema = {
@@ -73,7 +73,7 @@ const projectSchema = {
   "@type": "Article",
   headline: "103–105 Victoria Street Wellington",
   description: "Bear Construction earthquake-strengthened and fully rebuilt this historic Wellington CBD building — new commercial ground floor and a two-bedroom upper apartment.",
-  image: "https://www.bearconstruction.co.nz/projects/103-105 Victoria Street/103-105-Victoria-St-2-scaled.webp",
+  image: "https://www.bearconstruction.co.nz/projects/103-105-victoria-street/103-105-Victoria-St-2-scaled.webp",
   author: { "@type": "Organization", name: "Bear Construction", url: "https://www.bearconstruction.co.nz" },
   publisher: { "@type": "Organization", name: "Bear Construction", logo: { "@type": "ImageObject", url: "https://www.bearconstruction.co.nz/bear-logo-dark.png" } },
   datePublished: "2025-01-01",
@@ -88,7 +88,7 @@ export default function VictoriaStreetPage() {
       {/* ── HERO ─────────────────────────────────────────────────── */}
       <section className="relative flex min-h-[72vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-32 sm:pb-20 sm:pt-40">
         <Image
-          src="/projects/103-105 Victoria Street/103-105-Victoria-St-2-scaled.webp"
+          src="/projects/103-105-victoria-street/103-105-Victoria-St-2-scaled.webp"
           alt="103-105 Victoria Street Wellington"
           fill
           priority
@@ -175,7 +175,7 @@ export default function VictoriaStreetPage() {
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="relative aspect-video w-full rounded-2xl bg-zinc-100 shadow-xl overflow-hidden">
               <Image
-                src="/projects/103-105 Victoria Street/Bear-Construction-July-2025-Photos-1414444-scaled.webp"
+                src="/projects/103-105-victoria-street/Bear-Construction-July-2025-Photos-1414444-scaled.webp"
                 alt="103-105 Victoria Street rebuild"
                 fill
                 className="object-cover rounded-2xl"

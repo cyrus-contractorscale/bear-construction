@@ -7,7 +7,7 @@ export function FormCta() {
       className="scroll-mt-24 bg-[#111] bg-cover bg-center bg-no-repeat py-14 sm:py-16"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.82)), url('/projects/Churton%20Park/Churton-Park-1-scaled.webp')",
+          "linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.82)), url('/projects/churton-park/Churton-Park-1-scaled.webp')",
       }}
     >
       <Container className="grid gap-8 lg:grid-cols-[1fr_520px] lg:items-center">

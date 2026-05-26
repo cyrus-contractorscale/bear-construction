@@ -235,7 +235,7 @@ export default function TestimonialsPage() {
         className="bg-cover bg-center py-20 sm:py-24"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/Churton%20Park/Churton-Park-1-scaled.webp')",
+            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/churton-park/Churton-Park-1-scaled.webp')",
         }}
       >
         <Container className="max-w-[800px] text-center">

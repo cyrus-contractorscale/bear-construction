@@ -41,31 +41,31 @@ const services = [
   {
     title: "Home Extensions",
     body: "Need more space but love where you live? We build seamless home extensions and second-storey additions that grow your footprint without the disruption of moving.",
-    image: "/Services/Home Extensions Services.png",
+    image: "/services/home-extensions-services.png",
     href: "/services/home-extensions",
   },
   {
     title: "Home Renovations",
     body: "For homeowners planning structural changes, layout upgrades, or full-home transformations. We manage the entire project so the process stays organised and on track.",
-    image: "/Services/Home Renovations Services.png",
+    image: "/services/home-renovations-services.png",
     href: "/services/home-renovations",
   },
   {
     title: "Recladding",
     body: "Worried about a leaky home? Protect your biggest asset. We specialise in recladding and leaky home remediation, permanently resolving weathertightness issues and upgrading your home's street appeal.",
-    image: "/Services/Exterior Cladding Services.png",
+    image: "/services/exterior-cladding-services.png",
     href: "/services/recladding",
   },
   {
     title: "Kitchen Renovations",
     body: "Turn an outdated, cramped kitchen into a practical, hardworking space with better flow, better storage, and modern durability.",
-    image: "/Services/Kitchen Renovations Services.png",
+    image: "/services/kitchen-renovations-services.png",
     href: "/services/kitchen-renovations",
   },
   {
     title: "Bathroom Renovations",
     body: "We build high-quality, functional bathrooms designed for long-term performance and everyday use.",
-    image: "/Services/Bathroom Renovations Services.png",
+    image: "/services/bathroom-renovations-services.png",
     href: "/services/bathroom-renovations",
   },
 ];

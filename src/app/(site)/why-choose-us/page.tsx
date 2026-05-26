@@ -36,37 +36,37 @@ const reasons = [
     num: "01",
     title: "Direct Access to the Owner",
     body: "We are an independent, locally owned company. You are not dealing with a massive volume building franchise, a disconnected sales rep, or a junior project manager. You get direct, honest communication from Phil Ashton, our owner and operator.\n\nWith over 20 years of experience in the Wellington building trade, Phil personally oversees client relationships and ensures your project runs smoothly from start to finish.",
-    image: "/projects/Churton Park/Bear-Construction-Action-Photos-2024-1335838-scaled.webp",
+    image: "/projects/churton-park/Bear-Construction-Action-Photos-2024-1335838-scaled.webp",
   },
   {
     num: "02",
     title: "Expertise in Architectural Renovations and Leaky Homes",
     body: "While many home improvement builders focus on volume new builds or basic cosmetic updates, our true expertise lies in technically demanding work. We focus heavily on architectural renovations, second-storey extensions, and seamless leaky home remediation.\n\nWe have the technical knowledge required to safely manage and execute the most complex residential builds in the region.",
-    image: "/projects/Churton Park/Bear-Construction-Action-Photos-2024-1335861-scaled.webp",
+    image: "/projects/churton-park/Bear-Construction-Action-Photos-2024-1335861-scaled.webp",
   },
   {
     num: "03",
     title: "Fully Certified and Master Builder Backed",
     body: "Trust is everything when undertaking a major renovation. Phil holds a current Licensed Building Practitioner (LBP) qualification and is a Certified Building Surveyor (CBS).\n\nFurthermore, Bear Construction is a proud member of Registered Master Builders. We build strictly to code and ensure every detail meets the highest industry standards.",
-    image: "/projects/Churton Park/Churton-Park-6-scaled.webp",
+    image: "/projects/churton-park/Churton-Park-6-scaled.webp",
   },
   {
     num: "04",
     title: "Transparent and Fair Pricing",
     body: "A successful build requires financial clarity. Our business is built on long-term relationships and word-of-mouth referrals, which means we focus on delivering genuine value. We submit plans for detailed quantity surveying and provide transparent, fair pricing with no hidden surprises.\n\nWe believe it is incredibly important that you know exactly what your investment covers before we start.",
-    image: "/projects/103-105 Victoria Street/103-105-Victoria-St-10-scaled.webp",
+    image: "/projects/103-105-victoria-street/103-105-Victoria-St-10-scaled.webp",
   },
   {
     num: "05",
     title: "Premium Materials & A Trusted Network",
     body: "Over the last two decades, we have built long-standing relationships with Wellington's best architects, plumbers, electricians, and painters. We use premium, sustainable products, including treated NZ Radiata pine, to ensure your home remains safe, healthy, and structurally sound for decades to come.",
-    image: "/projects/Esplanade/BC-take2-33-scaled.webp",
+    image: "/projects/esplanade/BC-take2-33-scaled.webp",
   },
   {
     num: "06",
     title: "The 10-Year Ironclad Guarantee",
     body: "We stand by our quality workmanship. Every major structural project and exterior cladding job we complete is backed by our 10-Year Ironclad Guarantee. We build robust, healthy homes designed to perform flawlessly in Wellington's unique environment, providing the written assurance you need for total peace of mind.",
-    image: "/projects/Churton Park/Churton-Park-1-scaled.webp",
+    image: "/projects/churton-park/Churton-Park-1-scaled.webp",
   },
 ];
 

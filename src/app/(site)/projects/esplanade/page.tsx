@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.bearconstruction.co.nz/projects/Esplanade/BC-take2-3-scaled.webp",
+        url: "https://www.bearconstruction.co.nz/projects/esplanade/BC-take2-3-scaled.webp",
         width: 1200,
         height: 800,
         alt: "Esplanade Warehouse Rebuild Petone — Bear Construction",
@@ -40,14 +40,14 @@ const projectDetails = [
 ];
 
 const galleryImages = [
-  "/projects/Esplanade/BC-take2-3-scaled.webp",
-  "/projects/Esplanade/BC-take2-17-scaled.webp",
-  "/projects/Esplanade/BC-take2-27-scaled.webp",
-  "/projects/Esplanade/BC-take2-28-scaled.webp",
-  "/projects/Esplanade/BC-take2-33-scaled.webp",
-  "/projects/Esplanade/BC-take2-42-scaled.webp",
-  "/projects/Esplanade/BC-take2-57-scaled.webp",
-  "/projects/Esplanade/BC-take2-66-scaled.webp",
+  "/projects/esplanade/BC-take2-3-scaled.webp",
+  "/projects/esplanade/BC-take2-17-scaled.webp",
+  "/projects/esplanade/BC-take2-27-scaled.webp",
+  "/projects/esplanade/BC-take2-28-scaled.webp",
+  "/projects/esplanade/BC-take2-33-scaled.webp",
+  "/projects/esplanade/BC-take2-42-scaled.webp",
+  "/projects/esplanade/BC-take2-57-scaled.webp",
+  "/projects/esplanade/BC-take2-66-scaled.webp",
 ];
 
 const breadcrumbSchema = {
@@ -65,7 +65,7 @@ const projectSchema = {
   "@type": "Article",
   headline: "Esplanade Warehouse Rebuild",
   description: "Bear Construction delivered comprehensive building services at 81 The Esplanade, Petone — converting a large printing premises into modern warehouse and office tenancies.",
-  image: "https://www.bearconstruction.co.nz/projects/Esplanade/BC-take2-3-scaled.webp",
+  image: "https://www.bearconstruction.co.nz/projects/esplanade/BC-take2-3-scaled.webp",
   author: { "@type": "Organization", name: "Bear Construction", url: "https://www.bearconstruction.co.nz" },
   publisher: { "@type": "Organization", name: "Bear Construction", logo: { "@type": "ImageObject", url: "https://www.bearconstruction.co.nz/bear-logo-dark.png" } },
   datePublished: "2023-01-01",
@@ -80,7 +80,7 @@ export default function EsplanadePage() {
       {/* ── HERO ─────────────────────────────────────────────────── */}
       <section className="relative flex min-h-[72vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-32 sm:pb-20 sm:pt-40">
         <Image
-          src="/projects/Esplanade/BC-take2-3-scaled.webp"
+          src="/projects/esplanade/BC-take2-3-scaled.webp"
           alt="Esplanade Warehouse Rebuild"
           fill
           priority
@@ -167,7 +167,7 @@ export default function EsplanadePage() {
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="relative aspect-video w-full rounded-2xl bg-zinc-100 shadow-xl overflow-hidden">
               <Image
-                src="/projects/Esplanade/BC-take2-42-scaled.webp"
+                src="/projects/esplanade/BC-take2-42-scaled.webp"
                 alt="Esplanade warehouse rebuild in progress"
                 fill
                 className="object-cover rounded-2xl"

@@ -35,19 +35,19 @@ const projects = [
   {
     title: "Churton Park Home Reclad",
     body: "A complex two-stage recladding project, bringing expert diagnosis and compliant workmanship to fix a previous builder's non-compliant cladding.",
-    image: "/projects/Churton Park/Churton-Park--scaled.webp",
+    image: "/projects/churton-park/Churton-Park--scaled.webp",
     href: "/projects/churton-park",
   },
   {
     title: "Esplanade Warehouse Rebuild",
     body: "Comprehensive building services dividing a large commercial premises into distinct warehouse and office spaces at 81 The Esplanade, Petone.",
-    image: "/projects/Esplanade/BC-take2-3-scaled.webp",
+    image: "/projects/esplanade/BC-take2-3-scaled.webp",
     href: "/projects/esplanade",
   },
   {
     title: "103–105 Victoria Street",
     body: "Earthquake-strengthening and full rebuild bringing new life to a historic Wellington CBD building, with a modern commercial ground floor and expanded upper apartment.",
-    image: "/projects/103-105 Victoria Street/103-105-Victoria-St-2-scaled.webp",
+    image: "/projects/103-105-victoria-street/103-105-Victoria-St-2-scaled.webp",
     href: "/projects/103-105-victoria-street",
   },
 ];

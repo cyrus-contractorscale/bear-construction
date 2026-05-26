@@ -35,17 +35,17 @@ const guaranteePoints = [
   {
     title: "Total Weathertightness Protection",
     body: "Wellington weather requires specific expertise. We guarantee that our exterior cladding and structural work will keep your home warm, dry, and fully protected.",
-    image: "/projects/Churton Park/Churton-Park-3-scaled.webp",
+    image: "/projects/churton-park/Churton-Park-3-scaled.webp",
   },
   {
     title: "Structural Integrity",
     body: "From second-storey additions to complete architectural renovations, we guarantee the structural soundness of our framing, foundations, and load-bearing work.",
-    image: "/projects/Churton Park/Bear-Construction-Action-Photos-2024-1335860-scaled.webp",
+    image: "/projects/churton-park/Bear-Construction-Action-Photos-2024-1335860-scaled.webp",
   },
   {
     title: "You Deal Directly With The Owner",
     body: "If you have a question years down the track, you will not be passed around a corporate office. You deal directly with Phil, the owner who ran your job.",
-    image: "/projects/Churton Park/Churton-Park-4-scaled.webp",
+    image: "/projects/churton-park/Churton-Park-4-scaled.webp",
   },
 ];
 
@@ -137,7 +137,7 @@ export default function GuaranteePage() {
           <AnimateOnScroll variant="fade-right">
             <div className="relative h-[400px] w-full overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5 lg:h-[560px]">
               <Image
-                src="/projects/Churton Park/Churton-Park-5-scaled.webp"
+                src="/projects/churton-park/Churton-Park-5-scaled.webp"
                 alt="Bear Construction quality workmanship Wellington"
                 fill
                 className="object-cover"
@@ -276,7 +276,7 @@ export default function GuaranteePage() {
             <div className="grid grid-cols-2 gap-3">
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
                 <Image
-                  src="/projects/103-105 Victoria Street/103-105-Victoria-St-2-scaled.webp"
+                  src="/projects/103-105-victoria-street/103-105-Victoria-St-2-scaled.webp"
                   alt="Bear Construction project Wellington"
                   fill
                   className="object-cover"
@@ -285,7 +285,7 @@ export default function GuaranteePage() {
               </div>
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl mt-6">
                 <Image
-                  src="/projects/Esplanade/BC-take2-17-scaled.webp"
+                  src="/projects/esplanade/BC-take2-17-scaled.webp"
                   alt="Bear Construction project Wellington"
                   fill
                   className="object-cover"
@@ -294,7 +294,7 @@ export default function GuaranteePage() {
               </div>
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
                 <Image
-                  src="/projects/Churton Park/Churton-Park-2-scaled.webp"
+                  src="/projects/churton-park/Churton-Park-2-scaled.webp"
                   alt="Bear Construction Churton Park"
                   fill
                   className="object-cover"
@@ -303,7 +303,7 @@ export default function GuaranteePage() {
               </div>
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl mt-6">
                 <Image
-                  src="/projects/103-105 Victoria Street/103-105-Victoria-St-5-scaled.webp"
+                  src="/projects/103-105-victoria-street/103-105-Victoria-St-5-scaled.webp"
                   alt="Bear Construction Victoria Street"
                   fill
                   className="object-cover"

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.bearconstruction.co.nz/projects/Churton Park/Churton-Park--scaled.webp",
+        url: "https://www.bearconstruction.co.nz/projects/churton-park/Churton-Park--scaled.webp",
         width: 1200,
         height: 800,
         alt: "Churton Park Home Reclad — Bear Construction Wellington",
@@ -40,16 +40,16 @@ const projectDetails = [
 ];
 
 const galleryImages = [
-  "/projects/Churton Park/Churton-Park--scaled.webp",
-  "/projects/Churton Park/Churton-Park-1-scaled.webp",
-  "/projects/Churton Park/Churton-Park-2-scaled.webp",
-  "/projects/Churton Park/Churton-Park-3-scaled.webp",
-  "/projects/Churton Park/Churton-Park-4-scaled.webp",
-  "/projects/Churton Park/Churton-Park-5-scaled.webp",
-  "/projects/Churton Park/Churton-Park-6-scaled.webp",
-  "/projects/Churton Park/Bear-Construction-Action-Photos-2024-1335838-scaled.webp",
-  "/projects/Churton Park/Bear-Construction-Action-Photos-2024-1335860-scaled.webp",
-  "/projects/Churton Park/Bear-Construction-Action-Photos-2024-1335861-scaled.webp",
+  "/projects/churton-park/Churton-Park--scaled.webp",
+  "/projects/churton-park/Churton-Park-1-scaled.webp",
+  "/projects/churton-park/Churton-Park-2-scaled.webp",
+  "/projects/churton-park/Churton-Park-3-scaled.webp",
+  "/projects/churton-park/Churton-Park-4-scaled.webp",
+  "/projects/churton-park/Churton-Park-5-scaled.webp",
+  "/projects/churton-park/Churton-Park-6-scaled.webp",
+  "/projects/churton-park/Bear-Construction-Action-Photos-2024-1335838-scaled.webp",
+  "/projects/churton-park/Bear-Construction-Action-Photos-2024-1335860-scaled.webp",
+  "/projects/churton-park/Bear-Construction-Action-Photos-2024-1335861-scaled.webp",
 ];
 
 const breadcrumbSchema = {
@@ -67,7 +67,7 @@ const projectSchema = {
   "@type": "Article",
   headline: "Churton Park Home Reclad",
   description: "Complex two-stage recladding project in Churton Park, Wellington — Bear Construction diagnosed and remediated non-compliant cladding, managing full consent and certification.",
-  image: "https://www.bearconstruction.co.nz/projects/Churton Park/Churton-Park--scaled.webp",
+  image: "https://www.bearconstruction.co.nz/projects/churton-park/Churton-Park--scaled.webp",
   author: { "@type": "Organization", name: "Bear Construction", url: "https://www.bearconstruction.co.nz" },
   publisher: { "@type": "Organization", name: "Bear Construction", logo: { "@type": "ImageObject", url: "https://www.bearconstruction.co.nz/bear-logo-dark.png" } },
   datePublished: "2023-01-01",
@@ -82,7 +82,7 @@ export default function ChurtonParkPage() {
       {/* ── HERO ─────────────────────────────────────────────────── */}
       <section className="relative flex min-h-[72vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-32 sm:pb-20 sm:pt-40">
         <Image
-          src="/projects/Churton Park/Churton-Park--scaled.webp"
+          src="/projects/churton-park/Churton-Park--scaled.webp"
           alt="Churton Park Home Reclad"
           fill
           priority
@@ -169,7 +169,7 @@ export default function ChurtonParkPage() {
           <AnimateOnScroll variant="fade-left" delay={150}>
             <div className="relative aspect-video w-full rounded-2xl bg-zinc-100 shadow-xl overflow-hidden">
               <Image
-                src="/projects/Churton Park/Churton-Park-3-scaled.webp"
+                src="/projects/churton-park/Churton-Park-3-scaled.webp"
                 alt="Churton Park recladding work"
                 fill
                 className="object-cover rounded-2xl"

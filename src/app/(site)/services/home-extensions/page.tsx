@@ -183,7 +183,7 @@ export default function HomeExtensionsPage() {
       {/* ── HERO ─────────────────────────────────────────────────── */}
       <section className="relative flex min-h-[50vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-44 sm:pb-20 sm:pt-52 lg:pt-60">
         <Image
-          src="/Services/Home Extensions Services.png"
+          src="/services/home-extensions-services.png"
           alt="Home Extensions Wellington — Bear Construction"
           fill
           priority
@@ -275,7 +275,7 @@ export default function HomeExtensionsPage() {
           <AnimateOnScroll variant="fade-right">
             <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5">
               <Image
-                src="/projects/Churton Park/Bear-Construction-Action-Photos-2024-1335861-scaled.webp"
+                src="/projects/churton-park/Bear-Construction-Action-Photos-2024-1335861-scaled.webp"
                 alt="Bear Construction home extension Wellington"
                 fill
                 className="object-cover"
@@ -350,7 +350,7 @@ export default function HomeExtensionsPage() {
         className="bg-cover bg-center py-16 sm:py-20"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/Churton%20Park/Churton-Park-1-scaled.webp')",
+            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/churton-park/Churton-Park-1-scaled.webp')",
         }}
       >
         <Container className="max-w-[1200px]">
@@ -412,7 +412,7 @@ export default function HomeExtensionsPage() {
             <div className="grid grid-cols-2 gap-3">
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
                 <Image
-                  src="/projects/103-105 Victoria Street/103-105-Victoria-St-5-scaled.webp"
+                  src="/projects/103-105-victoria-street/103-105-Victoria-St-5-scaled.webp"
                   alt="Bear Construction extension Wellington"
                   fill
                   className="object-cover"
@@ -421,7 +421,7 @@ export default function HomeExtensionsPage() {
               </div>
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl mt-8">
                 <Image
-                  src="/projects/Churton Park/Churton-Park-4-scaled.webp"
+                  src="/projects/churton-park/Churton-Park-4-scaled.webp"
                   alt="Bear Construction Wellington project"
                   fill
                   className="object-cover"
@@ -465,7 +465,7 @@ export default function HomeExtensionsPage() {
           <AnimateOnScroll variant="fade-left" delay={100}>
             <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5">
               <Image
-                src="/projects/Churton Park/Churton-Park-5-scaled.webp"
+                src="/projects/churton-park/Churton-Park-5-scaled.webp"
                 alt="Bear Construction completed Wellington home extension"
                 fill
                 className="object-cover"
@@ -501,7 +501,7 @@ export default function HomeExtensionsPage() {
         className="scroll-mt-24 bg-cover bg-center py-16 sm:py-20"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/Churton%20Park/Churton-Park-1-scaled.webp')",
+            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/churton-park/Churton-Park-1-scaled.webp')",
         }}
       >
         <Container className="max-w-[1200px] grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
@@ -589,7 +589,7 @@ export default function HomeExtensionsPage() {
           <AnimateOnScroll variant="fade-left" delay={100}>
             <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5">
               <Image
-                src="/projects/Esplanade/BC-take2-42-scaled.webp"
+                src="/projects/esplanade/BC-take2-42-scaled.webp"
                 alt="Bear Construction Wellington service area"
                 fill
                 className="object-cover"

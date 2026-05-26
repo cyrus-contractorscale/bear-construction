@@ -209,7 +209,7 @@ export default function FaqPage() {
           <AnimateOnScroll variant="fade-left" delay={120}>
             <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5">
               <Image
-                src="/projects/Esplanade/BC-take2-42-scaled.webp"
+                src="/projects/esplanade/BC-take2-42-scaled.webp"
                 alt="Bear Construction team on site Wellington"
                 fill
                 className="object-cover"
@@ -245,7 +245,7 @@ export default function FaqPage() {
         className="bg-cover bg-center py-20 sm:py-24"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/Churton%20Park/Churton-Park-1-scaled.webp')",
+            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/churton-park/Churton-Park-1-scaled.webp')",
         }}
       >
         <Container className="max-w-[800px] text-center">

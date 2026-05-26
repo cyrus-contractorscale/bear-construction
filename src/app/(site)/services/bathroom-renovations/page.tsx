@@ -183,7 +183,7 @@ export default function BathroomRenovationsPage() {
       {/* ── HERO ─────────────────────────────────────────────────── */}
       <section className="relative flex min-h-[50vh] items-end overflow-hidden bg-zinc-950 pb-16 pt-44 sm:pb-20 sm:pt-52 lg:pt-60">
         <Image
-          src="/Services/Bathroom Renovations Services.png"
+          src="/services/bathroom-renovations-services.png"
           alt="Bathroom Renovations Wellington — Bear Construction"
           fill
           priority
@@ -299,7 +299,7 @@ export default function BathroomRenovationsPage() {
             <div className="grid grid-cols-2 gap-3">
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
                 <Image
-                  src="/projects/Churton Park/Churton-Park-2-scaled.webp"
+                  src="/projects/churton-park/Churton-Park-2-scaled.webp"
                   alt="Bear Construction bathroom renovation Wellington"
                   fill
                   className="object-cover"
@@ -308,7 +308,7 @@ export default function BathroomRenovationsPage() {
               </div>
               <div className="relative aspect-[3/4] mt-8 overflow-hidden rounded-2xl">
                 <Image
-                  src="/projects/Churton Park/Churton-Park-3-scaled.webp"
+                  src="/projects/churton-park/Churton-Park-3-scaled.webp"
                   alt="Bear Construction premium bathroom finish Wellington"
                   fill
                   className="object-cover"
@@ -364,7 +364,7 @@ export default function BathroomRenovationsPage() {
         className="bg-cover bg-center py-16 sm:py-20"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/Churton%20Park/Churton-Park-1-scaled.webp')",
+            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/churton-park/Churton-Park-1-scaled.webp')",
         }}
       >
         <Container className="max-w-[1200px]">
@@ -428,7 +428,7 @@ export default function BathroomRenovationsPage() {
           <AnimateOnScroll variant="fade-left" delay={100}>
             <div className="relative aspect-[3/4] overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5">
               <Image
-                src="/projects/Churton Park/Churton-Park-5-scaled.webp"
+                src="/projects/churton-park/Churton-Park-5-scaled.webp"
                 alt="Bear Construction bathroom quality Wellington"
                 fill
                 className="object-cover"
@@ -445,7 +445,7 @@ export default function BathroomRenovationsPage() {
           <AnimateOnScroll variant="fade-right">
             <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5">
               <Image
-                src="/projects/Churton Park/Churton-Park-6-scaled.webp"
+                src="/projects/churton-park/Churton-Park-6-scaled.webp"
                 alt="Bear Construction 10-year guarantee Wellington bathroom"
                 fill
                 className="object-cover"
@@ -507,7 +507,7 @@ export default function BathroomRenovationsPage() {
         className="scroll-mt-24 bg-cover bg-center py-16 sm:py-20"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/Churton%20Park/Churton-Park-1-scaled.webp')",
+            "linear-gradient(rgba(10,20,40,0.93), rgba(10,20,40,0.93)), url('/projects/churton-park/Churton-Park-1-scaled.webp')",
         }}
       >
         <Container className="max-w-[1200px] grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
@@ -594,7 +594,7 @@ export default function BathroomRenovationsPage() {
           <AnimateOnScroll variant="fade-left" delay={100}>
             <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] shadow-xl shadow-zinc-900/10 ring-1 ring-zinc-900/5">
               <Image
-                src="/projects/Esplanade/BC-take2-42-scaled.webp"
+                src="/projects/esplanade/BC-take2-42-scaled.webp"
                 alt="Bear Construction Wellington service area"
                 fill
                 className="object-cover"
