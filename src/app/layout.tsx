@@ -139,6 +139,14 @@ export default function RootLayout({
             data-tracking-id="tk_bf41288bda444b048916515a9ac962f3"
             strategy="afterInteractive"
           />
+          {/* ContractorScale Feedback Tracker */}
+          <Script
+            id="cs-feedback-tracker"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `(function(d,t,g,k){var ph=d.createElement(t),s=d.getElementsByTagName(t)[0],tk=(new URLSearchParams(window.location.search)).get(k);tk&&localStorage.setItem(k,tk);tk=localStorage.getItem(k);ph.type='text/javascript';ph.async=true;ph.defer=true;ph.charset='UTF-8';ph.src=g+'&v='+(new Date()).getTime();ph.src+=tk?'&'+k+'='+tk:'';s.parentNode.insertBefore(ph,s);})(document,'script','//feedback.contractorscale.com/?p=9321&ph_apikey=c42ce374a4edcbe4d15b5fe6ce401554','ph_access_token');`,
+            }}
+          />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}

@@ -30,6 +30,13 @@ const trackingStatus = [
     note: "Loaded globally via layout.tsx (afterInteractive)",
   },
   {
+    tool: "ContractorScale Feedback Tracker",
+    id: "p=9321 · ph_apikey=c42ce374…",
+    script: "//feedback.contractorscale.com/?p=9321",
+    status: "active" as const,
+    note: "Inline script loaded globally via root layout.tsx (afterInteractive, dangerouslySetInnerHTML). Applies to all pages.",
+  },
+  {
     tool: "Facebook Pixel",
     id: "—",
     script: "https://connect.facebook.net/en_US/fbevents.js",
