@@ -72,7 +72,7 @@ function IconYearsExp() {
 
 const credentials = [
   { label: "Licensed Building Practitioner", icon: <IconLBP /> },
-  { label: "Registered license builder", icon: <IconCBS /> },
+  { label: "Weltec Graduate", icon: <IconCBS /> },
   { label: "Registered license builders", icon: <IconRMB /> },
   { label: "20+ Years Local Experience", icon: <IconYearsExp /> },
 ];
