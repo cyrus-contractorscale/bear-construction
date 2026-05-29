@@ -199,13 +199,13 @@ export function MainNav() {
           </Link>
 
           <a
-            href="tel:+6421824419"
+            href="tel:+6448873529"
             className="flex items-center gap-2 rounded-sm border border-white/20 px-4 py-2.5 text-[12px] font-bold text-white/90 transition hover:border-white/40 hover:text-white"
           >
             <span className="flex h-6 w-6 items-center justify-center rounded-full text-white" style={{ backgroundColor: "#1278ce" }}>
               <IconPhone />
             </span>
-            021 824 419
+            +64 4 887 3529
           </a>
         </div>
 
@@ -336,13 +336,13 @@ export function MainNav() {
             <span aria-hidden="true">&#x2197;</span>
           </Link>
           <a
-            href="tel:+6421824419"
+            href="tel:+6448873529"
             className="flex items-center justify-center gap-2 rounded-sm border border-white/20 px-5 py-3 text-[13px] font-semibold text-white/80 transition hover:border-white/40 hover:text-white"
           >
             <span className="flex h-6 w-6 items-center justify-center rounded-full text-white" style={{ backgroundColor: "#1278ce" }}>
               <IconPhone />
             </span>
-            021 824 419
+            +64 4 887 3529
           </a>
         </div>
       </aside>

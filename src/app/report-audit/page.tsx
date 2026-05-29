@@ -85,7 +85,7 @@ const pages = [
     url: "/contact",
     title: "Contact Us | Bear Construction Wellington",
     titleLen: 42,
-    description: "Get in touch with Bear Construction. We are independent builders servicing Wellington, Lower Hutt, Upper Hutt, and Porirua. Call 021 824 419 today.",
+    description: "Get in touch with Bear Construction. We are independent builders servicing Wellington, Lower Hutt, Upper Hutt, and Porirua. Call +64 4 887 3529 today.",
     descLen: 147,
     keywords: ["residential builders wellington"],
     hasOG: true,
@@ -635,7 +635,7 @@ export default function ReportAuditPage() {
               {[
                 ["Type", "LocalBusiness"],
                 ["Name", "Bear Construction"],
-                ["Phone", "+64 21 824 419"],
+                ["Phone", "+64 4 887 3529"],
                 ["Email", "phil@bearconstruction.co.nz"],
                 ["Address", "191 Thorndon Quay, Wellington 6011"],
                 ["Areas Served", "Wellington, Lower Hutt, Upper Hutt, Porirua"],

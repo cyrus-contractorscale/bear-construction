@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Us | Bear Construction Wellington",
   description:
-    "Get in touch with Bear Construction. We are independent builders servicing Wellington, Lower Hutt, Upper Hutt, and Porirua. Call 021 824 419 today.",
+    "Get in touch with Bear Construction. We are independent builders servicing Wellington, Lower Hutt, Upper Hutt, and Porirua. Call +64 4 887 3529 today.",
   keywords: "residential builders wellington",
   alternates: {
     canonical: "https://www.bearconstruction.co.nz/contact",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Us | Bear Construction Wellington",
     description:
-      "Get in touch with Bear Construction — independent builders servicing Wellington, Lower Hutt, Upper Hutt, and Porirua. Call 021 824 419 today.",
+      "Get in touch with Bear Construction — independent builders servicing Wellington, Lower Hutt, Upper Hutt, and Porirua. Call +64 4 887 3529 today.",
     url: "https://www.bearconstruction.co.nz/contact",
     siteName: "Bear Construction",
     locale: "en_NZ",
@@ -40,7 +40,7 @@ const contactPageSchema = {
   mainEntity: {
     "@type": "LocalBusiness",
     name: "Bear Construction",
-    telephone: "+6421824419",
+    telephone: "+6448873529",
     email: "phil@bearconstruction.co.nz",
     address: {
       "@type": "PostalAddress",
@@ -82,10 +82,10 @@ export default function ContactPage() {
               Book Your Project Consultation
             </Link>
             <a
-              href="tel:+6421824419"
+              href="tel:+6448873529"
               className="inline-flex items-center justify-center rounded-full border border-white/40 px-7 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
             >
-              021 824 419
+              +64 4 887 3529
             </a>
           </div>
         </Container>
@@ -103,8 +103,8 @@ export default function ContactPage() {
                   </svg>
                 ),
                 label: "Phone",
-                value: "021 824 419",
-                href: "tel:+6421824419",
+                value: "+64 4 887 3529",
+                href: "tel:+6448873529",
               },
               {
                 icon: (

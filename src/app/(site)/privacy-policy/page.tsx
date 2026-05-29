@@ -156,7 +156,7 @@ export default function PrivacyPolicyPage() {
               <p className="font-bold text-[#1a2f48]">Bear Construction</p>
               <p>191 Thorndon Quay, Pipitea, Wellington 6011, New Zealand</p>
               <p>
-                <a href="tel:+6421824419" className="text-[#1278ce] hover:underline">021 824 419</a>
+                <a href="tel:+6448873529" className="text-[#1278ce] hover:underline">+64 4 887 3529</a>
               </p>
               <p>
                 <a href="mailto:phil@bearconstruction.co.nz" className="text-[#1278ce] hover:underline">

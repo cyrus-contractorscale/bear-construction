@@ -158,7 +158,7 @@ const serviceSchema = {
     "@type": "LocalBusiness",
     name: "Bear Construction",
     url: "https://www.bearconstruction.co.nz",
-    telephone: "+6421824419",
+    telephone: "+6448873529",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Wellington",
@@ -527,11 +527,11 @@ export default function KitchenRenovationsPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="tel:+6421824419"
+                  href="tel:+6448873529"
                   className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
                 >
                   <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>
-                  021 824 419
+                  +64 4 887 3529
                 </a>
                 <a
                   href="mailto:phil@bearconstruction.co.nz"

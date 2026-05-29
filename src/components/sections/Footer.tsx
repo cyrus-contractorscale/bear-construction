@@ -214,11 +214,11 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="tel:+6421824419"
+                  href="tel:+6448873529"
                   className="group flex items-center gap-3 transition hover:text-white"
                 >
                   <IconPhone className="mt-0.5 h-5 w-5 shrink-0 text-[#8fa3b8]" />
-                  021 824 419
+                  +64 4 887 3529
                 </Link>
               </li>
               <li>

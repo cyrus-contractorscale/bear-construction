@@ -78,7 +78,7 @@ const localBusinessSchema = {
   description:
     "Bear Construction are Wellington's trusted renovation and extension builders. We deliver architectural home extensions, full renovations, exterior cladding, bathroom and kitchen upgrades, and leaky home repairs across the Wellington region.",
   url: "https://www.bearconstruction.co.nz",
-  telephone: "+6421824419",
+  telephone: "+6448873529",
   email: "phil@bearconstruction.co.nz",
   image: "https://www.bearconstruction.co.nz/bear-logo-dark.png",
   logo: "https://www.bearconstruction.co.nz/bear-logo-dark.png",
