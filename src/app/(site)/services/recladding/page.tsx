@@ -40,7 +40,7 @@ const processSteps = [
   {
     step: "02",
     title: "Scope & Feasibility",
-    body: "Before you pay for expensive architectural details, we assess the physical realities of your exterior. With Phil's background as a Certified Building Surveyor, we identify potential moisture risks early, giving you a clear picture of what is structurally required.",
+    body: "Before you pay for expensive architectural details, we assess the physical realities of your exterior. With Phil's background as a Registered license builder, we identify potential moisture risks early, giving you a clear picture of what is structurally required.",
   },
   {
     step: "03",
@@ -78,8 +78,8 @@ const trustPoints = [
     body: "A secure site is a productive site. We respect your property and heavily manage our safety systems and weatherproofing to ensure steady progress.",
   },
   {
-    title: "Master Builder Backing",
-    body: "We are proud members of Registered Master Builders. Our reputation is built on delivering a secure, durable finish that speaks for itself.",
+    title: "Registered license builder Backing",
+    body: "We are proud members of Registered license builders. Our reputation is built on delivering a secure, durable finish that speaks for itself.",
   },
 ];
 
@@ -261,7 +261,7 @@ export default function RecladdingPage() {
                 Securing the building envelope of a house is a high-stakes operation. Defending a property against the elements requires a deep understanding of moisture control, airflow, and structural framing. When an exterior system fails, it threatens the entire framework of the home. Remediating these issues requires a high level of diagnostic skill to uncover exactly what lies beneath the surface and ensure the damage is permanently eradicated.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                Bear Construction brings unparalleled technical precision to every recladding project in Wellington. Led by Phil Ashton, a Certified Building Surveyor and Registered Master Builder, we eliminate the uncertainty of major structural repairs. We manage scaffolding, timber testing, and precise cladding replacement, ensuring your property is permanently secured.
+                Bear Construction brings unparalleled technical precision to every recladding project in Wellington. Led by Phil Ashton, a Registered license builder, we eliminate the uncertainty of major structural repairs. We manage scaffolding, timber testing, and precise cladding replacement, ensuring your property is permanently secured.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
                 When you need an expert team to execute weathertight repairs with absolute control, we are ready to help. Whether it is targeted exterior remediation or a complete architectural facelift, we deliver a robust, beautiful result built to handle the harshest local weather.
@@ -427,7 +427,7 @@ export default function RecladdingPage() {
                   We actively take on heavy exterior transformations that overwhelm standard contractors. Whether your project involves stripping a leaky home back to the framing, replacing major structural beams, or executing highly intricate architectural facades, our team excels under pressure.
                 </p>
                 <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                  We apply a rigorous quality-control system throughout every phase of the rebuild, with a strong focus on modern cavity systems and flashing. You receive the efficiency of a dedicated project manager combined with the deep technical insight of a Certified Building Surveyor.
+                  We apply a rigorous quality-control system throughout every phase of the rebuild, with a strong focus on modern cavity systems and flashing. You receive the efficiency of a dedicated project manager combined with the deep technical insight of a Registered license builder.
                 </p>
               </div>
               <div className="space-y-4">
@@ -480,7 +480,7 @@ export default function RecladdingPage() {
                 The 10-Year Ironclad Guarantee
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                As a Registered Master Builder, we back our major exterior projects with a comprehensive 10-Year Guarantee. It covers you for:
+                As a Registered license builder, we back our major exterior projects with a comprehensive 10-Year Guarantee. It covers you for:
               </p>
               <ul className="space-y-4">
                 {guaranteePoints.map((point) => (

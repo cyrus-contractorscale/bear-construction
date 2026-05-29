@@ -78,8 +78,8 @@ const trustPoints = [
     body: "We respect your property and heavily manage our plumbers, sparkies, and joiners to ensure steady, reliable progress.",
   },
   {
-    title: "Master Builder Backing",
-    body: "We are proud members of Registered Master Builders. Our reputation is built on delivering a finish that speaks for itself.",
+    title: "Registered license builder Backing",
+    body: "We are proud members of Registered license builders. Our reputation is built on delivering a finish that speaks for itself.",
   },
 ];
 
@@ -101,7 +101,7 @@ const faqs = [
   },
   {
     q: "What happens if you find issues behind the walls after demolition?",
-    a: "This is where our diagnostic experience as a Certified Building Surveyor matters. We conduct a thorough feasibility check early on. If we do uncover hidden damage (like old wiring that needs replacing), we pause, present you with clear repair options, and agree on the cost before proceeding.",
+    a: "This is where our diagnostic experience as a Registered license builder matters. We conduct a thorough feasibility check early on. If we do uncover hidden damage (like old wiring that needs replacing), we pause, present you with clear repair options, and agree on the cost before proceeding.",
   },
   {
     q: "Can you help with the design and layout?",
@@ -256,7 +256,7 @@ export default function KitchenRenovationsPage() {
                 The kitchen is the hardest-working room in your home. A bad renovation here does not just look cheap; it disrupts your daily life. When a builder rushes the design phase or fails to coordinate the trades properly, you end up with sinks in the wrong place, cabinet doors that hit each other, and a space that feels chaotic to work in.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                Bear Construction brings meticulous planning to every project. Led by Phil Ashton, a Certified Building Surveyor and Registered Master Builder, we eliminate the chaos of poorly executed fit-outs. We manage the demolition, the structural alterations, and the precise installation of your high-end finishes, ensuring your new space performs flawlessly.
+                Bear Construction brings meticulous planning to every project. Led by Phil Ashton, a Registered license builder, we eliminate the chaos of poorly executed fit-outs. We manage the demolition, the structural alterations, and the precise installation of your high-end finishes, ensuring your new space performs flawlessly.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
                 When you are looking for kitchen renovation builders Wellington families trust, you need a team that executes with absolute control. Whether it is a sleek entertainer&apos;s hub or a highly functional family space, we deliver a stunning result, on time, and built to handle the demands of everyday life.
@@ -286,7 +286,7 @@ export default function KitchenRenovationsPage() {
                   Delivering premium kitchen renovations Wellington-wide requires a deep understanding of spatial design and structural engineering. Older homes in the capital often feature closed-off, isolated cooking areas. Opening these spaces up to create fluid, modern kitchens Wellington families desire usually involves removing load-bearing walls — requiring expert structural knowledge.
                 </p>
                 <p>
-                  As a Certified Building Surveyor, Phil Ashton brings total structural authority to our kitchen upgrades. We assess the existing framing and load paths before we finalise the design, ensuring that when we open up your space to improve the flow, the ceiling lines are flush and the structure is permanently secure.
+                  As a Registered license builder, Phil Ashton brings total structural authority to our kitchen upgrades. We assess the existing framing and load paths before we finalise the design, ensuring that when we open up your space to improve the flow, the ceiling lines are flush and the structure is permanently secure.
                 </p>
                 <p>
                   A truly successful space relies on flawless kitchen layouts. Every measurement matters. We coordinate closely with specialist joiners to ensure your custom cabinetry is installed with millimetre precision. From heavy stone benchtops to seamless appliance integration, we tightly manage our trusted network of local plumbers, electricians, and cabinet makers.
@@ -408,7 +408,7 @@ export default function KitchenRenovationsPage() {
                   We specialise in the technical demands of a high-end kitchen remodel that Wellington homeowners expect. Whether your project involves relocating major plumbing lines, removing structural walls, or executing intricate island designs, our team excels under pressure.
                 </p>
                 <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                  We apply a rigorous quality control system across every critical phase, especially the cabinetry installation. You receive the efficiency of a dedicated project manager combined with the deep technical insight of a Certified Building Surveyor.
+                  We apply a rigorous quality control system across every critical phase, especially the cabinetry installation. You receive the efficiency of a dedicated project manager combined with the deep technical insight of a Registered license builder.
                 </p>
               </div>
               <div className="space-y-4">
@@ -461,7 +461,7 @@ export default function KitchenRenovationsPage() {
                 The 10-Year Ironclad Guarantee
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                As a Registered Master Builder, we back our major projects with a comprehensive 10-Year Guarantee.
+                As a Registered license builder, we back our major projects with a comprehensive 10-Year Guarantee.
               </p>
               <ul className="space-y-4">
                 {guaranteePoints.map((point) => (

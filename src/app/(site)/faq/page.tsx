@@ -42,7 +42,7 @@ const faqs = [
     number: "02",
     question: "Do you handle leaky home repairs and recladding?",
     answer:
-      "Yes. While we execute high-end architectural extensions and full home renovations, leaky home remediation is our true specialty. As a Certified Building Surveyor (CBS), Phil Ashton has the diagnostic expertise to identify the root cause of the moisture, replace damaged timber, and install premium cladding systems that are permanently weathertight.",
+      "Yes. While we execute high-end architectural extensions and full home renovations, leaky home remediation is our true specialty. As a Registered license builder, Phil Ashton has the diagnostic expertise to identify the root cause of the moisture, replace damaged timber, and install premium cladding systems that are permanently weathertight.",
   },
   {
     number: "03",
@@ -78,7 +78,7 @@ const faqs = [
     number: "08",
     question: "What kind of guarantee do you offer?",
     answer:
-      "We stand by our quality workmanship with the Bear Construction 10-Year Ironclad Guarantee. Furthermore, as we are Registered Master Builders, your eligible project is also backed by the Master Build 10-Year Guarantee. This covers loss of deposit, non-completion, materials, workmanship, and structural defects, providing you with total financial protection.",
+      "We stand by our quality workmanship with the Bear Construction 10-Year Ironclad Guarantee. Furthermore, as we are Registered license builders, your eligible project is also backed by the Master Build 10-Year Guarantee. This covers loss of deposit, non-completion, materials, workmanship, and structural defects, providing you with total financial protection.",
   },
   {
     number: "09",

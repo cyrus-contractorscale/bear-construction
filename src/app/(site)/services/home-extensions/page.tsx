@@ -78,8 +78,8 @@ const trustPoints = [
     body: "We stick to the schedule. We manage our trusted network of plumbers, electricians, and painters so your project never stalls.",
   },
   {
-    title: "Master Builder Quality",
-    body: "Phil is a Certified Building Surveyor (CBS) and a Licensed Building Practitioner. We prove our quality through flawless results.",
+    title: "Registered license builder Quality",
+    body: "Phil is a Registered license builder and a Licensed Building Practitioner. We prove our quality through flawless results.",
   },
 ];
 
@@ -394,7 +394,7 @@ export default function HomeExtensionsPage() {
                   We specialise in technically demanding work that scares other builders. From complex second-storey extensions to intricate leaky home remediation, our team thrives on difficult structural challenges.
                 </p>
                 <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                  We manage bespoke builds with a rigorous quality-control model that ensures flawless execution by every subcontractor. You get the efficiency of a dedicated project manager with the deep technical knowledge of a Certified Building Surveyor.
+                  We manage bespoke builds with a rigorous quality-control model that ensures flawless execution by every subcontractor. You get the efficiency of a dedicated project manager with the deep technical knowledge of a Registered license builder.
                 </p>
               </div>
               <div className="space-y-4">
@@ -443,7 +443,7 @@ export default function HomeExtensionsPage() {
                 The 10-Year Ironclad Guarantee
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                As a Registered Master Builder, we back our work with a comprehensive 10-Year Guarantee on all major projects.
+                As a Registered license builder, we back our work with a comprehensive 10-Year Guarantee on all major projects.
               </p>
               <ul className="space-y-4">
                 {guaranteePoints.map((point) => (

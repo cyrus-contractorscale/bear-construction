@@ -72,7 +72,7 @@ export function About() {
                 Bear Construction is an independent building company led by Phil Ashton. We work with homeowners who want local renovation specialists to guide them through the building and renovation process with clear communication, respect for their home, and a flawless finish.
               </p>
               <p>
-                With over 20 years of local experience, Phil is a Certified Building Surveyor (CBS) and a Registered Master Builder. Because we are independent, you are not dealing with a large franchise or getting passed around between different supervisors. You get direct, honest communication and tight project management from the owner from day one.
+                With over 20 years of local experience, Phil is a Registered license builder. Because we are independent, you are not dealing with a large franchise or getting passed around between different supervisors. You get direct, honest communication and tight project management from the owner from day one.
               </p>
             </div>
           </AnimateOnScroll>

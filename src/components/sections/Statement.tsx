@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 
 const fixedHeadingStart = "Independent, Licensed Builders";
 const revealLineOne = " &";
-const revealLineTwo = "Master Builders";
+const revealLineTwo = "Registered license builders";
 const revealLineThree = "";
 const revealText = `${revealLineOne}${revealLineTwo}${revealLineThree}`;
 

@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: "Are you licensed and insured?",
-    answer: "Absolutely. Phil is a Licensed Building Practitioner (LBP) and a Certified Building Surveyor (CBS). Bear Construction is also a proud member of Registered Master Builders. Every project is fully insured and backed by our 10-Year Ironclad Guarantee.",
+    answer: "Absolutely. Phil is a Licensed Building Practitioner (LBP) and a Registered license builder. Bear Construction is also a proud member of Registered license builders. Every project is fully insured and backed by our 10-Year Ironclad Guarantee.",
   },
   {
     question: "Can we live in the house while you renovate?",

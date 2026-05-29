@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Independent Builders Wellington | About Bear Construction",
   description:
-    "Phil Ashton leads Bear Construction, a team of independent, licensed building practitioners in Wellington backed by 20+ years of experience and Master Builders.",
+    "Phil Ashton leads Bear Construction, a team of independent, licensed building practitioners in Wellington backed by 20+ years of experience and Registered license builders.",
   keywords: "independent builders wellington",
   alternates: {
     canonical: "https://www.bearconstruction.co.nz/about",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Independent Builders Wellington | About Bear Construction",
     description:
-      "Phil Ashton leads Bear Construction, Wellington's trusted independent builders — 20+ years experience, Licensed Building Practitioners, and Registered Master Builders.",
+      "Phil Ashton leads Bear Construction, Wellington's trusted independent builders — 20+ years experience, Licensed Building Practitioners, and Registered license builders.",
     url: "https://www.bearconstruction.co.nz/about",
     siteName: "Bear Construction",
     locale: "en_NZ",
@@ -72,8 +72,8 @@ function IconYearsExp() {
 
 const credentials = [
   { label: "Licensed Building Practitioner", icon: <IconLBP /> },
-  { label: "Certified Building Surveyor", icon: <IconCBS /> },
-  { label: "Registered Master Builders", icon: <IconRMB /> },
+  { label: "Registered license builder", icon: <IconCBS /> },
+  { label: "Registered license builders", icon: <IconRMB /> },
   { label: "20+ Years Local Experience", icon: <IconYearsExp /> },
 ];
 
@@ -88,7 +88,7 @@ const aboutSchema = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
   name: "About Bear Construction",
-  description: "Phil Ashton leads Bear Construction, a team of independent, licensed building practitioners in Wellington backed by 20+ years of experience and Master Builders.",
+  description: "Phil Ashton leads Bear Construction, a team of independent, licensed building practitioners in Wellington backed by 20+ years of experience and Registered license builders.",
   url: "https://www.bearconstruction.co.nz/about",
   mainEntity: {
     "@type": "Person",
@@ -159,7 +159,7 @@ export default function AboutUsPage() {
                   Hi, I am Phil Ashton, the owner and operator of Bear Construction.
                 </p>
                 <p>
-                  I started this company to give homeowners a clear, confident path to transforming their properties. Born and raised right here in the capital, I have spent over 20 years in the Wellington building trade. I am a Weltec graduate, a fully Licensed Building Practitioner (LBP), and a Certified Building Surveyor (CBS).
+                  I started this company to give homeowners a clear, confident path to transforming their properties. Born and raised right here in the capital, I have spent over 20 years in the Wellington building trade. I am a Weltec graduate, a fully Licensed Building Practitioner (LBP), and a Registered license builder.
                 </p>
                 <p>
                   Over the last two decades, I have learned that a truly successful build comes down to proactive planning, open communication, and absolute accountability. My team and I are dedicated to guiding homeowners through the building and renovation process with ease, delivering a premium finish you can be proud of.
@@ -213,7 +213,7 @@ export default function AboutUsPage() {
 
           <AnimateOnScroll variant="fade-up" delay={80}>
             <p>
-              While we handle comprehensive home renovations, our true expertise lies in technically demanding work: architectural extensions, exterior recladding, and seamless leaky home remediation. We build homes designed to thrive in Wellington&apos;s unique environment. As a proud member of Registered Master Builders, we use sustainable, premium materials to ensure your home remains safe, healthy, and beautiful for decades to come. We pride ourselves on getting the right result, every single time.
+              While we handle comprehensive home renovations, our true expertise lies in technically demanding work: architectural extensions, exterior recladding, and seamless leaky home remediation. We build homes designed to thrive in Wellington&apos;s unique environment. As a proud member of Registered license builders, we use sustainable, premium materials to ensure your home remains safe, healthy, and beautiful for decades to come. We pride ourselves on getting the right result, every single time.
             </p>
           </AnimateOnScroll>
 

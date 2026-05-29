@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Why Choose Bear Construction | Wellington Builders",
   description:
-    "Discover why Wellington homeowners trust Bear Construction — 20+ years local experience, Registered Master Builders, and a 10-Year Ironclad Guarantee.",
+    "Discover why Wellington homeowners trust Bear Construction — 20+ years local experience, Registered license builders, and a 10-Year Ironclad Guarantee.",
   keywords: "residential builders wellington",
   alternates: {
     canonical: "https://www.bearconstruction.co.nz/why-choose-us",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Why Choose Bear Construction | Wellington Builders",
     description:
-      "Discover why Wellington homeowners choose Bear Construction — direct access to owner Phil Ashton, 20+ years experience, Master Builders membership, and a 10-Year Guarantee.",
+      "Discover why Wellington homeowners choose Bear Construction — direct access to owner Phil Ashton, 20+ years experience, Registered license builders membership, and a 10-Year Guarantee.",
     url: "https://www.bearconstruction.co.nz/why-choose-us",
     siteName: "Bear Construction",
     locale: "en_NZ",
@@ -46,8 +46,8 @@ const reasons = [
   },
   {
     num: "03",
-    title: "Fully Certified and Master Builder Backed",
-    body: "Trust is everything when undertaking a major renovation. Phil holds a current Licensed Building Practitioner (LBP) qualification and is a Certified Building Surveyor (CBS).\n\nFurthermore, Bear Construction is a proud member of Registered Master Builders. We build strictly to code and ensure every detail meets the highest industry standards.",
+    title: "Fully Certified and Registered license builder Backed",
+    body: "Trust is everything when undertaking a major renovation. Phil holds a current Licensed Building Practitioner (LBP) qualification and is a Registered license builder.\n\nFurthermore, Bear Construction is a proud member of Registered license builders. We build strictly to code and ensure every detail meets the highest industry standards.",
     image: "/projects/churton-park/Churton-Park-6-scaled.webp",
   },
   {
@@ -74,7 +74,7 @@ const whyChooseSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Why Choose Bear Construction | Wellington Builders",
-  description: "Discover why Wellington homeowners trust Bear Construction — 20+ years local experience, Registered Master Builders, and a 10-Year Ironclad Guarantee.",
+  description: "Discover why Wellington homeowners trust Bear Construction — 20+ years local experience, Registered license builders, and a 10-Year Ironclad Guarantee.",
   url: "https://www.bearconstruction.co.nz/why-choose-us",
   mainEntity: {
     "@type": "Organization",
@@ -84,7 +84,7 @@ const whyChooseSchema = {
     description: "Independent, owner-operated building company specialising in residential renovations, home extensions, and exterior recladding across Wellington.",
     hasCredential: [
       { "@type": "EducationalOccupationalCredential", credentialCategory: "Licensed Building Practitioner" },
-      { "@type": "EducationalOccupationalCredential", credentialCategory: "Registered Master Builders" },
+      { "@type": "EducationalOccupationalCredential", credentialCategory: "Registered license builders" },
     ],
   },
 };

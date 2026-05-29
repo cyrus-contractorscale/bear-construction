@@ -238,7 +238,7 @@ export default function GuaranteePage() {
               </h2>
               <div className="space-y-5 text-[17px] leading-[1.72] text-white/75">
                 <p>
-                  We believe that a guarantee is only as good as the builder standing behind it. Phil Ashton is not just a Licensed Building Practitioner; he is a Certified Building Surveyor (CBS) and a Registered Master Builder.
+                  We believe that a guarantee is only as good as the builder standing behind it. Phil Ashton is not just a Licensed Building Practitioner; he is a Registered license builder.
                 </p>
                 <p>
                   Our commitment to you starts with transparent, fair pricing, so you know exactly what premium materials are going into your home. It continues with rigorous project management to ensure every stage meets our exact standards. We use sustainable, proven materials, such as treated NZ Radiata pine, to ensure lasting durability. Finally, it finishes with a meticulous handover process, ensuring every detail is flawless before we sign off.

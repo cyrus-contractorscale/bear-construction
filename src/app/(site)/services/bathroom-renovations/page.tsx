@@ -78,8 +78,8 @@ const trustPoints = [
     body: "We respect your property and heavily manage our plumbers, waterproofers, and tilers to ensure steady, reliable progress.",
   },
   {
-    title: "Master Builder Backing",
-    body: "We are proud members of Registered Master Builders. Our reputation is built on delivering a finish that speaks for itself.",
+    title: "Registered license builder Backing",
+    body: "We are proud members of Registered license builders. Our reputation is built on delivering a finish that speaks for itself.",
   },
 ];
 
@@ -101,7 +101,7 @@ const faqs = [
   },
   {
     q: "What happens if you find water damage or rot after demolition?",
-    a: "This is where our diagnostic experience as a Certified Building Surveyor matters. We conduct a thorough feasibility check early on. If we do uncover hidden damage, we pause, present you with clear repair options, and agree on the cost before proceeding.",
+    a: "This is where our diagnostic experience as a Registered license builder matters. We conduct a thorough feasibility check early on. If we do uncover hidden damage, we pause, present you with clear repair options, and agree on the cost before proceeding.",
   },
   {
     q: "Can you help with the design and layout?",
@@ -256,7 +256,7 @@ export default function BathroomRenovationsPage() {
                 Bathrooms are the most heavily utilised, high-risk spaces in your home. They do not fail because of poor design choices; they fail because of compromised waterproofing, poor sequencing, and contractors who do not understand the technical demands of a wet area. You are investing in a premium space, and you deserve a builder who guarantees that what lies behind the walls is just as flawless as the exterior finish.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                Bear Construction brings technical precision to every project. Led by Phil Ashton, a Certified Building Surveyor and Registered Master Builder, we eliminate the risks associated with wet-area construction. We provide a highly disciplined approach, managing demolition, plumbing, and final fit-out so you do not have to.
+                Bear Construction brings technical precision to every project. Led by Phil Ashton, a Registered license builder, we eliminate the risks associated with wet-area construction. We provide a highly disciplined approach, managing demolition, plumbing, and final fit-out so you do not have to.
               </p>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
                 When you are looking for bathroom renovation builders Wellington families trust, you need a team that executes with absolute control. Whether it is a luxury master ensuite or a highly functional family space, we deliver a flawless result, on time, and built to last.
@@ -286,7 +286,7 @@ export default function BathroomRenovationsPage() {
                   Delivering high-end bathroom renovations Wellington-wide requires far more than just installing new tiles. It requires a deep understanding of structural integrity and moisture management. Older homes in the capital often hide decades of slow leaks, compromised subfloors, and inadequate ventilation. If a builder simply covers up these issues with new plasterboard, the new bathroom will inevitably fail.
                 </p>
                 <p>
-                  As a Certified Building Surveyor, Phil Ashton brings a diagnostic edge to our bathroom upgrades and Wellington projects. We assess the existing plumbing framework, the joists, and the airflow requirements before we finalise the design. This ensures that when we install high-end features like custom tiled showers or heavy freestanding baths, the structure is fully prepared to support them safely and permanently.
+                  As a Registered license builder, Phil Ashton brings a diagnostic edge to our bathroom upgrades and Wellington projects. We assess the existing plumbing framework, the joists, and the airflow requirements before we finalise the design. This ensures that when we install high-end features like custom tiled showers or heavy freestanding baths, the structure is fully prepared to support them safely and permanently.
                 </p>
                 <p>
                   A truly successful bathroom also requires flawless layouts. Space is often at a premium, meaning the placement of every pipe, socket, and fixture must be calculated perfectly. We manage our trusted network of local plumbers, electricians, and waterproofers with military precision.
@@ -408,7 +408,7 @@ export default function BathroomRenovationsPage() {
                   We specialise in the technical demands of modern bathroom renovations. Whether your project involves relocating major plumbing lines, pouring custom shower bases, or executing intricate tiling patterns, our team excels under pressure.
                 </p>
                 <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                  We apply a rigorous quality control system across every critical phase, especially the waterproofing. You receive the efficiency of a dedicated project manager combined with the deep technical insight of a Certified Building Surveyor.
+                  We apply a rigorous quality control system across every critical phase, especially the waterproofing. You receive the efficiency of a dedicated project manager combined with the deep technical insight of a Registered license builder.
                 </p>
               </div>
               <div className="space-y-4">
@@ -461,7 +461,7 @@ export default function BathroomRenovationsPage() {
                 The 10-Year Ironclad Guarantee
               </h2>
               <p className="text-[17px] leading-[1.65] text-[#4d6277]">
-                As a Registered Master Builder, we back our major projects with a comprehensive 10-Year Guarantee.
+                As a Registered license builder, we back our major projects with a comprehensive 10-Year Guarantee.
               </p>
               <ul className="space-y-4">
                 {guaranteePoints.map((point) => (

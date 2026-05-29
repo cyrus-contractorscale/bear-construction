@@ -92,7 +92,7 @@ export default function TermsAndConditionsPage() {
               6. The 10-Year Building Guarantee
             </h2>
             <p className="text-[17px] leading-[1.7]">
-              Eligible projects completed by Bear Construction are backed by a 10-Year Building Guarantee as outlined in your contract. As a member of Registered Master Builders, eligible projects may also be covered under the Master Build 10-Year Guarantee. Specific terms, conditions, and exclusions apply and are detailed in your guarantee documentation.
+              Eligible projects completed by Bear Construction are backed by a 10-Year Building Guarantee as outlined in your contract. As a member of Registered license builders, eligible projects may also be covered under the Master Build 10-Year Guarantee. Specific terms, conditions, and exclusions apply and are detailed in your guarantee documentation.
             </p>
             <p className="text-[17px] leading-[1.7]">
               The guarantee is provided to the property owner at the time of construction and may be transferable to subsequent property owners in certain circumstances. Please refer to your guarantee certificate for full details.

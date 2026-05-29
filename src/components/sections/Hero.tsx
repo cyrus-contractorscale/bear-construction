@@ -176,7 +176,7 @@ export function Hero() {
         <div className="flex items-end justify-between gap-6">
           <div className="pointer-events-auto text-white">
             <p className="mt-3 text-[18px] font-extrabold leading-none tracking-tight">
-              20+ Years Experience | Registered Master Builders
+              20+ Years Experience | Registered license builders
             </p>
           </div>
           <button

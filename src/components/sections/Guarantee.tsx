@@ -45,7 +45,7 @@ export function Guarantee() {
             The Bear Construction 10-Year Ironclad Guarantee
           </h2>
           <p className="text-lg leading-relaxed text-zinc-400">
-            A major architectural extension or reclad is a significant investment. You need absolute certainty that your home will perform flawlessly for decades to come. Backed by over 20 years of local experience and Registered Master Builders, we secure our quality workmanship with a rock-solid 10-Year Ironclad Guarantee. We build robust, healthy homes designed to handle Wellington's unique environment, giving you total peace of mind long after the scaffolding comes down.
+            A major architectural extension or reclad is a significant investment. You need absolute certainty that your home will perform flawlessly for decades to come. Backed by over 20 years of local experience and Registered license builders, we secure our quality workmanship with a rock-solid 10-Year Ironclad Guarantee. We build robust, healthy homes designed to handle Wellington's unique environment, giving you total peace of mind long after the scaffolding comes down.
           </p>
           <Link
             href="/about"
