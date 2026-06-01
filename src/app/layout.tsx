@@ -7,12 +7,14 @@ const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-sans-body",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
 const lora = Lora({
   variable: "--font-serif-display",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 const siteUrl = "https://www.bearconstruction.co.nz";

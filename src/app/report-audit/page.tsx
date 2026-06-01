@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 // ─── DATA ────────────────────────────────────────────────────────────────────
 
 const SITE_URL = "https://www.bearconstruction.co.nz";
-const REPORT_DATE = "1 June 2026";
+const REPORT_DATE = "1 June 2026 (Updated: PageSpeed fixes applied)";
 
 const trackingStatus = [
   {
@@ -392,6 +392,9 @@ const remainingGaps = [
   { priority: "Low", page: "Privacy Policy & Terms", issue: "No OG / canonical (intentional)", fix: "Consider noindex to save crawl budget" },
   { priority: "Phase 2", page: "Service pages — Areas We Service", issue: "Section uses project image instead of map-based local proof", fix: "Embed GBP-style map or location-proof module" },
   { priority: "Phase 2", page: "Per-service estimate funnels", issue: "No dedicated landing page per service (e.g. Wellington Bathroom Cost Calculator)", fix: "Build one estimate page per service if service-specific funnels are needed" },
+  { priority: "Phase 2", page: "All pages — images", issue: "PageSpeed: Improve image delivery — 6,537 KiB savings. Total payload 11,755 KiB.", fix: "Compress and resize project/service images to <200 KB each using Squoosh or similar" },
+  { priority: "Phase 2", page: "All pages — contrast", issue: "PageSpeed Accessibility 73: some text/background combos below 4.5:1 ratio", fix: "Audit muted text colours (#516577, #8fa3b8) against backgrounds and increase contrast" },
+  { priority: "Phase 2", page: "Homepage — Best Practices", issue: "Third-party cookies detected (GHL webchat, GTM). CSP / HSTS / COOP headers missing.", fix: "Add security headers via Cloudflare Transform Rules or _headers file" },
 ];
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
@@ -700,6 +703,57 @@ export default function ReportAuditPage() {
               </tbody>
             </table>
           </div>
+        </div>
+
+        {/* ══ PAGESPEED AUDIT ══════════════════════════════════════════════════ */}
+        <SectionHeading>PageSpeed Insights Audit — Jun 1, 2026</SectionHeading>
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 mb-4">
+          {[
+            { label: "Performance", score: 85, tone: "yellow" },
+            { label: "Accessibility", score: 73, tone: "yellow" },
+            { label: "Best Practices", score: 100, tone: "good" },
+            { label: "SEO", score: "—", tone: "gray" },
+          ].map((s) => (
+            <div key={s.label} className="rounded-xl border border-zinc-200 bg-white p-4 text-center">
+              <p className="text-[12px] font-semibold uppercase tracking-wide text-zinc-500">{s.label}</p>
+              <p className={`mt-1 text-3xl font-extrabold ${s.tone === "good" ? "text-green-600" : s.tone === "yellow" ? "text-yellow-600" : "text-zinc-400"}`}>{s.score}</p>
+            </div>
+          ))}
+        </div>
+        <div className="overflow-x-auto rounded-xl border border-zinc-200 bg-white mb-8">
+          <table className="w-full text-[13px]">
+            <thead>
+              <tr className="border-b border-zinc-100 bg-zinc-50 text-left">
+                <th className="px-4 py-3 font-semibold text-zinc-600">Category</th>
+                <th className="px-4 py-3 font-semibold text-zinc-600">Issue</th>
+                <th className="px-4 py-3 font-semibold text-zinc-600">Status</th>
+                <th className="px-4 py-3 font-semibold text-zinc-600">Fix Applied</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { cat: "Performance", issue: "FCP 5.7s — Google Fonts missing font-display:swap", status: "fixed", fix: "Added display:'swap' to Plus Jakarta Sans & Lora in layout.tsx" },
+                { cat: "Performance", issue: "Enormous network payloads (11,755 KiB) — oversized images", status: "pending", fix: "Compress project/service images <200 KB each (Phase 2)" },
+                { cat: "Performance", issue: "Render-blocking requests", status: "fixed", fix: "GTM loads async; font-display:swap prevents font blocking" },
+                { cat: "Performance", issue: "NO_LCP — hero image priority already set", status: "ok", fix: "Hero image has priority prop; LCP should resolve with faster FCP" },
+                { cat: "Accessibility", issue: "List items not inside ul/ol — AnimateOnScroll wrapped <li>", status: "fixed", fix: "Added as prop to AnimateOnScroll; fixed About.tsx & HowItWorks.tsx" },
+                { cat: "Accessibility", issue: "Insufficient contrast on muted text", status: "pending", fix: "Audit #516577, #8fa3b8 text colours against backgrounds (Phase 2)" },
+                { cat: "Best Practices", issue: "Image aspect ratio — logo width/height mismatch", status: "fixed", fix: "Replaced h-auto class with style={{ height:'auto' }} on logo images" },
+                { cat: "Best Practices", issue: "Third-party cookies (GHL webchat, GTM)", status: "pending", fix: "Known — required for chat/analytics. Add CSP headers (Phase 2)" },
+              ].map((row, i) => (
+                <tr key={i} className={`border-b border-zinc-100 ${i % 2 === 0 ? "bg-white" : "bg-zinc-50/50"}`}>
+                  <td className="px-4 py-3 text-[12px] font-semibold text-zinc-500">{row.cat}</td>
+                  <td className="px-4 py-3 text-zinc-700">{row.issue}</td>
+                  <td className="px-4 py-3">
+                    <Badge variant={row.status === "fixed" ? "green" : row.status === "ok" ? "blue" : "yellow"}>
+                      {row.status === "fixed" ? "Fixed" : row.status === "ok" ? "OK" : "Phase 2"}
+                    </Badge>
+                  </td>
+                  <td className="px-4 py-3 text-zinc-500">{row.fix}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
 
         {/* ══ REMAINING GAPS ══════════════════════════════════════════════════ */}

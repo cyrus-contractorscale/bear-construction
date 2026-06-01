@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type ReactNode, type CSSProperties, type ElementType } from "react";
 
 export type AnimateVariant = "fade-up" | "fade-left" | "fade-right" | "scale-in" | "stamp";
 
@@ -11,6 +11,8 @@ interface AnimateOnScrollProps {
   duration?: number;
   threshold?: number;
   className?: string;
+  /** Render as a different element (e.g. "li" inside a <ul>/<ol>) */
+  as?: ElementType;
 }
 
 const hiddenStyles: Record<AnimateVariant, CSSProperties> = {
@@ -30,6 +32,7 @@ export function AnimateOnScroll({
   duration = 700,
   threshold = 0.12,
   className,
+  as: Tag = "div",
 }: AnimateOnScrollProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -59,8 +62,8 @@ export function AnimateOnScroll({
   };
 
   return (
-    <div ref={ref} className={className} style={style}>
+    <Tag ref={ref} className={className} style={style}>
       {children}
-    </div>
+    </Tag>
   );
 }

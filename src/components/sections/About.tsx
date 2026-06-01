@@ -83,14 +83,12 @@ export function About() {
               "Transparent, practical guidance on your budget and scope",
               "Quality workmanship backed by a 10-Year Building Guarantee",
             ].map((text, i) => (
-              <AnimateOnScroll key={text} variant="fade-up" delay={300 + i * 80}>
-                <li className="flex items-start gap-3">
-                  <svg viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 shrink-0 text-[#1278ce]" aria-hidden="true">
-                    <circle cx="12" cy="12" r="9.2" fill="none" stroke="currentColor" strokeWidth="1.8" />
-                    <path d="M8.3 12.2l2.2 2.2 5.1-5.1" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                  <span>{text}</span>
-                </li>
+              <AnimateOnScroll as="li" key={text} variant="fade-up" delay={300 + i * 80} className="flex items-start gap-3">
+                <svg viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 shrink-0 text-[#1278ce]" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9.2" fill="none" stroke="currentColor" strokeWidth="1.8" />
+                  <path d="M8.3 12.2l2.2 2.2 5.1-5.1" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <span>{text}</span>
               </AnimateOnScroll>
             ))}
           </ul>

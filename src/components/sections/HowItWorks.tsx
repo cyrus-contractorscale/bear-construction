@@ -40,8 +40,7 @@ export function HowItWorks() {
 
         <ol className="grid gap-y-12 sm:grid-cols-2 sm:gap-x-10 lg:grid-cols-3 lg:gap-x-8">
           {steps.map((item, index) => (
-            <AnimateOnScroll key={item.step} variant="scale-in" delay={index * 75} duration={600}>
-              <li className="relative text-center">
+            <AnimateOnScroll as="li" key={item.step} variant="scale-in" delay={index * 75} duration={600} className="relative text-center">
                 {index % 3 !== 2 ? (
                   <span className="absolute left-1/2 top-[39px] z-0 hidden h-px w-[calc(100%+2rem)] bg-[#d8e0eb] lg:block" />
                 ) : null}
@@ -57,7 +56,6 @@ export function HowItWorks() {
                   {item.title}
                 </h3>
                 <p className="mt-3 text-[16px] leading-[1.55] text-[#536779]">{item.body}</p>
-              </li>
             </AnimateOnScroll>
           ))}
         </ol>

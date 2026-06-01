@@ -140,7 +140,8 @@ export function MainNav() {
             width={250}
             height={104}
             priority
-            className="h-auto w-[200px] object-contain lg:w-[250px]"
+            style={{ height: "auto" }}
+            className="w-[200px] object-contain lg:w-[250px]"
           />
         </Link>
 
@@ -251,7 +252,8 @@ export function MainNav() {
             alt="Bear Construction logo"
             width={100}
             height={42}
-            className="h-auto w-[100px] object-contain"
+            style={{ height: "auto" }}
+            className="w-[100px] object-contain"
           />
           <button
             type="button"
