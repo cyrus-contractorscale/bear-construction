@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.bearconstruction.co.nz/Bear Construction Social Media.png",
+        url: "https://www.bearconstruction.co.nz/bear-construction-social-media.png",
         width: 1200,
         height: 630,
         alt: "Bear Construction Wellington — Why Choose Us",

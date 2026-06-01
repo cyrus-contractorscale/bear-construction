@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 // ─── DATA ────────────────────────────────────────────────────────────────────
 
 const SITE_URL = "https://www.bearconstruction.co.nz";
-const REPORT_DATE = "22 May 2026";
+const REPORT_DATE = "1 June 2026";
 
 const trackingStatus = [
   {
@@ -37,18 +37,25 @@ const trackingStatus = [
     note: "Inline script loaded globally via root layout.tsx (afterInteractive, dangerouslySetInnerHTML). Applies to all pages.",
   },
   {
+    tool: "Google Tag Manager",
+    id: "GTM-P7DP83TD",
+    script: "https://www.googletagmanager.com/gtm.js?id=GTM-P7DP83TD",
+    status: "active" as const,
+    note: "GTM head script loaded via beforeInteractive in layout.tsx. Noscript fallback added after <body> opening tag. Applies to all pages.",
+  },
+  {
+    tool: "GHL WebChat Widget",
+    id: "6a1d294296c166bea6225b1f",
+    script: "https://beta.leadconnectorhq.com/loader.js",
+    status: "active" as const,
+    note: "Loaded globally via layout.tsx (afterInteractive). Chat widget appears on all pages.",
+  },
+  {
     tool: "Facebook Pixel",
     id: "—",
     script: "https://connect.facebook.net/en_US/fbevents.js",
     status: "missing" as const,
     note: "Not installed. Add FB Pixel ID to layout.tsx when ready.",
-  },
-  {
-    tool: "Google Tag Manager",
-    id: "—",
-    script: "https://www.googletagmanager.com/gtag/js",
-    status: "missing" as const,
-    note: "Not installed. Add GTM container ID or GA4 measurement ID when ready.",
   },
 ];
 
@@ -740,7 +747,7 @@ export default function ReportAuditPage() {
                   ["Sitemap", "/sitemap.xml · 20 URLs"],
                   ["robots.txt", "Allow all · Sitemap pointer"],
                   ["Favicon", "cropped-BC_Favicon-32x32.png"],
-                  ["OG Image", "Bear Construction Social Media.png (1200×630)"],
+                  ["OG Image", "bear-construction-social-media.png (1200×630)"],
                   ["Fonts", "Plus Jakarta Sans + Lora"],
                 ].map(([k, v], i) => (
                   <tr key={k} className={`border-b border-zinc-100 ${i % 2 === 0 ? "bg-white" : "bg-zinc-50/50"}`}>

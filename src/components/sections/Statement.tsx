@@ -128,22 +128,22 @@ export function Statement() {
     <section ref={sectionRef} className="bg-white py-14 sm:py-20">
       <Container>
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
-          <div>
-            <p className="text-[18px] leading-[1.62] text-[#516577]">
+          <div className="min-w-0">
+            <p className="text-base leading-[1.62] text-[#516577] sm:text-[18px]">
               As a trusted home renovation company Wellington homeowners recommend, we take the fear out of complex builds. From second-storey additions to permanent weathertightness remediation, we deliver quality workmanship backed by clear communication and a solid 10-Year Building Guarantee.
             </p>
           </div>
-          <div>
-            <h2 className="font-[ui-sans-serif,system-ui,sans-serif] text-[46px] font-extrabold leading-[1.05] tracking-tight !text-[#000] sm:text-[54px] lg:text-[60px]">
+          <div className="min-w-0 overflow-hidden">
+            <h2 className="w-full break-words font-[ui-sans-serif,system-ui,sans-serif] text-[32px] font-extrabold leading-[1.1] tracking-tight !text-[#000] sm:text-[44px] lg:text-[60px]">
               {fixedHeadingStart}
-              <span className="whitespace-pre">{firstLineReveal.visible}</span>
-              <span className="whitespace-pre text-[#000]/30">{firstLineReveal.hidden}</span>
+              <span className="whitespace-pre-wrap">{firstLineReveal.visible}</span>
+              <span className="whitespace-pre-wrap text-[#000]/30">{firstLineReveal.hidden}</span>
               <br />
-              <span className="whitespace-pre">{secondLineReveal.visible}</span>
-              <span className="whitespace-pre text-[#000]/30">{secondLineReveal.hidden}</span>
+              <span className="whitespace-pre-wrap">{secondLineReveal.visible}</span>
+              <span className="whitespace-pre-wrap text-[#000]/30">{secondLineReveal.hidden}</span>
               <br />
-              <span className="whitespace-pre">{thirdLineReveal.visible}</span>
-              <span className="whitespace-pre text-[#000]/30">{thirdLineReveal.hidden}</span>
+              <span className="whitespace-pre-wrap">{thirdLineReveal.visible}</span>
+              <span className="whitespace-pre-wrap text-[#000]/30">{thirdLineReveal.hidden}</span>
             </h2>
           </div>
         </div>

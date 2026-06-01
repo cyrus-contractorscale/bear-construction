@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       "Expert renovation and extension builders in Wellington. Bear Construction delivers architectural home extensions, full renovations, exterior cladding & leaky home repairs across Wellington, Lower Hutt, Upper Hutt and Porirua.",
     images: [
       {
-        url: `${siteUrl}/Bear Construction Social Media.png`,
+        url: `${siteUrl}/bear-construction-social-media.png`,
         width: 1200,
         height: 630,
         alt: "Bear Construction Wellington",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "Wellington Home Renovation Builders | Bear Construction",
     description:
       "Expert renovation and extension builders in Wellington. Architectural home extensions, full renovations, exterior cladding & leaky home repairs.",
-    images: [`${siteUrl}/Bear Construction Social Media.png`],
+    images: [`${siteUrl}/bear-construction-social-media.png`],
   },
   robots: {
     index: true,
@@ -131,7 +131,26 @@ export default function RootLayout({
         lang="en"
         className={`${plusJakarta.variable} ${lora.variable} h-full scroll-smooth antialiased`}
       >
+        <head>
+          {/* Google Tag Manager */}
+          <Script
+            id="gtm-head"
+            strategy="beforeInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P7DP83TD');`,
+            }}
+          />
+        </head>
         <body className="min-h-full flex flex-col font-sans">
+          {/* Google Tag Manager (noscript) */}
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-P7DP83TD"
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            />
+          </noscript>
           {children}
           <Script src="https://link.contractorscale.com/js/form_embed.js" strategy="afterInteractive" />
           <Script
@@ -146,6 +165,14 @@ export default function RootLayout({
             dangerouslySetInnerHTML={{
               __html: `(function(d,t,g,k){var ph=d.createElement(t),s=d.getElementsByTagName(t)[0],tk=(new URLSearchParams(window.location.search)).get(k);tk&&localStorage.setItem(k,tk);tk=localStorage.getItem(k);ph.type='text/javascript';ph.async=true;ph.defer=true;ph.charset='UTF-8';ph.src=g+'&v='+(new Date()).getTime();ph.src+=tk?'&'+k+'='+tk:'';s.parentNode.insertBefore(ph,s);})(document,'script','//feedback.contractorscale.com/?p=9331&ph_apikey=99c447f28b024ab1b26b90fd62fa7c53','ph_access_token');`,
             }}
+          />
+          {/* GHL WebChat */}
+          <Script
+            id="ghl-webchat"
+            src="https://beta.leadconnectorhq.com/loader.js"
+            data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js"
+            data-widget-id="6a1d294296c166bea6225b1f"
+            strategy="afterInteractive"
           />
           <script
             type="application/ld+json"
