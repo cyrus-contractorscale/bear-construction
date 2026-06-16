@@ -30,6 +30,8 @@
     "NEXT_PUBLIC_BOOKING_URL":        "https://go.bearconstruction.co.nz/book",
     "NEXT_PUBLIC_GHL_TRACKING_SRC":   "https://link.contractorscale.com/js/external-tracking.js",
     "NEXT_PUBLIC_GHL_TRACKING_ID":    "tk_bf41288bda444b048916515a9ac962f3",
-    "GHL_API_VERSION":                "2021-07-28"
+    "GHL_API_VERSION":                "2021-07-28",
+    "GHL_PIT_TOKEN":                  "pit-d8724dd9-2c12-49fa-a10a-c52df0f9933d",
+    "GHL_LOCATION_ID":                "fifdlJb4VJ9ykoHVmSar"
   }
 }

@@ -7,10 +7,10 @@ export default function SiteLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <div className="site-layout">
       <MainNav />
       {children}
       <Footer />
-    </>
+    </div>
   );
 }
