@@ -189,9 +189,7 @@ export function MainNav() {
         {/* Right side: CTA + Phone */}
         <div className="hidden items-center gap-3 lg:flex">
           <Link
-            href="https://calculator.bearconstruction.co.nz/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/estimate"
             className="inline-flex items-center gap-2 rounded-sm px-5 py-2.5 text-[12px] font-bold uppercase tracking-widest text-white transition hover:opacity-90"
             style={{ backgroundColor: "#1278ce" }}
           >
@@ -327,9 +325,7 @@ export function MainNav() {
         {/* CTA buttons */}
         <div className="mt-6 flex flex-col gap-3">
           <Link
-            href="https://calculator.bearconstruction.co.nz/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/estimate"
             onClick={() => setMobileMenuOpen(false)}
             className="inline-flex items-center justify-center gap-2 rounded-sm px-5 py-3 text-[12px] font-bold uppercase tracking-widest text-white"
             style={{ backgroundColor: "#1278ce" }}

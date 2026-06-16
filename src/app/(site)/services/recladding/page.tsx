@@ -207,7 +207,7 @@ export default function RecladdingPage() {
             </h1>
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
-                href="/contact"
+                href="/estimate"
                 className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-zinc-900 shadow-lg shadow-black/30 transition hover:bg-zinc-100"
               >
                 Online Estimate
