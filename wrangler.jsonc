@@ -19,5 +19,11 @@
       // Must match the "name" field above
       "service": "bear-construction"
     }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "BEAR_ESTIMATE",
+      "id": "b77ba41dfa8542ea9d05cdc4cba67041"
+    }
   ]
 }

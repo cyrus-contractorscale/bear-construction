@@ -43,7 +43,7 @@ export function MultiChoice({ question, value, onChange }: Props) {
               "group flex w-full items-center gap-3.5 rounded-2xl border px-4 py-4 text-left",
               "transition-all duration-200 ease-out",
               selected
-                ? "border-ink-900 bg-ink-900 shadow-lg scale-[1.01]"
+                ? "border-[#1278ce] bg-[#1278ce] shadow-lg scale-[1.01]"
                 : "border-ink-200 bg-white/80 hover:border-ink-400 hover:bg-white hover:shadow-md hover:-translate-y-0.5"
             )}
           >

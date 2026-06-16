@@ -54,7 +54,7 @@ function Cta({ variant = "dark" }: { variant?: "dark" | "light" }) {
   const base =
     "inline-flex items-center gap-2.5 rounded-xl px-9 py-4 text-[13px] font-extrabold uppercase tracking-[0.18em] transition-all duration-200 active:scale-[0.97]";
   const styles = {
-    dark:  `${base} bg-black text-white hover:bg-zinc-800 hover:shadow-[0_10px_36px_rgba(0,0,0,0.45)] hover:-translate-y-[3px]`,
+    dark:  `${base} bg-[#1278ce] text-white hover:bg-[#0d65b5] hover:shadow-[0_10px_36px_rgba(18,120,206,0.45)] hover:-translate-y-[3px]`,
     light: `${base} bg-white text-black hover:bg-zinc-100 hover:shadow-[0_10px_36px_rgba(255,255,255,0.2)] hover:-translate-y-[3px]`,
   };
   return (
@@ -141,14 +141,15 @@ export function ConsultContent({ site }: { site: SiteConfig }) {
 
         <div className="relative z-10 mx-auto max-w-[1440px] px-6 py-20 sm:px-16 sm:py-28 lg:px-24 lg:py-36 text-center text-white">
 
-          {/* Logo */}
+          {/* Logo — use light version on dark hero */}
           <div className="mb-7 flex justify-center">
             <Image
-              src={`/${site.logoFile}`}
+              src={`/${site.logoFileLight}`}
               alt="Company logo"
-              width={160}
-              height={160}
-              className="h-auto w-auto max-h-[160px] max-w-[160px] object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+              width={200}
+              height={67}
+              className="h-auto w-auto max-h-[80px] max-w-[200px] object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+              style={{ height: "auto" }}
               priority
             />
           </div>
@@ -182,15 +183,19 @@ export function ConsultContent({ site }: { site: SiteConfig }) {
 
           {/* Author */}
           <div className="mt-12 flex items-center justify-center gap-4">
-            <div className="h-14 w-14 rounded-full bg-white/10 ring-2 ring-white/20 flex items-center justify-center shrink-0">
-              <svg className="h-7 w-7 text-white/40" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
-              </svg>
+            <div className="h-14 w-14 rounded-full overflow-hidden ring-2 ring-white/20 shrink-0">
+              <Image
+                src={`/${site.directorPhoto}`}
+                alt={site.directorName}
+                width={56}
+                height={56}
+                className="h-full w-full object-cover object-top"
+              />
             </div>
             <div className="text-left">
               <p className="text-[10px] uppercase tracking-[0.2em] text-white/35">From</p>
               <p className="text-sm font-bold text-white">{site.directorName}</p>
-              <p className="text-[11px] text-white/45">Director and Master Builder</p>
+              <p className="text-[11px] text-white/45">{site.directorTitle}</p>
             </div>
           </div>
 
@@ -514,10 +519,14 @@ export function ConsultContent({ site }: { site: SiteConfig }) {
         <div className="mx-auto max-w-[860px]">
           <div className="flex flex-col sm:flex-row gap-10 items-start">
             <div className="mx-auto sm:mx-0 shrink-0">
-              <div className="h-36 w-36 rounded-full bg-zinc-200 ring-4 ring-zinc-200 ring-offset-4 flex items-center justify-center">
-                <svg className="h-16 w-16 text-zinc-400" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
-                </svg>
+              <div className="h-36 w-36 rounded-full overflow-hidden ring-4 ring-zinc-200 ring-offset-4">
+                <Image
+                  src={`/${site.directorPhoto}`}
+                  alt={site.directorName}
+                  width={144}
+                  height={144}
+                  className="h-full w-full object-cover object-top"
+                />
               </div>
             </div>
             <div>
@@ -526,7 +535,7 @@ export function ConsultContent({ site }: { site: SiteConfig }) {
                 {site.directorName}
               </h3>
               <p className="mt-1 text-[12px] font-bold uppercase tracking-[0.2em] text-zinc-400">
-                Director &amp; Master Builder
+                {site.directorTitle}
               </p>
               <p className="mt-6 text-[16px] leading-[1.9] text-zinc-600">
                 {site.name} aims to revolutionise home building in NZ. Our vision is to

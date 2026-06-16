@@ -1,6 +1,4 @@
 import { Inter, Montserrat, Poppins } from "next/font/google";
-import Link from "next/link";
-import Image from "next/image";
 import type { Metadata } from "next";
 
 const inter = Inter({
@@ -41,29 +39,6 @@ export default function EstimateLayout({
 }) {
   return (
     <div className={`${inter.variable} ${montserrat.variable} ${poppins.variable}`}>
-      {/* Minimal branded header */}
-      <header className="sticky top-0 z-50 border-b border-white/60 bg-white/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-[1440px] items-center justify-between px-4 py-3 sm:px-8">
-          <Link href="/" aria-label="Bear Construction home">
-            <Image
-              src="/bear-logo-dark.png"
-              alt="Bear Construction"
-              width={160}
-              height={66}
-              style={{ height: "auto" }}
-              className="w-[130px] sm:w-[160px]"
-              priority
-            />
-          </Link>
-          <a
-            href="tel:+6448873529"
-            className="text-sm font-semibold text-[#1278ce] hover:underline"
-          >
-            +64 4 887 3529
-          </a>
-        </div>
-      </header>
-
       {children}
     </div>
   );

@@ -41,8 +41,9 @@ export function EstimateResult({ site }: { site: SiteConfig }) {
               src={`/${site.logoFile}`}
               alt="Company logo"
               width={200}
-              height={80}
-              className="h-auto w-auto max-h-[80px] max-w-[200px] object-contain"
+              height={67}
+              className="h-auto w-auto max-h-[67px] max-w-[200px] object-contain"
+              style={{ height: "auto" }}
               priority
             />
           </Link>
@@ -50,7 +51,7 @@ export function EstimateResult({ site }: { site: SiteConfig }) {
           {/* Call button */}
           <a
             href={site.phoneHref}
-            className="inline-flex items-center gap-2 rounded-full bg-ink-900 px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-black sm:gap-2.5 sm:px-5 sm:py-2.5 sm:text-sm"
+            className="inline-flex items-center gap-2 rounded-full bg-[#1278ce] px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-[#0d65b5] sm:gap-2.5 sm:px-5 sm:py-2.5 sm:text-sm"
           >
             <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.44 2 2 0 0 1 3.59 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
@@ -161,7 +162,7 @@ export function EstimateResult({ site }: { site: SiteConfig }) {
               href={site.bookingUrl}
               target="_blank"
               rel="noreferrer"
-              className="group flex flex-col items-center gap-3 rounded-2xl bg-ink-900 px-6 py-8 text-center shadow-sm transition-all hover:-translate-y-1 hover:bg-black hover:shadow-md"
+              className="group flex flex-col items-center gap-3 rounded-2xl bg-[#1278ce] px-6 py-8 text-center shadow-sm transition-all hover:-translate-y-1 hover:bg-[#0d65b5] hover:shadow-md"
             >
               <span className="grid h-12 w-12 place-items-center rounded-full bg-white/10 text-white group-hover:bg-white/15 transition-colors">
                 <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -358,7 +359,7 @@ export function EstimateResult({ site }: { site: SiteConfig }) {
               {/* CTA button */}
               <a
                 href={site.phoneHref}
-                className="mt-8 inline-flex items-center gap-2.5 rounded-xl bg-ink-900 px-6 py-3.5 text-[15px] font-semibold text-white transition-colors hover:bg-black"
+                className="mt-8 inline-flex items-center gap-2.5 rounded-xl bg-[#1278ce] px-6 py-3.5 text-[15px] font-semibold text-white transition-colors hover:bg-[#0d65b5]"
               >
                 <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.44 2 2 0 0 1 3.59 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
@@ -367,31 +368,22 @@ export function EstimateResult({ site }: { site: SiteConfig }) {
               </a>
             </div>
 
-            {/* ── Right: person placeholder ── */}
+            {/* ── Right: director photo ── */}
             <div className="shrink-0 lg:w-[340px]">
-              <div className="relative overflow-hidden rounded-2xl bg-ink-100 shadow-[0_8px_40px_rgba(0,0,0,0.10)]" style={{ aspectRatio: "4/4.2" }}>
-
-                {/* Placeholder silhouette */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-ink-200 to-ink-300">
-                  <svg viewBox="0 0 24 24" className="h-24 w-24 text-ink-400" fill="currentColor">
-                    <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
-                  </svg>
-                  <p className="mt-2 text-[11px] font-semibold uppercase tracking-widest text-ink-400">
-                    Photo placeholder
-                  </p>
-                </div>
+              <div className="relative overflow-hidden rounded-2xl shadow-[0_8px_40px_rgba(0,0,0,0.10)]" style={{ aspectRatio: "4/4.2" }}>
+                <Image
+                  src={`/${site.directorPhoto}`}
+                  alt={site.directorName}
+                  fill
+                  className="object-cover object-top"
+                />
 
                 {/* Name card overlay */}
                 <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm px-5 py-4 border-t border-ink-100">
                   <p className="font-heading text-[16px] font-black text-ink-900">{site.directorName}</p>
-                  <p className="mt-0.5 text-[13px] font-semibold text-ink-500">Director &amp; Owner</p>
+                  <p className="mt-0.5 text-[13px] font-semibold text-ink-500">{site.directorTitle}</p>
                 </div>
               </div>
-
-              {/* Instruction note */}
-              <p className="mt-3 text-center text-[11px] text-ink-400 italic">
-                Replace with your photo — add to <code className="text-ink-500">/public</code>
-              </p>
             </div>
 
           </div>

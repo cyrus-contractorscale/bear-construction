@@ -135,7 +135,7 @@ export function SurveyFlow({ projectType, backHref = "/estimate" }: Props) {
               className={[
                 "rounded-full transition-all duration-300",
                 isCurrent
-                  ? "h-2 w-6 bg-ink-900"
+                  ? "h-2 w-6 bg-[#1278ce]"
                   : isPast
                   ? "h-2 w-2 bg-ink-400"
                   : "h-2 w-2 bg-ink-200",
@@ -150,7 +150,7 @@ export function SurveyFlow({ projectType, backHref = "/estimate" }: Props) {
 
         {/* Question number tag */}
         <span className="inline-flex items-center gap-1.5 rounded-full border border-ink-200 bg-white/60 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-ink-500">
-          <span className="h-1.5 w-1.5 rounded-full bg-ink-900 inline-block" />
+          <span className="h-1.5 w-1.5 rounded-full bg-[#1278ce] inline-block" />
           Question {index + 1}
         </span>
 
