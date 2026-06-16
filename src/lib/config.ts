@@ -14,20 +14,20 @@ export type SiteConfig    = typeof site;
 export type PricingConfig = typeof pricing;
 
 /** Resolve the BEAR_ESTIMATE KV namespace — returns null outside Workers. */
-async function tryGetKV(): Promise<KVNamespace | null> {
+function tryGetKV(): KVNamespace | null {
   try {
-    const { getCloudflareContext } = await import("@opennextjs/cloudflare");
-    const { env } = await getCloudflareContext({ async: true });
-    return env.BEAR_ESTIMATE ?? null;
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { getCloudflareContext } = require("@opennextjs/cloudflare");
+    const { env } = getCloudflareContext();
+    return (env as Record<string, unknown>)["BEAR_ESTIMATE"] as KVNamespace ?? null;
   } catch {
-    // Running in plain Next.js dev server — no Cloudflare context
     return null;
   }
 }
 
 /** Read site config — KV value overrides static default when available. */
 export async function getSiteConfig(): Promise<SiteConfig> {
-  const kv = await tryGetKV();
+  const kv = tryGetKV();
   if (kv) {
     try {
       const raw = await kv.get("site-config");
@@ -41,7 +41,7 @@ export async function getSiteConfig(): Promise<SiteConfig> {
 
 /** Read pricing config — KV value overrides static default when available. */
 export async function getPricingConfig(): Promise<PricingConfig> {
-  const kv = await tryGetKV();
+  const kv = tryGetKV();
   if (kv) {
     try {
       const raw = await kv.get("pricing-config");
@@ -55,7 +55,7 @@ export async function getPricingConfig(): Promise<PricingConfig> {
 
 /** Persist site config to KV. Returns true on success, false if KV unavailable. */
 export async function setSiteConfig(config: SiteConfig): Promise<boolean> {
-  const kv = await tryGetKV();
+  const kv = tryGetKV();
   if (!kv) return false;
   await kv.put("site-config", JSON.stringify(config));
   return true;
@@ -63,7 +63,7 @@ export async function setSiteConfig(config: SiteConfig): Promise<boolean> {
 
 /** Persist pricing config to KV. Returns true on success, false if KV unavailable. */
 export async function setPricingConfig(config: PricingConfig): Promise<boolean> {
-  const kv = await tryGetKV();
+  const kv = tryGetKV();
   if (!kv) return false;
   await kv.put("pricing-config", JSON.stringify(config));
   return true;
