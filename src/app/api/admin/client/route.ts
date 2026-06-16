@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { getSiteConfig, setSiteConfig } from "@/lib/config";
 import type { SiteConfig } from "@/lib/config";
 
+export const runtime = "edge";
+
 export type ClientInfo = SiteConfig;
 
 export async function GET() {

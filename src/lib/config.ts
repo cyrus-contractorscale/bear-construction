@@ -1,13 +1,13 @@
 /**
  * Runtime config helpers.
  *
- * On Cloudflare Workers (production/preview) these read from and write to the
+ * On Cloudflare Pages (production/preview) these read from and write to the
  * BEAR_ESTIMATE KV namespace so the /audit admin can persist changes.
  *
- * On plain Next.js dev (npm run dev) getCloudflareContext() throws — we catch
- * it and fall back silently to the static defaults in lib/site.ts / pricing.ts.
+ * On plain Next.js dev (npm run dev) getRequestContext() throws — we catch it
+ * and fall back silently to the static defaults in lib/site.ts / pricing.ts.
  */
-import { getCloudflareContext } from "@opennextjs/cloudflare";
+import { getRequestContext } from "@cloudflare/next-on-pages";
 import { site } from "./site";
 import { pricing } from "./pricing";
 
@@ -17,9 +17,9 @@ export type PricingConfig = typeof pricing;
 /** Resolve the BEAR_ESTIMATE KV namespace — returns null outside Workers. */
 function tryGetKV(): KVNamespace | null {
   try {
-    const ctx = getCloudflareContext();
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return (ctx.env as any).BEAR_ESTIMATE as KVNamespace ?? null;
+    const kv = (getRequestContext().env as any).BEAR_ESTIMATE as KVNamespace | undefined;
+    return kv ?? null;
   } catch {
     // No Cloudflare request context (plain Next.js dev server)
     return null;
