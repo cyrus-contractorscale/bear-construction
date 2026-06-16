@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
   }
 
   return NextResponse.json(
-    { ok: false, error: "KV not available. Make sure the CS_CONFIG KV namespace is bound in wrangler.toml and Cloudflare Pages settings." },
+    { ok: false, error: "KV not available. Make sure the BEAR_ESTIMATE KV namespace is bound in the Cloudflare Pages dashboard under Settings → Functions → KV namespace bindings." },
     { status: 503 }
   );
 }

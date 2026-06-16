@@ -216,7 +216,7 @@ export function ClientInfoEditor() {
       {/* ── KV note ── */}
       <div className="rounded-xl border border-blue-200 bg-blue-50 px-5 py-3 text-[12px] text-blue-700">
         <strong>On Cloudflare Pages:</strong> Changes save to KV and go live immediately — no rebuild needed.{" "}
-        Requires the <code className="rounded bg-blue-100 px-1">CS_CONFIG</code> KV namespace to be set up (see <code className="rounded bg-blue-100 px-1">wrangler.toml</code>).
+        Requires the <code className="rounded bg-blue-100 px-1">BEAR_ESTIMATE</code> KV namespace binding in Cloudflare Pages → Settings → Functions → KV namespace bindings.
         On localhost, changes save to <code className="rounded bg-blue-100 px-1">lib/site.ts</code> and require a dev server restart.
       </div>
 
