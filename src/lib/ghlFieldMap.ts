@@ -55,7 +55,7 @@ export const ghlFieldMap: Record<string, string> = {
 
   // ---- Home Extension ----
   extensionType:      "fER4LHWS1CiXNgTD0kmP",  // E - Type of addition
-  spaceUse:           "",                        // no direct match in GHL account
+  spaceUse:           "nF77cPPDkcBIbKN9lJZ2",  // Extension Space Use
   bathroomIncluded:   "vbDJmJ1D2RwLNL4XTwUQ",  // E - Addition Include Bathroom
   kitchenIncluded:    "IUHBl3SC98V1tCDHSzSC",  // E - Addition Kitchen Included
 
@@ -76,7 +76,7 @@ export const ghlFieldMap: Record<string, string> = {
   improvements:       "blDVXpDalQK66GDB01Ob",  // E - B - The improvement I am looking for is:
   layoutPreference:   "UICKwaWqEABY2Snb4Pz0",  // E - B - The approximate size of my bathroom is:
   manageDuringReno:   "1XA6BiDIQu880TiejKxh",  // E - B - While my bathroom is being remodeled:
-  professionalDesigns:"",                        // no direct match in GHL account
+  professionalDesigns:"m53IbZ4vdsJse9Svuhul",  // Has Professional Designs
 
   // ---- Computed / meta ----
   projectType:        "1DlQfMBMgOpmzptsa5XD",  // Project Type
