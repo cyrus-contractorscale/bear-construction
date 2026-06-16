@@ -4,9 +4,10 @@
  * On Cloudflare Workers (production/preview) these read from and write to the
  * BEAR_ESTIMATE KV namespace so the /audit admin can persist changes.
  *
- * On plain Next.js dev (npm run dev) there is no Cloudflare context, so we
- * fall back silently to the static defaults in lib/site.ts and lib/pricing.ts.
+ * On plain Next.js dev (npm run dev) getCloudflareContext() throws — we catch
+ * it and fall back silently to the static defaults in lib/site.ts / pricing.ts.
  */
+import { getCloudflareContext } from "@opennextjs/cloudflare";
 import { site } from "./site";
 import { pricing } from "./pricing";
 
@@ -16,11 +17,11 @@ export type PricingConfig = typeof pricing;
 /** Resolve the BEAR_ESTIMATE KV namespace — returns null outside Workers. */
 function tryGetKV(): KVNamespace | null {
   try {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const { getCloudflareContext } = require("@opennextjs/cloudflare");
-    const { env } = getCloudflareContext();
-    return (env as Record<string, unknown>)["BEAR_ESTIMATE"] as KVNamespace ?? null;
+    const ctx = getCloudflareContext();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return (ctx.env as any).BEAR_ESTIMATE as KVNamespace ?? null;
   } catch {
+    // No Cloudflare request context (plain Next.js dev server)
     return null;
   }
 }
