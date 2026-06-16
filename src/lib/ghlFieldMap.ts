@@ -7,7 +7,13 @@
  * ghlFieldMap maps every other `ghlFieldKey` used in the surveys (plus the
  * computed estimate keys) to a GHL CUSTOM FIELD ID.
  *
- * Field IDs verified via GET /api/ghl-fields against Location: fifdlJb4VJ9ykoHVmSar
+ * Field IDs verified via GET /locations/:id/customFields
+ * against Location: fifdlJb4VJ9ykoHVmSar (Bear Construction)
+ *
+ * Estimate output fields → GHL merge tags:
+ *   estimateLow   → {{contact.quote}}          (ID hOT1CpcZ4CLH5velp97n)
+ *   estimateHigh  → {{contact.pricing_estimate}} (ID nzd3xOJbgGnarEccCc9J)
+ *   estimateRange → {{contact.quote_range}}     (ID ZwwxhHBqtwsLTDsDkJa7)
  */
 
 export const STANDARD_FIELD_KEYS = [
@@ -79,8 +85,8 @@ export const ghlFieldMap: Record<string, string> = {
   professionalDesigns:"m53IbZ4vdsJse9Svuhul",  // Has Professional Designs
 
   // ---- Computed / meta ----
-  projectType:        "1DlQfMBMgOpmzptsa5XD",  // Project Type
-  estimateLow:        "hOT1CpcZ4CLH5velp97n",  // Quote (low end)
-  estimateHigh:       "nzd3xOJbgGnarEccCc9J",  // Pricing Estimate (high end)
-  estimateRange:      "ZwwxhHBqtwsLTDsDkJa7",  // Quote Range
+  projectType:        "1DlQfMBMgOpmzptsa5XD",  // {{contact.project_type}}       — Project Type
+  estimateLow:        "hOT1CpcZ4CLH5velp97n",  // {{contact.quote}}               — Quote (low number)
+  estimateHigh:       "nzd3xOJbgGnarEccCc9J",  // {{contact.pricing_estimate}}    — Pricing Estimate (high number)
+  estimateRange:      "ZwwxhHBqtwsLTDsDkJa7",  // {{contact.quote_range}}         — Quote Range (formatted "$X - $Y")
 };
