@@ -91,9 +91,9 @@ export function buildGhlPayload(
   // Inject computed estimate values so they can map to custom fields too.
   flat.projectType = survey.label;
   flat.estimateLow =
-    result.basis === "unavailable" ? "Pending consult" : formatCurrency(result.low);
+    result.basis === "unavailable" ? "Pending consult" : String(Math.round(result.low));
   flat.estimateHigh =
-    result.basis === "unavailable" ? "Pending consult" : formatCurrency(result.high);
+    result.basis === "unavailable" ? "Pending consult" : String(Math.round(result.high));
   flat.estimateRange =
     result.basis === "unavailable"
       ? "Pending consult"
