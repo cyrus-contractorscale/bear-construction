@@ -5,6 +5,8 @@ import { SurveyFlow } from "@/components/survey/SurveyFlow";
 import { getSiteConfig } from "@/lib/config";
 import type { ProjectType } from "@/lib/types";
 
+export const runtime = "edge";
+
 /* ─── Slug → ProjectType ──────────────────────────────────────────── */
 const slugToType: Record<string, ProjectType> = {
   "e-home":     "customHome",

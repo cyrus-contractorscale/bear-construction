@@ -1,5 +1,7 @@
 import { SurveyLandingPage } from "../_shared/SurveyLandingPage";
 
+export const runtime = "edge";
+
 export const metadata = {
   title: "Bathroom Renovation Estimate | Bear Construction",
   robots: { index: false, follow: false },
