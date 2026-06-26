@@ -24,10 +24,6 @@ const typeLabel: Record<ProjectType, string> = {
   bathroomRenovation: "Bathroom Renovation",
 };
 
-export async function generateStaticParams() {
-  return Object.keys(slugToType).map((slug) => ({ slug }));
-}
-
 export async function generateMetadata({
   params,
 }: {
