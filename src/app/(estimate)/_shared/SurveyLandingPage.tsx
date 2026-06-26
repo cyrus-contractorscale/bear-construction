@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { EstimateSidebar } from "@/components/survey/EstimateSidebar";
+import { EstimateSidebarStatic } from "@/components/survey/EstimateSidebarStatic";
 import { SurveyFlow } from "@/components/survey/SurveyFlow";
 import { BelowFoldLazy } from "./BelowFoldLazy";
 import type { FaqItem } from "./FaqAccordion";
@@ -87,7 +87,7 @@ export function SurveyLandingPage({ projectType, faqs }: Props) {
               <div className="min-w-0 flex-1">
                 <SurveyFlow projectType={projectType} backHref="/estimate" />
               </div>
-              <EstimateSidebar />
+              <EstimateSidebarStatic />
             </div>
           </div>
 

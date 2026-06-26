@@ -1,6 +1,5 @@
 import { SurveyLandingPage } from "../_shared/SurveyLandingPage";
 
-export const runtime = "edge";
 
 export const metadata = {
   title: "Custom Home Estimate | Bear Construction",
