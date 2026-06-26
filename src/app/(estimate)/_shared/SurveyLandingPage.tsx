@@ -1,17 +1,10 @@
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import Image from "next/image";
 import { EstimateSidebar } from "@/components/survey/EstimateSidebar";
 import { SurveyFlow } from "@/components/survey/SurveyFlow";
+import { BelowFoldLazy } from "./BelowFoldLazy";
 import type { FaqItem } from "./FaqAccordion";
 import type { ProjectType } from "@/lib/types";
-
-// Lazy-load heavy below-fold sections on the client to keep the
-// Worker bundle small (Cloudflare free tier: 3 MiB limit).
-const BelowFold = dynamic(
-  () => import("./BelowFold").then((m) => m.BelowFold),
-  { ssr: false }
-);
 
 const navLinks = [
   { label: "Get Estimate", href: "#estimate" },
@@ -119,7 +112,7 @@ export function SurveyLandingPage({ projectType, faqs }: Props) {
         </section>
 
         {/* About Us, Our Process, FAQ — client-side lazy loaded */}
-        <BelowFold faqs={faqs} />
+        <BelowFoldLazy faqs={faqs} />
 
       </main>
 
