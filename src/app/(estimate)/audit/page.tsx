@@ -10,7 +10,7 @@ import { CollapsibleSection } from "@/components/admin/CollapsibleSection";
 import { AuditTabs } from "@/components/admin/AuditTabs";
 import { ClientInfoEditor } from "@/components/admin/ClientInfoEditor";
 import type { AuditTab } from "@/components/admin/AuditTabs";
-import { ghlFieldMap } from "@/lib/ghlFieldMap";
+import { ghlFieldMap, ghlFieldKeys } from "@/lib/ghlFieldMap";
 import { getGhlConfig } from "@/lib/ghlClient";
 
 /* ─── Field label map ────────────────────────────────────────────── */
@@ -56,6 +56,15 @@ const fieldLabels: Record<string, string> = {
   estimateLow:        "Estimate – Low",
   estimateHigh:       "Estimate – High",
   estimateRange:      "Estimate Range",
+  utmSource:          "UTM Source",
+  utmCampaign:        "UTM Campaign",
+  utmKeyword:         "UTM Keyword / Term",
+  utmContent:         "UTM Content",
+  utmMatchType:       "UTM Match Type",
+  gclid:              "Google Click ID (GCLID)",
+  fbClickId:          "FB Click ID",
+  sessionSource:      "Session Source",
+  sourceUrl:          "Landing Page URL",
 };
 
 const standardFields = [
@@ -84,6 +93,24 @@ const computedNotes: Record<string, string> = {
   estimateLow:   "Calculated server-side from size × finish level pricing.",
   estimateHigh:  "Calculated server-side from size × finish level pricing.",
   estimateRange: "Formatted range string, e.g. '$440,000 – $560,000'.",
+};
+
+/* ─── Attribution — auto-captured from URL params & referrer ─────────── */
+const attributionKeys = [
+  "utmSource","utmCampaign","utmKeyword","utmContent","utmMatchType",
+  "gclid","fbClickId","sessionSource","sourceUrl",
+];
+
+const attributionNotes: Record<string, string> = {
+  utmSource:     "From ?utm_source= on the first visit (first-touch).",
+  utmCampaign:   "From ?utm_campaign=.",
+  utmKeyword:    "From ?utm_term= or ?utm_keyword=.",
+  utmContent:    "From ?utm_content=.",
+  utmMatchType:  "From ?utm_matchtype= (Google Ads).",
+  gclid:         "Google Ads click ID, from ?gclid=.",
+  fbClickId:     "Meta ads click ID, from ?fbclid=.",
+  sessionSource: "Derived: Campaign / Organic / Referral / Direct traffic.",
+  sourceUrl:     "Full URL of the first page the visitor landed on.",
 };
 
 /* ─── Service-specific keys only (shared removed) ────────────────────── */
@@ -368,6 +395,62 @@ export default function AuditPage() {
           </CollapsibleSection>
         </div>
 
+        {/* ── Lead Activity Logging ── */}
+        <div className="mb-8">
+          <CollapsibleSection
+            title={
+              <div className="flex items-center gap-3">
+                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-sky-600 text-white">
+                  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+                  </svg>
+                </span>
+                <div>
+                  <h2 className="text-base font-bold text-ink-900">Lead Activity Logging</h2>
+                  <p className="text-[11px] text-ink-400">Timeline notes + traffic attribution — records where each lead came from</p>
+                </div>
+              </div>
+            }
+            badge={<Pill ok label="Active" />}
+            defaultOpen={false}
+          >
+            <div className="space-y-4 p-6 sm:p-8">
+
+              <div className="rounded-xl border border-sky-100 bg-sky-50/50 p-4">
+                <p className="mb-1 text-[11px] font-bold uppercase tracking-widest text-sky-700">1 · Timeline Note on every submission</p>
+                <p className="text-sm text-ink-600 leading-relaxed">
+                  When a survey is submitted, the API automatically posts a <strong>note on the contact&apos;s timeline</strong> in GHL.
+                  The note records the survey filled in (e.g. Kitchen Renovation), the estimate range, the survey page URL,
+                  traffic source, UTM values, landing page, and referrer. Open any contact in GHL → Notes to see it.
+                </p>
+                <div className="mt-3 overflow-x-auto rounded-lg bg-ink-950 px-4 py-3">
+                  <code className="whitespace-pre text-xs text-emerald-400">{`📋 Estimate Survey Submitted — Kitchen Renovation\nEstimate: $28,000 - $42,000\nSurvey page: /e-kitchen\nTraffic source: Campaign: google\nUTM source: google\nUTM campaign: kitchen-reno-wgtn\nLanding page: https://www.bearconstruction.co.nz/?utm_source=google&...\nReferrer: https://www.google.com/`}</code>
+                </div>
+              </div>
+
+              <div className="rounded-xl border border-sky-100 bg-sky-50/50 p-4">
+                <p className="mb-1 text-[11px] font-bold uppercase tracking-widest text-sky-700">2 · UTM / Click-ID capture (first-touch)</p>
+                <p className="text-sm text-ink-600 leading-relaxed">
+                  Survey pages store <code className="rounded bg-ink-100 px-1 py-0.5 text-xs">utm_source, utm_campaign, utm_term, utm_content, utm_matchtype, gclid, fbclid</code>{" "}
+                  plus the referrer and landing page in the visitor&apos;s browser on their first visit. When the lead submits,
+                  these are written to the matching GHL custom fields (see the <strong>Attribution / Tracking</strong> section in
+                  the Shared &amp; Computed tab below) — so ad campaigns are attributed even though the survey is custom-coded.
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
+                <p className="mb-1 text-[11px] font-bold uppercase tracking-widest text-amber-700">Note · GHL Activity feed</p>
+                <p className="text-sm text-amber-800 leading-relaxed">
+                  GHL&apos;s native Activity feed only tracks visitors it has identified (native form submission, email/SMS link click,
+                  or chat). Since this funnel creates contacts via API, page-visit activity starts appearing <strong>after the contact
+                  first clicks a link back to the site from a GHL email or SMS</strong>. The timeline notes above cover the gap.
+                </p>
+              </div>
+
+            </div>
+          </CollapsibleSection>
+        </div>
+
         {/* ── Standard GHL Fields — collapsible, closed by default ── */}
         <div className="mb-8">
           <CollapsibleSection
@@ -388,7 +471,8 @@ export default function AuditPage() {
                 <thead className="bg-ink-50">
                   <tr>
                     <th className="px-4 py-3 text-[10px] font-bold uppercase tracking-wider text-ink-400">Field</th>
-                    <th className="px-4 py-3 text-[10px] font-bold uppercase tracking-wider text-ink-400">GHL Key</th>
+                    <th className="px-4 py-3 text-[10px] font-bold uppercase tracking-wider text-ink-400">Internal Key</th>
+                    <th className="px-4 py-3 text-[10px] font-bold uppercase tracking-wider text-ink-400 hidden md:table-cell">Merge Tag Key</th>
                     <th className="px-4 py-3 text-[10px] font-bold uppercase tracking-wider text-ink-400">Status</th>
                   </tr>
                 </thead>
@@ -397,6 +481,7 @@ export default function AuditPage() {
                     <tr key={f.key} className="border-t border-ink-100 hover:bg-ink-50/50">
                       <td className="px-4 py-3 font-medium text-ink-800">{f.label}</td>
                       <td className="px-4 py-3 font-mono text-xs text-ink-500">{f.key}</td>
+                      <td className="px-4 py-3 font-mono text-xs text-sky-700 hidden md:table-cell">{ghlFieldKeys[f.key] ?? "—"}</td>
                       <td className="px-4 py-3"><Pill ok label="Native Field" /></td>
                     </tr>
                   ))}
@@ -429,6 +514,7 @@ export default function AuditPage() {
               key,
               label: fieldLabels[key] ?? key,
               ghlId:  ghlFieldMap[key] ?? "",
+              ghlKey: ghlFieldKeys[key] ?? "",
               mapped: Boolean(ghlFieldMap[key]?.trim()),
               note,
             };
@@ -453,6 +539,10 @@ export default function AuditPage() {
                 {
                   sectionLabel: "Computed / Meta — auto-set by the app",
                   fields: makeFields(computedKeys, computedNotes),
+                },
+                {
+                  sectionLabel: "Attribution / Tracking — auto-captured from URL & referrer",
+                  fields: makeFields(attributionKeys, attributionNotes),
                 },
               ],
             },

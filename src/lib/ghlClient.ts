@@ -85,6 +85,24 @@ export async function upsertContact(
   return first;
 }
 
+/**
+ * Create a note on a contact's timeline. Used to log estimate submissions
+ * (survey page, estimate range, traffic source) since custom-coded surveys
+ * don't appear in GHL's native Activity feed.
+ */
+export async function createContactNote(
+  cfg: GhlConfig,
+  contactId: string,
+  body: string
+): Promise<{ ok: boolean; status: number }> {
+  const res = await fetch(`${BASE_URL}/contacts/${contactId}/notes`, {
+    method: "POST",
+    headers: headers(cfg),
+    body: JSON.stringify({ body }),
+  });
+  return { ok: res.ok, status: res.status };
+}
+
 /** Fetch the location's custom fields (used by the dev helper route). */
 export async function getCustomFields(
   cfg: GhlConfig

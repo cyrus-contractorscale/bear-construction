@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/Button";
 import { ProgressBar } from "@/components/ui/ProgressBar";
+import { captureAttribution, getAttribution } from "@/lib/attribution";
 import { computeEstimate } from "@/lib/estimate";
 import { saveState } from "@/lib/state";
 import { getSurvey } from "@/lib/surveys";
@@ -38,6 +39,11 @@ export function SurveyFlow({ projectType, backHref = "/estimate" }: Props) {
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [direction, setDirection] = useState<"forward" | "back">("forward");
+
+  // Persist UTM / referrer attribution (first-touch) as soon as the survey loads
+  useEffect(() => {
+    captureAttribution();
+  }, []);
 
   const questions = survey.questions;
   const current = questions[index];
@@ -90,7 +96,11 @@ export function SurveyFlow({ projectType, backHref = "/estimate" }: Props) {
       const res = await fetch("/api/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ projectType: survey.id, answers: finalAnswers }),
+        body: JSON.stringify({
+          projectType: survey.id,
+          answers: finalAnswers,
+          attribution: getAttribution(),
+        }),
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({})) as { error?: string; ghl?: unknown };

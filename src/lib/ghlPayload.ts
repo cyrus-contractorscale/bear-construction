@@ -84,9 +84,18 @@ export function flattenAnswers(survey: Survey, answers: Answers): Record<string,
 export function buildGhlPayload(
   survey: Survey,
   answers: Answers,
-  result: EstimateResult
+  result: EstimateResult,
+  attribution?: Record<string, string | undefined>
 ): GhlContactPayload {
   const flat = flattenAnswers(survey, answers);
+
+  // Merge attribution values (utmSource, gclid, sessionSource, …). Only keys
+  // present in ghlFieldMap are forwarded; survey answers take precedence.
+  if (attribution) {
+    for (const [key, value] of Object.entries(attribution)) {
+      if (value && ghlFieldMap[key] && !flat[key]) flat[key] = value;
+    }
+  }
 
   // Inject computed estimate values so they can map to custom fields too.
   flat.projectType = survey.label;

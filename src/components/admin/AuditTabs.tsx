@@ -7,6 +7,7 @@ export interface TabField {
   key: string;
   label: string;
   ghlId: string;
+  ghlKey?: string;        // GHL merge tag, e.g. {{contact.quote}}
   mapped: boolean;
   note?: string;          // optional explanation shown in a small tag
 }
@@ -120,9 +121,10 @@ export function AuditTabs({ tabs, totalMapped, totalFields }: Props) {
               <table className="min-w-full text-left text-sm">
                 <thead className="bg-ink-50/80 border-b border-ink-100">
                   <tr>
-                    <th className="px-4 py-2.5 text-[10px] font-bold uppercase tracking-wider text-ink-400 w-[220px]">Field Name</th>
-                    <th className="px-4 py-2.5 text-[10px] font-bold uppercase tracking-wider text-ink-400 hidden sm:table-cell w-[170px]">Internal Key</th>
-                    <th className="px-4 py-2.5 text-[10px] font-bold uppercase tracking-wider text-ink-400 hidden lg:table-cell">GHL Custom Field ID</th>
+                    <th className="px-4 py-2.5 text-[10px] font-bold uppercase tracking-wider text-ink-400 w-[200px]">Field Name</th>
+                    <th className="px-4 py-2.5 text-[10px] font-bold uppercase tracking-wider text-ink-400 hidden sm:table-cell w-[150px]">Internal Key</th>
+                    <th className="px-4 py-2.5 text-[10px] font-bold uppercase tracking-wider text-ink-400 hidden xl:table-cell w-[190px]">GHL Field ID</th>
+                    <th className="px-4 py-2.5 text-[10px] font-bold uppercase tracking-wider text-ink-400 hidden md:table-cell">Merge Tag Key</th>
                     <th className="px-4 py-2.5 text-[10px] font-bold uppercase tracking-wider text-ink-400 w-[110px]">Status</th>
                   </tr>
                 </thead>
@@ -132,7 +134,7 @@ export function AuditTabs({ tabs, totalMapped, totalFields }: Props) {
                       {/* Section divider row */}
                       {section.sectionLabel && (
                         <tr className="bg-ink-100/60">
-                          <td colSpan={4} className="px-4 py-2">
+                          <td colSpan={5} className="px-4 py-2">
                             <span className="inline-flex items-center gap-1.5 text-[10px] font-black uppercase tracking-[0.18em] text-ink-500">
                               <span className="h-px flex-1 bg-ink-300 hidden sm:block w-4" />
                               {section.sectionLabel}
@@ -156,10 +158,15 @@ export function AuditTabs({ tabs, totalMapped, totalFields }: Props) {
                           <td className="px-4 py-3 font-mono text-xs text-ink-500 hidden sm:table-cell align-top">
                             {f.key}
                           </td>
-                          <td className="px-4 py-3 font-mono text-xs hidden lg:table-cell align-top">
+                          <td className="px-4 py-3 font-mono text-xs hidden xl:table-cell align-top">
                             {f.mapped
                               ? <span className="text-emerald-700 break-all">{f.ghlId}</span>
                               : <span className="text-amber-500 italic">— add ID to ghlFieldMap.ts</span>}
+                          </td>
+                          <td className="px-4 py-3 font-mono text-xs hidden md:table-cell align-top">
+                            {f.ghlKey
+                              ? <span className="text-sky-700 break-all">{f.ghlKey}</span>
+                              : <span className="text-ink-300">—</span>}
                           </td>
                           <td className="px-4 py-3 align-top">
                             <Pill ok={f.mapped} label={f.mapped ? "Mapped" : "Needs ID"} />
